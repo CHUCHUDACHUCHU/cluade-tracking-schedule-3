@@ -232,7 +232,10 @@ def fetch_full_rest(t, tk, prices, out, fin_rows, got) -> dict:
         if ds:
             got.append("calendar")
             fut = [d for d in ds if d >= date.today() - timedelta(days=1)]
-            out["next_earnings"] = (fut[0] if fut else ds[-1]).isoformat()
+            past = [d for d in ds if d < date.today() - timedelta(days=1)]
+            out["next_earnings"] = fut[0].isoformat() if fut else None   # 아직 발표 예정일이 안 올라온 경우 비움
+            if past:
+                out["last_earnings_date"] = past[-1].isoformat()
     eh = safe(lambda: t.earnings_history, pd.DataFrame())
     time.sleep(PAUSE)
     if isinstance(eh, pd.DataFrame) and not eh.empty:
@@ -309,6 +312,42 @@ def estimates_and_ratings(t, out, got, full=False):
         out["pt_cut_90d"] = int(pta.str.contains("lower").sum())
         out["upgrade_90d"] = int((act == "up").sum())
         out["downgrade_90d"] = int((act == "down").sum())
+
+
+# ---------------- 누적 분기로 성장률 다시 계산 ----------------
+def recompute_growth(df: pd.DataFrame, fins: pd.DataFrame) -> pd.DataFrame:
+    """Yahoo는 분기 실적을 5개만 줘서 '직전 분기 전년 대비'(6개 필요)가 비는 경우가 많다.
+    지금까지 쌓은 financials.parquet의 분기를 합쳐 다시 계산한다(분기가 쌓일수록 채워짐)."""
+    if fins.empty:
+        return df
+    q = fins[fins["freq"] == "q"].copy()
+    q["period_end"] = pd.to_datetime(q["period_end"], errors="coerce")
+    q = q.dropna(subset=["period_end", "revenue"]).sort_values(["ticker", "period_end"])
+    grp = dict(tuple(q.groupby("ticker")))
+    out = df.copy()
+    for i, tk in out["ticker"].items():
+        g = grp.get(tk)
+        if g is None or len(g) < 5:
+            continue
+        idx = list(g["period_end"])
+        rev = dict(zip(idx, g["revenue"]))
+
+        def yoy(k):
+            if len(idx) < 5 + k:
+                return None
+            cur = idx[-1 - k]
+            cands = [d for d in idx if 330 <= (cur - d).days <= 400]
+            return rnd(pct(rev[cur], rev[cands[-1]])) if cands else None
+
+        g0, g1 = yoy(0), yoy(1)
+        if g0 is not None:
+            out.at[i, "rev_growth_q"] = g0
+        if g1 is not None:
+            out.at[i, "rev_growth_prev_q"] = g1
+        if g0 is not None and g1 is not None:
+            out.at[i, "rev_accel_pp"] = rnd(g0 - g1)
+        out.at[i, "q_count"] = len(idx)
+    return out
 
 
 # ---------------- 대상 고르기 ----------------
@@ -416,13 +455,14 @@ def main():
         if stopped:
             break
 
+    if new_fin:
+        nf = pd.DataFrame(new_fin)
+        fins = pd.concat([fins, nf], ignore_index=True).drop_duplicates(["ticker", "freq", "period_end"], keep="last")
     newdf = pd.DataFrame(new_rows)
     if not newdf.empty:
+        newdf = recompute_growth(newdf, fins)
         latest = pd.concat([old[~old["ticker"].isin(newdf["ticker"])] if not old.empty else old, newdf], ignore_index=True)
         hist = pd.concat([hist, newdf], ignore_index=True).drop_duplicates(["ticker", "fetched"], keep="last")
-        if new_fin:
-            nf = pd.DataFrame(new_fin)
-            fins = pd.concat([fins, nf], ignore_index=True).drop_duplicates(["ticker", "freq", "period_end"], keep="last")
     else:
         latest = old
 
@@ -445,7 +485,7 @@ def main():
             "rev_accel_pp", "op_margin_q", "op_margin_chg_pp", "fcf_q", "fcf_q_yago", "eps_growth_this_y_pct",
             "eps_growth_next_y_pct", "rev_growth_est_1y_pct", "eps_0y_chg_30d_pct", "eps_1y_chg_30d_pct",
             "eps_1y_chg_90d_pct", "rev_1y_up30", "rev_1y_down30", "pt_raise_90d", "pt_cut_90d", "upgrade_90d",
-            "downgrade_90d", "next_earnings", "last_earnings_q", "last_surprise_pct", "beats_4q", "target_mean",
+            "downgrade_90d", "next_earnings", "last_earnings_date", "last_earnings_q", "q_count", "last_surprise_pct", "beats_4q", "target_mean",
             "rec_mean", "n_analysts", "short_pct_float", "yf_industry"]
     sc = sidx.reset_index()
     sc = sc[[c for c in sc.columns if c not in keep[1:]]]
