@@ -1,0 +1,46 @@
+name: daily-closes
+
+on:
+  schedule:
+    # 21:41 UTC = 06:41 KST (화~토). 미국 장 마감(동부 16:00) 40분 이상 뒤(정각은 GitHub 지연이 잦아 피함), 리포터 08:07 전.
+    - cron: "41 21 * * 1-5"
+    # 토 21:41 UTC = 일 06:41 KST. 넓은 목록(universe) 주 1회 갱신 → 일요일 재선정용
+    - cron: "41 21 * * 6"
+  workflow_dispatch:
+    inputs:
+      universe:
+        description: "넓은 목록도 갱신"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: closes
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: fetch
+        run: |
+          if [ "${{ github.event.schedule }}" = "41 21 * * 6" ] || [ "${{ inputs.universe }}" = "true" ]; then
+            python scripts/fetch_closes.py --universe
+          else
+            python scripts/fetch_closes.py
+          fi
+      - name: commit
+        run: |
+          git config user.name "closes-bot"
+          git config user.email "closes-bot@users.noreply.github.com"
+          git add data/
+          git diff --cached --quiet || git commit -m "closes $(date -u +%F)"
+          git push

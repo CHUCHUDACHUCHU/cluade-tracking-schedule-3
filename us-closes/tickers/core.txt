@@ -1,0 +1,50 @@
+# 매일 받는 핵심 목록 (한 줄에 하나, # 뒤는 주석)
+# 기준·환율
+SPY
+KRW=X        # 원/달러 환율
+# ① 섹터 ETF 21개
+XLF
+SMH
+GRID
+XLK
+XLI
+ITA
+IGV
+XLE
+IYZ
+XBI
+XLC
+PAVE
+XLV
+XLB
+KRE
+XLU
+XLY
+URA
+XLP
+XHB
+XLRE
+# ② 종목 후보 풀 (② DB와 맞춰 갱신)
+STRL
+ANET
+NVT
+CRDO
+TER
+ALAB
+HWM
+COHR
+ETN
+PH
+RTX
+LMT
+NOC
+GS
+CME
+CBOE
+FORM
+MOD
+APH
+POWL
+JPM
+# 별도 관리(DY 리포트 참고용)
+DY
