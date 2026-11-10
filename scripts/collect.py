@@ -1,5 +1,5 @@
 """
-미국 주식 일봉 수집기 v2 — 약 2,800종목(S&P 600 + 러셀 2000 + 러셀 미드캡) + 핵심 목록
+미국 주식 일봉 수집기 v2 — 약 3,100종목(S&P 500 + S&P 600 + 러셀 2000·미드캡 또는 나스닥 대체) + 핵심 목록
 
 저장 구조
   [GitHub Release 'data' 첨부 파일 — git 이력에 안 쌓임]
@@ -56,6 +56,7 @@ ISHARES = {  # 보유 종목 CSV(섹터 포함)
     "rmid": "https://www.ishares.com/us/products/239718/ishares-russell-midcap-etf/1467271812596.ajax?fileType=csv&fileName=IWR_holdings&dataType=fund",
 }
 SP600_URL = "https://en.wikipedia.org/wiki/List_of_S%26P_600_companies"
+SP500_URL = "https://en.wikipedia.org/wiki/List_of_S%26P_500_companies"
 
 SECTOR_ETF = [  # GICS 섹터명(일부 문자열) → 섹터 ETF
     ("information technology", "XLK"), ("technology", "XLK"), ("health", "XLV"), ("financ", "XLF"),
@@ -130,8 +131,16 @@ def fetch_nasdaq_smid() -> pd.DataFrame:
                          "sector": d["sector"]}).dropna(subset=["ticker"]).drop_duplicates("ticker")
 
 
+def fetch_sp500() -> pd.DataFrame:
+    return fetch_wiki(SP500_URL)
+
+
 def fetch_sp600() -> pd.DataFrame:
-    tables = pd.read_html(io.StringIO(http_get(SP600_URL)))
+    return fetch_wiki(SP600_URL)
+
+
+def fetch_wiki(url: str) -> pd.DataFrame:
+    tables = pd.read_html(io.StringIO(http_get(url)))
     t = tables[0]
     sym = [c for c in t.columns if "Symbol" in str(c) or "Ticker" in str(c)][0]
     sec = [c for c in t.columns if "Sector" in str(c)]
@@ -147,7 +156,7 @@ def build_universe(refresh: bool) -> pd.DataFrame:
     if not refresh and not old.empty:
         return old
     parts, ok = [], []
-    for src, fn in [("sp600", fetch_sp600)] + [(k, (lambda u=u: parse_ishares(http_get(u)))) for k, u in ISHARES.items()]:
+    for src, fn in [("sp500", fetch_sp500), ("sp600", fetch_sp600)] + [(k, (lambda u=u: parse_ishares(http_get(u)))) for k, u in ISHARES.items()]:
         for attempt in range(3):
             try:
                 d = fn()
@@ -179,10 +188,20 @@ def build_universe(refresh: bool) -> pd.DataFrame:
     new = pd.concat(parts, ignore_index=True)
     new = (new.groupby("ticker", as_index=False)
               .agg({"name": "first", "sector": "first", "sources": lambda s: "+".join(sorted(set(s)))}))
-    # 일부 출처만 성공했으면 직전 목록의 나머지를 보존(목록이 갑자기 줄지 않게)
-    if len(ok) < 1 + len(ISHARES) and not old.empty:
-        keep = old[~old["ticker"].isin(new["ticker"])]
-        new = pd.concat([new, keep], ignore_index=True)
+    # 출처 묶음: S&P 600 / 중소형(러셀 2000·미드캡 또는 나스닥 대체). 실패한 묶음의 직전 종목만 보존
+    got_src = {p["sources"].iat[0] for p in parts}
+    covered = {x for x in ("sp500", "sp600") if x in got_src}
+    if got_src & {"r2000", "rmid", "nasdaq_smid"}:
+        covered |= {"r2000", "rmid", "nasdaq_smid"}
+    if not old.empty:
+        lost = old[~old["ticker"].isin(new["ticker"])]
+        keep = lost[lost["sources"].fillna("").map(lambda s: not (set(s.split("+")) & covered))]
+        if len(keep):
+            log(f"실패한 출처의 직전 종목 {len(keep)}개 보존")
+            new = pd.concat([new, keep], ignore_index=True)
+        dropped = len(lost) - len(keep)
+        if dropped:
+            log(f"목록에서 빠진 종목 {dropped}개(상장폐지·필터 제외 등) — 시계열은 저장소에 남음")
     if not old.empty and len(new) < 0.8 * len(old):
         warn(f"새 목록 {len(new)}개가 직전 {len(old)}개의 80% 미만 → 직전 목록 사용")
         return old

@@ -2,16 +2,20 @@ name: daily-closes
 
 on:
   schedule:
-    # 21:41 UTC = 06:41 KST (화~토) — 미국 장 마감 후, 리포터(08:07) 전
+    # 21:41 UTC = 06:41 KST (화~토) — 미국 장 마감 후, 리포터(08:07) 전에 끝나도록 펀더멘털은 30분 예산
     - cron: "41 21 * * 1-5"
-    # 토 21:41 UTC = 일 06:41 KST — 같은 수집 + 종목 목록(S&P 600·러셀 2000·러셀 미드캡) 갱신 + 주간 백업
+    # 토 21:41 UTC = 일 06:41 KST — 같은 수집 + 종목 목록 갱신 + 주간 백업
     - cron: "41 21 * * 6"
   workflow_dispatch:
     inputs:
       refresh_universe:
-        description: "종목 목록(S&P 600·러셀 2000·러셀 미드캡) 다시 받기"
+        description: "종목 목록(S&P 500·S&P 600·러셀/나스닥 대체) 다시 받기"
         type: boolean
         default: false
+      fund_budget_min:
+        description: "펀더멘털 수집 시간 예산(분)"
+        type: string
+        default: "30"
 
 permissions:
   contents: write
@@ -27,7 +31,7 @@ env:
 jobs:
   collect:
     runs-on: ubuntu-latest
-    timeout-minutes: 90
+    timeout-minutes: 100
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-python@v6
@@ -39,16 +43,19 @@ jobs:
         run: |
           mkdir -p store
           gh release view "$TAG" >/dev/null 2>&1 || \
-            gh release create "$TAG" --title "data store" --notes "일봉 시계열 저장소(자동 관리). ohlcv.parquet = 전체, ohlcv_backup_* = 주간 백업."
-          if gh release view "$TAG" --json assets -q '.assets[].name' | grep -qx "ohlcv.parquet"; then
-            # 저장소가 있는데 못 받으면 여기서 멈춤(빈 저장소로 덮어쓰는 사고 방지)
-            for i in 1 2 3; do gh release download "$TAG" -p ohlcv.parquet -D store --clobber && break; sleep 20; done
-            test -s store/ohlcv.parquet || { echo "저장소 내려받기 실패 — 중단"; exit 1; }
-          else
-            echo "저장소 없음 → 첫 실행(3년 백필)"
-          fi
+            gh release create "$TAG" --title "data store" --notes "일봉·펀더멘털 저장소(자동 관리)."
+          ASSETS=$(gh release view "$TAG" --json assets -q '.assets[].name')
+          for f in ohlcv.parquet fundamentals.parquet fund_history.parquet financials.parquet; do
+            if echo "$ASSETS" | grep -qx "$f"; then
+              # 저장소가 있는데 못 받으면 중단(빈 파일로 덮어쓰는 사고 방지)
+              for i in 1 2 3; do gh release download "$TAG" -p "$f" -D store --clobber && break; sleep 20; done
+              test -s "store/$f" || { echo "$f 내려받기 실패 — 중단"; exit 1; }
+            else
+              echo "$f 없음 → 처음 생성"
+            fi
+          done
 
-      - name: 수집
+      - name: 일봉 수집
         id: run
         run: |
           FLAG=""
@@ -59,7 +66,7 @@ jobs:
           python scripts/collect.py --store store/ohlcv.parquet $FLAG
           echo "code=$?" >> "$GITHUB_OUTPUT"
 
-      - name: 저장소 올리기(검증 통과 시)
+      - name: 일봉 저장소 올리기(검증 통과 시)
         if: steps.run.outputs.code == '0' || steps.run.outputs.code == '1'
         run: |
           gh release upload "$TAG" store/ohlcv.parquet --clobber
@@ -67,8 +74,29 @@ jobs:
             B="ohlcv_backup_$(date -u +%F).parquet"
             cp store/ohlcv.parquet "store/$B"
             gh release upload "$TAG" "store/$B" --clobber
-            # 백업은 최근 4개만 유지
             gh release view "$TAG" --json assets -q '.assets[].name' | grep '^ohlcv_backup_' | sort | head -n -4 | \
+              while read -r a; do gh release delete-asset "$TAG" "$a" -y; done
+          fi
+
+      - name: 펀더멘털 수집
+        id: fund
+        if: steps.run.outputs.code == '0' || steps.run.outputs.code == '1'
+        run: |
+          set +e
+          python scripts/fundamentals.py --store store --budget-min "${{ inputs.fund_budget_min || '30' }}"
+          echo "code=$?" >> "$GITHUB_OUTPUT"
+
+      - name: 펀더멘털 저장소 올리기
+        if: steps.fund.outputs.code == '0'
+        run: |
+          for f in fundamentals.parquet fund_history.parquet financials.parquet; do
+            [ -s "store/$f" ] && gh release upload "$TAG" "store/$f" --clobber
+          done
+          if [ "${{ github.event.schedule }}" = "41 21 * * 6" ] && [ -s store/fund_history.parquet ]; then
+            B="fund_history_backup_$(date -u +%F).parquet"
+            cp store/fund_history.parquet "store/$B"
+            gh release upload "$TAG" "store/$B" --clobber
+            gh release view "$TAG" --json assets -q '.assets[].name' | grep '^fund_history_backup_' | sort | head -n -4 | \
               while read -r a; do gh release delete-asset "$TAG" "$a" -y; done
           fi
 
@@ -84,5 +112,7 @@ jobs:
       - name: 결과 판정
         if: always()
         run: |
-          head -c 2000 data/collect_log.json 2>/dev/null || true
-          [ "${{ steps.run.outputs.code }}" = "0" ] || { echo "수집 결과 코드 ${{ steps.run.outputs.code }} (1=절반 미만 수신, 2=검증 실패로 업로드 안 함)"; exit 1; }
+          head -c 1500 data/collect_log.json 2>/dev/null || true; echo
+          head -c 1500 data/fund_log.json 2>/dev/null || true; echo
+          [ "${{ steps.run.outputs.code }}" = "0" ] || { echo "일봉 수집 코드 ${{ steps.run.outputs.code }} (1=절반 미만 수신, 2=검증 실패로 업로드 안 함)"; exit 1; }
+          [ "${{ steps.fund.outputs.code }}" = "0" ] || { echo "펀더멘털 코드 ${{ steps.fund.outputs.code }} (2=검증 실패로 업로드 안 함)"; exit 1; }

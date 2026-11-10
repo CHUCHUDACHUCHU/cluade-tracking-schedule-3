@@ -1,6 +1,6 @@
 # us-closes (v2)
 
-미국 주식 약 2,800종목(S&P 600 + 러셀 2000 + 러셀 미드캡) + 핵심 목록의 일봉을 매일 수집해 3년 이상 시계열로 쌓는다.
+미국 주식 약 3,100종목(S&P 500 + S&P 600 + 러셀 2000·미드캡, iShares가 막히면 나스닥 스크리너의 미국 기업 시총 3억~500억 달러로 대체) + 핵심 목록의 일봉을 매일 수집해 3년 이상 시계열로 쌓고, 펀더멘털·실적 추정치를 순환 수집한다.
 GitHub Actions가 yfinance(Yahoo Finance)로 받는다.
 
 ## 일정 (`.github/workflows/closes.yml`)
@@ -13,9 +13,13 @@ GitHub Actions가 yfinance(Yahoo Finance)로 받는다.
 |---|---|---|
 | Release `data` | `ohlcv.parquet` | **전체 시계열**(long: date,ticker,open,high,low,close,adj_close,volume). 첫 실행 3년 백필, 이후 매일 누적·삭제 없음. git 이력에 쌓이지 않음 |
 | Release `data` | `ohlcv_backup_YYYY-MM-DD.parquet` | 일요일 백업, 최근 4개 유지 |
+| Release `data` | `fundamentals.parquet` | 종목당 최신 펀더멘털 1행(시총·P/E·분기 매출 성장·가속·이익률 추이·연도별 P/E·실적일·서프라이즈·EPS/매출 추정치·추정치 변화·상향/하향 수·목표가 변경) |
+| Release `data` | `fund_history.parquet` | 받을 때마다 1행 누적(추정치 변화 추적), 일요일 백업 4개 |
+| Release `data` | `financials.parquet` | 분기(최근 8)·연간(최근 4~5) 매출·영업이익·순이익·EPS·FCF |
 | git `data/` | `screen.csv` | 전 종목 1행 요약 지표 + 섹터·섹터 ETF·섹터 대비 상대강도(②의 1차 거르기용) |
 | git `data/` | `latest.json`, `core_prices.csv` | 핵심 목록(core.txt) 최신 지표·최근 400거래일(①②③ 호환) |
 | git `data/` | `universe_latest.csv` | screen.csv 중 핵심 목록 밖 종목(현행 ② 지침 호환) |
+| git `data/` | `fund_log.json` | 펀더멘털 수집 통계(받은 수·커버리지·중단 사유) |
 | git `data/` | `collect_log.json` | 이번 실행 통계(받은 수·누락·백필·분할 재수집·검증 결과) |
 | git `tickers/` | `core.txt` | 핵심 목록(직접 관리: SPY·섹터 ETF·KRW=X·대형주 후보) |
 | git `tickers/` | `universe.csv` | 자동 목록(ticker,name,sector,sources) |
@@ -29,6 +33,13 @@ pip install pyarrow   # pandas.read_parquet용
 import pandas as pd
 df = pd.read_parquet("ohlcv.parquet", filters=[("ticker", "in", ["ANET", "STRL"])])  # 필요한 종목만
 ```
+
+## 펀더멘털 수집 방식(`scripts/fundamentals.py`, 매일 30분 예산)
+- A(매일): core.txt + 기술적 사전 순위 상위 150 + 실적 발표 전후(지난 5일·다음 3일) 종목, 최대 220개
+- B(순환): 나머지를 오래전에 받은 순으로 — 하루 약 150~250개, 약 3주에 한 바퀴
+- 재무제표·실적 일정은 6일마다 또는 실적 전후에만 전체 갱신, 그 사이엔 가벼운 갱신(info·추정치 변화·목표가)
+- 레이트 리밋 4회 연속이면 그날 중단(받은 값은 저장), 다음 날 이어서
+- screen.csv에 핵심 칸(mcap_b, fwd_pe, pe_hist_median, rev_growth_q, rev_growth_prev_q, rev_accel_pp, op_margin_chg_pp, eps_growth_next_y_pct, eps_1y_chg_30d_pct, rev_1y_up30/down30, pt_raise_90d/pt_cut_90d, next_earnings, last_surprise_pct, target_upside_pct 등)과 pre_rank를 덧붙임
 
 ## 안전장치
 - 목록: S&P 600(위키피디아), 러셀 2000(iShares IWM 보유 종목), 러셀 미드캡(iShares IWR). 일부 출처 실패 시 직전 목록을 보존, 새 목록이 직전의 80% 미만이면 직전 목록 사용.
