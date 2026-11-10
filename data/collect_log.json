@@ -1,41 +1,35 @@
 {
- "requested": 2693,
- "received": 2688,
+ "requested": 2717,
+ "received": 2716,
  "missing": [
-  "AMPX-WS",
-  "CWEN-A",
-  "INFQ-WS",
-  "OXY-WS",
-  "VAL-WS"
+  "CWEN-A"
  ],
- "backfilled": 30,
+ "backfilled": 249,
  "backfill_failed": [
-  "AMPX-WS",
-  "CWEN-A",
-  "INFQ-WS",
-  "OXY-WS",
-  "VAL-WS"
+  "CWEN-A"
  ],
  "split_refetched": [],
  "intraday_filled": {},
- "new_rows": 56044,
+ "new_rows": 225050,
  "validate_errors": [],
  "universe_errors": [
   "r2000: StopIteration: ",
   "rmid: StopIteration: "
  ],
  "universe_sources": {
-  "nasdaq_smid": 2054,
+  "nasdaq_smid": 1587,
   "nasdaq_smid+sp600": 573,
+  "nasdaq_smid+sp500": 258,
+  "sp500": 245,
   "sp600": 30
  },
  "as_of": "2026-11-09",
- "universe": 2648,
+ "universe": 2672,
  "core": 45,
- "screen_rows": 2672,
- "store_rows": 1892684,
- "store_tickers": 2688,
+ "screen_rows": 2903,
+ "store_rows": 2065758,
+ "store_tickers": 2919,
  "store_from": "2023-11-10",
- "seconds": 236,
- "missing_count": 5
+ "seconds": 248,
+ "missing_count": 1
 }
