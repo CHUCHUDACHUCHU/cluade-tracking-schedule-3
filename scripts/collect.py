@@ -36,7 +36,14 @@ import pandas as pd
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 TICKERS = ROOT / "tickers"
-UA = {"User-Agent": "Mozilla/5.0 (us-closes collector; personal research)"}
+UA = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36",
+    "Accept": "text/csv,application/json,text/html;q=0.9,*/*;q=0.8",
+    "Accept-Language": "en-US,en;q=0.9",
+}
+NASDAQ_URL = "https://api.nasdaq.com/api/screener/stocks?tableonly=true&limit=10000&offset=0&download=true"
+SMID_MCAP = (3e8, 5e10)   # 나스닥 대체 목록: 시총 3억~500억 달러(러셀 2000+미드캡 근사)
+UNIVERSE_ERRORS: list[str] = []
 
 KEEP_DAYS = 400
 BACKFILL_PERIOD = "3y"
@@ -54,7 +61,7 @@ SECTOR_ETF = [  # GICS 섹터명(일부 문자열) → 섹터 ETF
     ("information technology", "XLK"), ("technology", "XLK"), ("health", "XLV"), ("financ", "XLF"),
     ("industrial", "XLI"), ("consumer discretionary", "XLY"), ("consumer staples", "XLP"),
     ("energy", "XLE"), ("material", "XLB"), ("real estate", "XLRE"), ("utilit", "XLU"),
-    ("communication", "XLC"),
+    ("communication", "XLC"), ("telecom", "XLC"), ("finance", "XLF"),
 ]
 
 
@@ -103,6 +110,19 @@ def parse_ishares(text: str) -> pd.DataFrame:
     return df.dropna(subset=["ticker"]).drop_duplicates("ticker")
 
 
+def fetch_nasdaq_smid() -> pd.DataFrame:
+    """대체 목록: 나스닥 스크리너(NYSE·NASDAQ·AMEX 전 종목)에서 미국 기업 중 시총 3억~500억 달러."""
+    j = json.loads(http_get(NASDAQ_URL))
+    rows = j["data"]["rows"]
+    d = pd.DataFrame(rows)
+    d["mcap"] = pd.to_numeric(d["marketCap"].astype(str).str.replace(",", ""), errors="coerce")
+    d = d[(d["mcap"] >= SMID_MCAP[0]) & (d["mcap"] <= SMID_MCAP[1])]
+    if "country" in d.columns:
+        d = d[d["country"].fillna("").str.contains("United States")]
+    return pd.DataFrame({"ticker": d["symbol"].map(norm_ticker), "name": d["name"],
+                         "sector": d["sector"]}).dropna(subset=["ticker"]).drop_duplicates("ticker")
+
+
 def fetch_sp600() -> pd.DataFrame:
     tables = pd.read_html(io.StringIO(http_get(SP600_URL)))
     t = tables[0]
@@ -132,7 +152,20 @@ def build_universe(refresh: bool) -> pd.DataFrame:
                 break
             except Exception as e:
                 warn(f"목록 {src} 실패 {attempt + 1}/3: {e}")
+                if attempt == 2:
+                    UNIVERSE_ERRORS.append(f"{src}: {type(e).__name__}: {str(e)[:150]}")
                 time.sleep(5 * (attempt + 1))
+    # 러셀(iShares)이 하나라도 실패하면 나스닥 대체 목록으로 보충
+    if any(not any(p["sources"].iat[0] == k for p in parts) for k in ISHARES):
+        try:
+            d = fetch_nasdaq_smid()
+            if len(d) >= 100:
+                d["sources"] = "nasdaq_smid"
+                parts.append(d)
+                ok.append(f"nasdaq_smid:{len(d)}")
+        except Exception as e:
+            warn(f"나스닥 대체 목록 실패: {e}")
+            UNIVERSE_ERRORS.append(f"nasdaq_smid: {type(e).__name__}: {str(e)[:150]}")
     if not parts:
         warn("목록을 하나도 못 받음 → 직전 universe.csv 사용")
         return old
@@ -140,7 +173,7 @@ def build_universe(refresh: bool) -> pd.DataFrame:
     new = (new.groupby("ticker", as_index=False)
               .agg({"name": "first", "sector": "first", "sources": lambda s: "+".join(sorted(set(s)))}))
     # 일부 출처만 성공했으면 직전 목록의 나머지를 보존(목록이 갑자기 줄지 않게)
-    if len(parts) < 1 + len(ISHARES) and not old.empty:
+    if len(ok) < 1 + len(ISHARES) and not old.empty:
         keep = old[~old["ticker"].isin(new["ticker"])]
         new = pd.concat([new, keep], ignore_index=True)
     if not old.empty and len(new) < 0.8 * len(old):
@@ -454,6 +487,8 @@ def main():
     # 현행 ② 지침(일요일 새 리더 발굴) 호환용: 핵심 목록 밖 종목만
     sdf[sdf["sources"] != "core"].to_csv(DATA / "universe_latest.csv", index=False)
 
+    stat["universe_errors"] = UNIVERSE_ERRORS
+    stat["universe_sources"] = uni["sources"].value_counts().to_dict() if "sources" in uni else {}
     stat.update(as_of=as_of, universe=len(uni_t), core=len(core), screen_rows=len(rows),
                 store_rows=int(len(base)), store_tickers=int(base["ticker"].nunique()),
                 store_from=str(base["date"].min()), seconds=round(time.time() - t0))
