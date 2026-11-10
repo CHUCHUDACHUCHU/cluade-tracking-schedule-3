@@ -54,3 +54,13 @@ df = pd.read_parquet("ohlcv.parquet", filters=[("ticker", "in", ["ANET", "STRL"]
 - `close` = 분할 반영·배당 미반영 종가(진입·손절 비교용), `adj_close` = 배당까지 반영(수익률용).
 - `KRW=X` = 원/달러 환율.
 - 대형주(ETN·RTX 등)는 세 목록에 없으므로 `core.txt`에 둔다.
+
+## 리포터용 계산 스크립트 (v5, 2026-11-10)
+| 파일 | 쓰는 곳 | 하는 일 |
+|---|---|---|
+| `scripts/common.py` | ①② | 21개 섹터·테마 ETF 매핑(GICS + Yahoo 세부 업종), 추정치 신호·이익률 추이·사전 품질 점수 |
+| `scripts/sector_stage.py` | ① | 섹터별 추정치 방향·리더 밀도를 데이터로 계산 + score_v3 섹터 모드 실행 |
+| `scripts/stock_stage.py` | ② | 2,700종목 → 약 40개(A) → 채점 입력값 자동 생성·score_v3_2 채점(B), 웹 확인 대상(C) 표시 |
+| `scripts/score_v3.py` | ① | 채점 v3 섹터 모드(Notion에서 이전, 코드 변경 없음) |
+| `scripts/score_v3_2.py` | ② | 채점 v3.2 종목 모드(v3.1 + '기타' 바구니) |
+리포터는 매 실행 raw.githubusercontent.com에서 이 파일들을 받아 실행한다. 규칙을 바꿀 때는 이 파일과 Notion 시스템 페이지 v5 절을 함께 고친다.
