@@ -1,27 +1,30 @@
 ticker,name,sector,sources
-A,Agilent Technologies Inc. Common Stock,Industrials,nasdaq_smid
+A,Agilent Technologies,Health Care,nasdaq_smid+sp500
 AA,Alcoa Corporation Common Stock ,Industrials,nasdaq_smid
 AAL,American Airlines Group Inc. Common Stock,Consumer Discretionary,nasdaq_smid
 AAMI,Acadian Asset Management Inc.,Financials,sp600
 AAOI,Applied Optoelectronics Inc. Common Stock,Technology,nasdaq_smid
 AAON,AAON Inc. Common Stock,Industrials,nasdaq_smid
 AAP,"Advance Auto Parts, Inc.",Consumer Discretionary,nasdaq_smid+sp600
+AAPL,Apple Inc.,Information Technology,sp500
 AAT,American Assets Trust,Real Estate,nasdaq_smid+sp600
-AB,AllianceBernstein Holding L.P.  Units,Finance,nasdaq_smid
+ABBV,AbbVie,Health Care,sp500
 ABCB,Ameris Bancorp,Financials,nasdaq_smid+sp600
 ABG,Asbury Automotive Group,Consumer Discretionary,nasdaq_smid+sp600
 ABM,"ABM Industries, Inc.",Industrials,nasdaq_smid+sp600
+ABNB,Airbnb,Consumer Discretionary,sp500
 ABR,Arbor Realty Trust,Financials,sp600
 ABSI,Absci Corporation Common Stock,Health Care,nasdaq_smid
+ABT,Abbott Laboratories,Health Care,sp500
 ABTC,American Bitcoin Corp. Class A Common Stock,Finance,nasdaq_smid
 ABX,Abacus Global Management Inc. Class A Common Stock,Finance,nasdaq_smid
-ABXL,Abacus Global Management Inc. 9.875% Fixed Rate Senior Notes due 2028,Finance,nasdaq_smid
 ACA,"Arcosa, Inc.",Industrials,sp600
 ACAD,Acadia Pharmaceuticals,Health Care,nasdaq_smid+sp600
 ACCO,Acco Brands Corporation Common Stock,Consumer Discretionary,nasdaq_smid
 ACCV,Accelevation Holdings Corp. Class A Ordinary Shares,Energy,nasdaq_smid
 ACDC,ProFrac Holding Corp. Class A Common Stock,Energy,nasdaq_smid
 ACEL,Accel Entertainment Inc. ,Consumer Discretionary,nasdaq_smid
+ACGL,Arch Capital Group,Financials,sp500
 ACHC,Acadia Healthcare,Health Care,nasdaq_smid+sp600
 ACHR,Archer Aviation Inc. Class A Common Stock,Industrials,nasdaq_smid
 ACHV,Achieve Life Sciences Inc. Common Shares,Health Care,nasdaq_smid
@@ -31,35 +34,36 @@ ACIW,ACI Worldwide,Information Technology,nasdaq_smid+sp600
 ACLS,"Axcelis Technologies, Inc.",Information Technology,nasdaq_smid+sp600
 ACM,AECOM Common Stock,Consumer Discretionary,nasdaq_smid
 ACMR,"ACM Research, Inc.",Information Technology,nasdaq_smid+sp600
+ACN,Accenture,Information Technology,sp500
 ACNB,ACNB Corporation Common Stock,Finance,nasdaq_smid
 ACRS,Aclaris Therapeutics Inc. Common Stock,Health Care,nasdaq_smid
 ACT,"Enact Holdings, Inc.",Financials,nasdaq_smid+sp600
 ACTG,Acacia Research Corporation (Acacia Tech) Common Stock,Miscellaneous,nasdaq_smid
 AD,Array Digital Infrastructure Inc. Common Shares,Telecommunications,nasdaq_smid
 ADAM,"Adamas Trust, Inc.",Real Estate,nasdaq_smid+sp600
-ADAMI,Adamas Trust Inc. 9.125% Senior Notes Due 2029,Real Estate,nasdaq_smid
-ADAML,Adamas Trust Inc. 6.875% Series F Fixed-to-Floating Rate Cumulative Redeemable Preferred Stock $0.01 par value per share,Real Estate,nasdaq_smid
-ADAMM,Adamas Trust Inc. 7.875% Series E Fixed-to-Floating Rate Cumulative Redeemable Preferred Stock,Real Estate,nasdaq_smid
-ADAMN,Adamas Trust Inc. 8.00% Series D Fixed-to-Floating Rate Cumulative Redeemable Preferred Stock,Real Estate,nasdaq_smid
-ADAMZ,Adamas Trust Inc. 7.000% Series G Cumulative Redeemable Preferred Stock $0.01 par value per share,Real Estate,nasdaq_smid
+ADBE,Adobe Inc.,Information Technology,sp500
 ADC,Agree Realty Corporation Common Stock,Real Estate,nasdaq_smid
 ADEA,"Adeia, Inc.",Information Technology,nasdaq_smid+sp600
+ADI,Analog Devices,Information Technology,sp500
 ADIG,ADI Global Distribution,Information Technology,nasdaq_smid+sp600
-ADM,Archer-Daniels-Midland Company Common Stock,Consumer Staples,nasdaq_smid
+ADM,Archer Daniels Midland,Consumer Staples,nasdaq_smid+sp500
 ADMA,"ADMA Biologics, Inc.",Health Care,nasdaq_smid+sp600
 ADNT,Adient,Consumer Discretionary,nasdaq_smid+sp600
+ADP,Automatic Data Processing,Industrials,sp500
 ADPT,Adaptive Biotechnologies Corporation Common Stock,Health Care,nasdaq_smid
 ADRX,ADARx Pharmaceuticals Inc. Common Stock,Health Care,nasdaq_smid
+ADSK,Autodesk,Information Technology,sp500
 ADT,ADT Inc.,Consumer Discretionary,nasdaq_smid+sp600
 ADTN,ADTRAN Holdings Inc. Common Stock,Utilities,nasdaq_smid
 ADUS,Addus HomeCare Corp.,Health Care,nasdaq_smid+sp600
 ADV,Advantage Solutions Inc. Class A Common Stock,Consumer Discretionary,nasdaq_smid
-AEE,Ameren Corporation Common Stock,Utilities,nasdaq_smid
+AEE,Ameren,Utilities,nasdaq_smid+sp500
 AEF,abrdn Emerging Markets ex-China Fund Inc. Common Stock,Finance,nasdaq_smid
 AEHR,Aehr Test Systems Common Stock,Industrials,nasdaq_smid
 AEIS,Advanced Energy Industries Inc. Common Stock,Technology,nasdaq_smid
 AEO,American Eagle Outfitters,Consumer Discretionary,nasdaq_smid+sp600
-AES,The AES Corporation Common Stock,Industrials,nasdaq_smid
+AEP,American Electric Power,Utilities,sp500
+AES,AES Corporation,Utilities,nasdaq_smid+sp500
 AESI,"Atlas Energy Solutions, Inc.",Energy,nasdaq_smid+sp600
 AEVA,Aeva Technologies Inc. Common Stock,Consumer Discretionary,nasdaq_smid
 AFG,American Financial Group Inc. Common Stock,Finance,nasdaq_smid
@@ -67,21 +71,15 @@ AFGB,American Financial Group Inc. 5.875% Subordinated Debentures due 2059,Finan
 AFGC,American Financial Group Inc. 5.125% Subordinated Debentures due 2059,Finance,nasdaq_smid
 AFGD,American Financial Group Inc. 5.625% Subordinated Debentures due 2060,Finance,nasdaq_smid
 AFGE,American Financial Group Inc. 4.500% Subordinated Debentures due 2060,Finance,nasdaq_smid
+AFL,Aflac,Financials,sp500
 AFRM,Affirm Holdings Inc. Class A Common Stock,Finance,nasdaq_smid
 AGCO,AGCO Corporation Common Stock,Industrials,nasdaq_smid
 AGEN,Agenus Inc. Common Stock,Health Care,nasdaq_smid
 AGIO,Agios Pharmaceuticals Inc. Common Stock,Health Care,nasdaq_smid
 AGL,agilon health inc. Common Stock,Health Care,nasdaq_smid
 AGLT,Agility Robotics Inc. Common Stock,Industrials,nasdaq_smid
-AGLTW,Agility Robotics Inc. Warrants,Industrials,nasdaq_smid
 AGM,Federal Agricultural Mortgage Corporation Common Stock,Finance,nasdaq_smid
 AGNC,AGNC Investment Corp. Common Stock,Real Estate,nasdaq_smid
-AGNCL,AGNC Investment Corp. Depositary Shares Each Representing a 1/1000th Interest in a Share of 7.75% Series G Fixed-Rate Reset Cumulative Redeemable Preferred Stock,Real Estate,nasdaq_smid
-AGNCM,AGNC Investment Corp. Depositary Shares rep 6.875% Series D Fixed-to-Floating Cumulative Redeemable Preferred Stock,Real Estate,nasdaq_smid
-AGNCN,AGNC Investment Corp. Depositary Shares Each Representing a 1/1000th Interest in a Share of 7.00% Series C Fixed-To-Floating Rate Cumulative Redeemable Preferred Stock,Real Estate,nasdaq_smid
-AGNCO,AGNC Investment Corp. Depositary Shares each representing a 1/1000th interest in a share of 6.50% Series E Fixed-to-Floating Cumulative Redeemable Preferred Stock,Real Estate,nasdaq_smid
-AGNCP,AGNC Investment Corp. Depositary Shares Each Representing a 1/1000th Interest in a Share of 6.125% Series F Fixed-to-Floating Rate Cumulative Redeemable Preferred Stock,Real Estate,nasdaq_smid
-AGNCZ,AGNC Investment Corp. Depositary Shares Each Representing a 1/1000th Interest in a Share of 8.75% Series H Fixed-Rate Cumulative Redeemable Preferred Stock,Real Estate,nasdaq_smid
 AGNT,"eXp World Holdings, Inc.",Real Estate,nasdaq_smid+sp600
 AGO,Assured Guaranty Ltd.,Financials,sp600
 AGX,"Argan, Inc.",Industrials,nasdaq_smid+sp600
@@ -90,24 +88,24 @@ AHCO,AdaptHealth Corp.,Health Care,nasdaq_smid+sp600
 AHR,American Healthcare REIT Inc. Common Stock,Real Estate,nasdaq_smid
 AHRT,AH Realty Trust Inc. Common Stock,Finance,nasdaq_smid
 AI,C3.ai Inc. Class A Common Stock,Technology,nasdaq_smid
-AIG,American International Group Inc. New Common Stock,Finance,nasdaq_smid
+AIG,American International Group,Financials,nasdaq_smid+sp500
 AII,American Integrity Insurance Group Inc. Common Stock,Finance,nasdaq_smid
 AIN,Albany International Corp.,Industrials,nasdaq_smid+sp600
 AIOT,PowerFleet Inc. Common Stock,Telecommunications,nasdaq_smid
 AIP,Arteris Inc. Common Stock,Technology,nasdaq_smid
 AIR,AAR Corp.,Industrials,nasdaq_smid+sp600
 AIT,Applied Industrial Technologies Inc. Common Stock,Consumer Discretionary,nasdaq_smid
-AIZ,Assurant Inc. Common Stock,Finance,nasdaq_smid
-AIZN,Assurant Inc. 5.25% Subordinated Notes due 2061,Finance,nasdaq_smid
-AKAM,Akamai Technologies Inc. Common Stock,Consumer Discretionary,nasdaq_smid
+AIZ,Assurant,Financials,nasdaq_smid+sp500
+AJG,Arthur J. Gallagher & Co.,Financials,sp500
+AKAM,Akamai Technologies,Information Technology,nasdaq_smid+sp500
 AKR,Acadia Realty Trust,Real Estate,nasdaq_smid+sp600
 AKTS,Aktis Oncology Inc. Common stock,Health Care,nasdaq_smid
 ALAB,Astera Labs Inc. Common Stock,Technology,nasdaq_smid
-ALB,Albemarle Corporation Common Stock,Industrials,nasdaq_smid
+ALB,Albemarle Corporation,Materials,nasdaq_smid+sp500
 ALEC,Alector Inc. Common Stock,Health Care,nasdaq_smid
 ALG,Alamo Group,Industrials,nasdaq_smid+sp600
 ALGM,Allegro MicroSystems Inc. Common Stock,Technology,nasdaq_smid
-ALGN,Align Technology Inc. Common Stock,Health Care,nasdaq_smid
+ALGN,Align Technology,Health Care,nasdaq_smid+sp500
 ALGT,Allegiant Travel Company,Industrials,nasdaq_smid+sp600
 ALH,Alliance Laundry Holdings Inc. Common Stock,Industrials,nasdaq_smid
 ALHC,"Alignment Healthcare, Inc.",Health Care,nasdaq_smid+sp600
@@ -115,7 +113,8 @@ ALIT,Alight Inc. Class A Common Stock,Consumer Discretionary,nasdaq_smid
 ALK,Alaska Air Group Inc. Common Stock,Consumer Discretionary,nasdaq_smid
 ALKS,Alkermes plc,Health Care,sp600
 ALKT,Alkami Technology Inc. Common Stock,Technology,nasdaq_smid
-ALLE,Allegion plc Ordinary Shares,Consumer Discretionary,nasdaq_smid
+ALL,Allstate,Financials,sp500
+ALLE,Allegion,Industrials,nasdaq_smid+sp500
 ALLO,Allogene Therapeutics Inc. Common Stock,Health Care,nasdaq_smid
 ALLY,Ally Financial Inc. Common Stock,Finance,nasdaq_smid
 ALMR,Alamar Biosciences Inc. Common Stock,Industrials,nasdaq_smid
@@ -131,53 +130,65 @@ ALTI,AlTi Global Inc. Class A Common Stock,Finance,nasdaq_smid
 ALX,Alexander's Inc. Common Stock,Real Estate,nasdaq_smid
 AM,Antero Midstream Corporation Common Stock,Utilities,nasdaq_smid
 AMAL,Amalgamated Financial Corp. Common Stock (DE),Finance,nasdaq_smid
+AMAT,Applied Materials,Information Technology,sp500
 AMBA,Ambarella Inc. Ordinary Shares,Technology,nasdaq_smid
 AMBQ,Ambiq Micro Inc. Common Stock,Technology,nasdaq_smid
 AMC,AMC Entertainment Holdings Inc. Class A Common Stock,Consumer Discretionary,nasdaq_smid
+AMCR,Amcor,Materials,sp500
 AMCX,AMC Global Media Inc. Class A Common Stock,Telecommunications,nasdaq_smid
+AMD,Advanced Micro Devices,Information Technology,sp500
+AME,Ametek,Industrials,sp500
 AMG,Affiliated Managers Group Inc. Common Stock,Finance,nasdaq_smid
+AMGN,Amgen,Health Care,sp500
 AMH,American Homes 4 Rent Common Shares of Beneficial Interest,Real Estate,nasdaq_smid
 AMKR,Amkor Technology Inc. Common Stock,Technology,nasdaq_smid
 AMLX,Amylyx Pharmaceuticals Inc. Common Stock,Health Care,nasdaq_smid
 AMN,"Amn Healthcare Services, Inc.",Health Care,nasdaq_smid+sp600
-AMP,Ameriprise Financial Inc. Common Stock,Finance,nasdaq_smid
+AMP,Ameriprise Financial,Financials,nasdaq_smid+sp500
 AMPH,"Amphstar Pharmaceuticals, Inc.",Health Care,nasdaq_smid+sp600
 AMPL,Amplitude Inc. Class A Common Stock,Technology,nasdaq_smid
 AMPX,Amprius Technologies Inc. Common Stock,Miscellaneous,nasdaq_smid
-AMPX-WS,Amprius Technologies Inc. Warrants to purchase one share of Common Stock at an exercise price of $11.50 per share,Miscellaneous,nasdaq_smid
 AMR,"Alpha Metallurgical Resources, Inc.",Materials,nasdaq_smid+sp600
 AMRC,Ameresco Inc. Class A Common Stock,Consumer Discretionary,nasdaq_smid
 AMRX,Amneal Pharmaceuticals,Health Care,nasdaq_smid+sp600
 AMSC,American Superconductor Corporation Common Stock,Consumer Discretionary,nasdaq_smid
 AMSF,"Amerisafe, Inc.",Financials,nasdaq_smid+sp600
+AMT,American Tower,Real Estate,sp500
 AMTB,Amerant Bancorp Inc. Class A Common Stock,Finance,nasdaq_smid
 AMTM,Amentum,Industrials,nasdaq_smid+sp600
+AMZN,Amazon,Consumer Discretionary,sp500
 AN,AutoNation Inc. Common Stock,Consumer Discretionary,nasdaq_smid
 ANAB,AnaptysBio Inc. Common Stock,Health Care,nasdaq_smid
 ANDE,"The Andersons, Inc.",Consumer Staples,nasdaq_smid+sp600
 ANDG,Andersen Group Inc. Class A Common Stock,Consumer Discretionary,nasdaq_smid
+ANET,Arista Networks,Information Technology,sp500
 ANF,Abercrombie & Fitch Company Common Stock,Consumer Discretionary,nasdaq_smid
 ANGO,AngioDynamics Inc. Common Stock,Health Care,nasdaq_smid
 ANGX,Angel Studios Inc. Class A Common Stock,Consumer Discretionary,nasdaq_smid
 ANIP,"ANI Pharmaceuticals, Inc.",Health Care,nasdaq_smid+sp600
 ANNX,Annexon Inc. Common Stock,Health Care,nasdaq_smid
 ANRO,Alto Neuroscience Inc. Common Stock,Health Care,nasdaq_smid
+AON,Aon plc,Financials,sp500
 AORT,Artivion,Health Care,nasdaq_smid+sp600
-AOS,A.O. Smith Corporation Common Stock,Consumer Discretionary,nasdaq_smid
+AOS,A. O. Smith,Industrials,nasdaq_smid+sp500
 AOSL,"Alpha and Omega Semiconductor, Ltd.",Information Technology,sp600
-APA,APA Corporation Common Stock,Energy,nasdaq_smid
+APA,APA Corporation,Energy,nasdaq_smid+sp500
 APAM,"Artisan Partners Asset Management, Inc.",Financials,nasdaq_smid+sp600
 APC,ARKO Petroleum Corp. Class A Common Stock,Energy,nasdaq_smid
+APD,Air Products,Materials,sp500
 APEI,American Public Education Inc. Common Stock,Real Estate,nasdaq_smid
 APG,APi Group Corporation Common Stock,Consumer Discretionary,nasdaq_smid
+APH,Amphenol,Information Technology,sp500
 APLD,Applied Digital Corporation Common Stock,Technology,nasdaq_smid
 APLE,"Apple Hospitality REIT, Inc.",Real Estate,nasdaq_smid+sp600
 APMD,Apnimed Inc. Common Stock,Health Care,nasdaq_smid
+APO,Apollo Global Management,Financials,sp500
 APOG,"Apogee Enterprises, Inc.",Industrials,nasdaq_smid+sp600
-APOS,Apollo Global Management Inc. 7.625% Fixed-Rate Resettable Junior Subordinated Notes due 2053,Finance,nasdaq_smid
+APP,AppLovin,Communication Services,sp500
 APPF,AppFolio Inc. Class A Common Stock,Technology,nasdaq_smid
 APPN,Appian Corporation Class A Common Stock,Technology,nasdaq_smid
 APPS,Digital Turbine Inc. Common Stock,Miscellaneous,nasdaq_smid
+APTV,Aptiv,Consumer Discretionary,sp500
 AQN,Algonquin Power & Utilities Corp. Common Shares,Utilities,nasdaq_smid
 AQNB,Algonquin Power & Utilities Corp. 6.20% Fixed-to-Floating Subordinated Notes Series 2019-A due July 1 2079,Utilities,nasdaq_smid
 AQST,Aquestive Therapeutics Inc. Common Stock,Health Care,nasdaq_smid
@@ -186,13 +197,12 @@ ARCB,ArcBest Corp.,Industrials,nasdaq_smid+sp600
 ARCC,Ares Capital Corporation Common Stock,Finance,nasdaq_smid
 ARDT,Ardent Health Inc. Common Stock,Health Care,nasdaq_smid
 ARDX,Ardelyx Inc. Common Stock,Health Care,nasdaq_smid
-ARE,Alexandria Real Estate Equities Inc. Common Stock,Real Estate,nasdaq_smid
-ARES,Ares Management Corporation Class A Common Stock,Finance,nasdaq_smid
+ARE,Alexandria Real Estate Equities,Real Estate,nasdaq_smid+sp500
+ARES,Ares Management,Financials,nasdaq_smid+sp500
 ARHS,Arhaus Inc. Class A Common Stock,Consumer Discretionary,nasdaq_smid
 ARKO,ARKO Corp. Common Stock,Consumer Staples,nasdaq_smid
 ARL,American Realty Investors Inc. Common Stock,Finance,nasdaq_smid
 ARLO,Arlo Technologies,Information Technology,nasdaq_smid+sp600
-ARLP,Alliance Resource Partners L.P. Common Units representing Limited Partners Interests,Energy,nasdaq_smid
 ARMK,Aramark Common Stock,Consumer Discretionary,nasdaq_smid
 AROC,"Archrock, Inc.",Energy,nasdaq_smid+sp600
 AROW,Arrow Financial Corporation Common Stock,Finance,nasdaq_smid
@@ -207,7 +217,6 @@ ARXS,Arxis Inc. Class A Common Stock,Industrials,nasdaq_smid
 ASA,ASA  Gold and Precious Metals Limited,Industrials,nasdaq_smid
 ASAN,Asana Inc. Class A Common Stock,Technology,nasdaq_smid
 ASB,Associated Banc-Corp Common Stock,Finance,nasdaq_smid
-ASBA,Associated Banc-Corp 6.625% Fixed-Rate Reset Subordinated Notes due 2033,Finance,nasdaq_smid
 ASH,Ashland Inc. Common Stock,Consumer Discretionary,nasdaq_smid
 ASIX,AdvanSix Inc. Common Stock ,Industrials,nasdaq_smid
 ASMB,Assembly Biosciences Inc. Common Stock,Health Care,nasdaq_smid
@@ -218,19 +227,15 @@ ASPN,Aspen Aerogels Inc. Common Stock,Consumer Discretionary,nasdaq_smid
 ASST,Strive Inc. Class A Common Stock,Finance,nasdaq_smid
 ASTE,"Astec Industries, Inc.",Industrials,nasdaq_smid+sp600
 ASTH,"Astrana Health, Inc.",Health Care,nasdaq_smid+sp600
-ASTS,AST SpaceMobile Inc. Class A Common Stock,Consumer Discretionary,nasdaq_smid
 ATEC,Alphatec Holdings Inc. Common Stock,Health Care,nasdaq_smid
 ATEN,"A10 Networks, Inc.",Information Technology,nasdaq_smid+sp600
 ATEX,Anterix Inc. Common Stock,Telecommunications,nasdaq_smid
 ATI,ATI Inc. Common Stock,Industrials,nasdaq_smid
 ATLC,Atlanticus Holdings Corporation Common Stock,Finance,nasdaq_smid
-ATLCL,Atlanticus Holdings Corporation 6.125% Senior Notes due 2026,Finance,nasdaq_smid
-ATLCP,Atlanticus Holdings Corporation 7.625% Series B Cumulative Perpetual Preferred Stock no par value per share,Finance,nasdaq_smid
-ATLCZ,Atlanticus Holdings Corporation 9.25% Senior Notes due 2029,Finance,nasdaq_smid
 ATLO,Ames National Corporation Common Stock,Finance,nasdaq_smid
 ATMU,Atmus Filtration Technologies Inc.,Industrials,nasdaq_smid+sp600
 ATNI,ATN International Inc. Common Stock,Telecommunications,nasdaq_smid
-ATO,Atmos Energy Corporation Common Stock,Utilities,nasdaq_smid
+ATO,Atmos Energy,Utilities,nasdaq_smid+sp500
 ATR,AptarGroup Inc. Common Stock,Industrials,nasdaq_smid
 ATRC,AtriCure Inc. Common Stock,Health Care,nasdaq_smid
 ATRO,Astronics Corporation Common Stock,Industrials,nasdaq_smid
@@ -246,6 +251,7 @@ AVBC,Avidia Bancorp Inc. Common Stock,Finance,nasdaq_smid
 AVBH,Avidbank Holdings Inc. Common stock,Finance,nasdaq_smid
 AVBP,ArriVent BioPharma Inc. Common Stock,Health Care,nasdaq_smid
 AVEX,AEVEX Corp. Class A Common Stock,Industrials,nasdaq_smid
+AVGO,Broadcom,Information Technology,sp500
 AVIR,Atea Pharmaceuticals Inc. Common Stock,Health Care,nasdaq_smid
 AVLN,Avalyn Pharma Inc. Common Stock,Health Care,nasdaq_smid
 AVNT,Avient Corporation Common Stock,Industrials,nasdaq_smid
@@ -255,30 +261,33 @@ AVR,Anteris Technologies Global Corp. Common Stock,Health Care,nasdaq_smid
 AVT,Avnet Inc. Common Stock,Technology,nasdaq_smid
 AVTR,Avantor Inc. Common Stock,Industrials,nasdaq_smid
 AVTX,Avalo Therapeutics Inc. Common Stock,Health Care,nasdaq_smid
-AVY,Avery Dennison Corporation Common Stock,Consumer Discretionary,nasdaq_smid
+AVY,Avery Dennison,Materials,nasdaq_smid+sp500
 AWI,"Armstrong World Industries, Inc.",Industrials,nasdaq_smid+sp600
-AWK,American Water Works Company Inc. Common Stock,Utilities,nasdaq_smid
+AWK,American Water Works,Utilities,nasdaq_smid+sp500
 AWR,American States Water Company,Utilities,nasdaq_smid+sp600
 AX,"Axos Financial, Inc.",Financials,nasdaq_smid+sp600
 AXGN,Axogen Inc. Common Stock,Health Care,nasdaq_smid
-AXON,Axon Enterprise Inc. Common Stock,Industrials,nasdaq_smid
+AXON,Axon Enterprise,Industrials,nasdaq_smid+sp500
+AXP,American Express,Financials,sp500
 AXSM,Axsome Therapeutics Inc. Common Stock,Health Care,nasdaq_smid
 AXTA,Axalta Coating Systems Ltd. Common Shares,Consumer Discretionary,nasdaq_smid
 AXTI,AXT Inc Common Stock,Technology,nasdaq_smid
 AYI,Acuity Inc. Common Stock,Consumer Discretionary,nasdaq_smid
+AZO,AutoZone,Consumer Discretionary,sp500
 AZTA,"Azenta, Inc.",Health Care,nasdaq_smid+sp600
 AZZ,"AZZ, Inc.",Industrials,nasdaq_smid+sp600
+BA,Boeing,Industrials,sp500
+BAC,Bank of America,Financials,sp500
 BAH,Booz Allen Hamilton Holding Corporation Common Stock,Consumer Discretionary,nasdaq_smid
-BALL,Ball Corporation Common Stock,Industrials,nasdaq_smid
+BALL,Ball Corporation,Materials,nasdaq_smid+sp500
 BALY,Bally's Corporation Common Stock,Consumer Discretionary,nasdaq_smid
 BANC,"Banc Of California, Inc.",Financials,nasdaq_smid+sp600
 BAND,Bandwidth Inc. Class A Common Stock,Technology,nasdaq_smid
 BANF,Bancfirst Corp,Financials,nasdaq_smid+sp600
-BANFP,BancFirst Corporation - BFC Capital Trust II Cumulative Trust Preferred Securities,Finance,nasdaq_smid
 BANR,Banner Corporation,Financials,nasdaq_smid+sp600
 BATRA,Atlanta Braves Holdings Inc. Series A Common Stock,Consumer Discretionary,nasdaq_smid
 BATRK,Atlanta Braves Holdings Inc. Series C Common Stock,Consumer Discretionary,nasdaq_smid
-BAX,Baxter International Inc. Common Stock,Health Care,nasdaq_smid
+BAX,Baxter International,Health Care,nasdaq_smid+sp500
 BBAI,BigBear.ai Inc. Common Stock,Technology,nasdaq_smid
 BBCP,Concrete Pumping Holdings Inc. Common Stock,Consumer Discretionary,nasdaq_smid
 BBDC,Barings BDC Inc. Common Stock,Finance,nasdaq_smid
@@ -289,7 +298,7 @@ BBT,Beacon Financial Corp.,Financials,nasdaq_smid+sp600
 BBTX,Bambusa Therapeutics Inc. Common stock,Health Care,nasdaq_smid
 BBW,Build-A-Bear Workshop Inc. Common Stock,Consumer Discretionary,nasdaq_smid
 BBWI,Bath & Body Works Inc.,Consumer Discretionary,nasdaq_smid
-BBY,Best Buy Co. Inc. Common Stock,Consumer Discretionary,nasdaq_smid
+BBY,Best Buy,Consumer Discretionary,nasdaq_smid+sp500
 BC,Brunswick Corporation Common Stock,Industrials,nasdaq_smid
 BCAL,California BanCorp Common Stock,Finance,nasdaq_smid
 BCAT,BlackRock Capital Allocation Term Trust Common Shares of Beneficial Interest,Finance,nasdaq_smid
@@ -304,19 +313,22 @@ BCX,BlackRock Resources Common Shares of Beneficial Interest,Finance,nasdaq_smid
 BDC,Belden Inc Common Stock,Industrials,nasdaq_smid
 BDJ,Blackrock Enhanced Equity Dividend Trust,Finance,nasdaq_smid
 BDN,Brandywine Realty Trust Common Stock,Real Estate,nasdaq_smid
+BDX,Becton Dickinson,Health Care,sp500
+BE,Bloom Energy,Industrials,sp500
 BEAM,Beam Therapeutics Inc. Common Stock,Health Care,nasdaq_smid
 BELFA,Bel Fuse Inc. Class A Common Stock,,nasdaq_smid
 BELFB,Bel Fuse Inc. Class B Common Stock,,nasdaq_smid
-BEN,Franklin Templeton Inc. Common Stock,Finance,nasdaq_smid
+BEN,Franklin Resources,Financials,nasdaq_smid+sp500
 BEPC,Brookfield Renewable Corporation Brookfield Renewable Corporation Class A Subordinate Voting Shares,Utilities,nasdaq_smid
 BETA,Beta Technologies Inc. Class A Common Stock,Industrials,nasdaq_smid
+BF-B,Brown–Forman,Consumer Staples,sp500
 BFAM,Bright Horizons Family Solutions Inc.,Consumer Discretionary,nasdaq_smid+sp600
 BFC,Bank First Corporation Common Stock,Finance,nasdaq_smid
 BFH,"Bread Financial Holdings, Inc.",Financials,nasdaq_smid+sp600
 BFLY,Butterfly Network Inc. Class A Common Stock,Health Care,nasdaq_smid
 BFS,"Saul Centers, Inc.",Real Estate,nasdaq_smid+sp600
 BFST,Business First Bancshares Inc. Common Stock,Finance,nasdaq_smid
-BG,Bunge Limited Common Shares,Consumer Staples,nasdaq_smid
+BG,Bunge Global,Consumer Staples,nasdaq_smid+sp500
 BGC,"BGC Group, Inc.",Financials,nasdaq_smid+sp600
 BGR,BlackRock Energy and Resources Trust,Finance,nasdaq_smid
 BH,Biglari Holdings Inc. Class B Common Stock,Consumer Discretionary,nasdaq_smid
@@ -324,13 +336,9 @@ BHB,Bar Harbor Bankshares Inc. Common Stock,Finance,nasdaq_smid
 BHE,"Benchmark Electronics, Inc.",Information Technology,nasdaq_smid+sp600
 BHF,Brighthouse Financial Inc. Common Stock,Finance,nasdaq_smid
 BHFAL,Brighthouse Financial Inc. 6.25% Junior Subordinated Debentures due 2058,Finance,nasdaq_smid
-BHFAM,Brighthouse Financial Inc. Depositary shares each representing a 1/1000th Interest in a Share of 4.625% Non-Cumulative Preferred Stock Series D,Finance,nasdaq_smid
-BHFAN,Brighthouse Financial Inc. Depositary shares each representing a 1/1000th interest in a share of 5.375% Non-Cumulative Preferred Stock Series C,Finance,nasdaq_smid
-BHFAO,Brighthouse Financial Inc. Depositary Shares 6.75% Non-Cumulative Preferred Stock Series B,Finance,nasdaq_smid
-BHFAP,Brighthouse Financial Inc. Depositary Shares 6.6% Non-Cumulative Preferred Stock Series A,Finance,nasdaq_smid
 BHRB,Burke & Herbert Financial Services Corp. Common Stock,Finance,nasdaq_smid
 BHVN,Biohaven Ltd. Common Shares ,Health Care,nasdaq_smid
-BIIB,Biogen Inc. Common Stock,Health Care,nasdaq_smid
+BIIB,Biogen,Health Care,nasdaq_smid+sp500
 BILL,BILL Holdings Inc. Common Stock,Technology,nasdaq_smid
 BIO,Bio-Rad Laboratories Inc. Class A Common Stock,Industrials,nasdaq_smid
 BJ,BJ's Wholesale Club Holdings Inc. Common Stock,Consumer Discretionary,nasdaq_smid
@@ -338,7 +346,8 @@ BJRI,"BJ's Restaurants, Inc.",Consumer Discretionary,nasdaq_smid+sp600
 BKD,Brookdale Senior Living Inc. Common Stock,Health Care,nasdaq_smid
 BKE,"The Buckle, Inc.",Consumer Discretionary,nasdaq_smid+sp600
 BKH,Black Hills Corporation Common Stock,Utilities,nasdaq_smid
-BKR,Baker Hughes Company Class A Common Stock,Consumer Discretionary,nasdaq_smid
+BKNG,Booking Holdings,Consumer Discretionary,sp500
+BKR,Baker Hughes,Energy,nasdaq_smid+sp500
 BKSY,BlackSky Technology Inc. Class A Common Stock,Technology,nasdaq_smid
 BKT,BlackRock Income Trust Inc. (The),Finance,nasdaq_smid
 BKU,"BankUnited, Inc.",Financials,nasdaq_smid+sp600
@@ -347,11 +356,11 @@ BL,"BlackLine Systems, Inc.",Information Technology,nasdaq_smid+sp600
 BLBD,Blue Bird Corporation Common Stock,Consumer Discretionary,nasdaq_smid
 BLDR,Builders FirstSource Inc. Common Stock,Consumer Discretionary,nasdaq_smid
 BLFS,"BioLife Solutions, Inc.",Health Care,sp600
+BLK,BlackRock,Financials,sp500
 BLKB,Blackbaud,Information Technology,nasdaq_smid+sp600
 BLLN,BillionToOne Inc. Class A Common Stock,Health Care,nasdaq_smid
 BLMN,Bloomin' Brands Inc. Common Stock,Consumer Discretionary,nasdaq_smid
 BLSM,BlossomHill Therapeutics Inc. Common Stock,Health Care,nasdaq_smid
-BLTE,Belite Bio Inc American Depositary Shares,Health Care,nasdaq_smid
 BLW,Blackrock Limited Duration Income Trust,Consumer Discretionary,nasdaq_smid
 BLZE,Backblaze Inc. Class A Common Stock,Technology,nasdaq_smid
 BMBL,Bumble Inc. Class A Common Stock,Technology,nasdaq_smid
@@ -360,9 +369,11 @@ BMI,"Badger Meter, Inc.",Information Technology,nasdaq_smid+sp600
 BMNR,BitMine Immersion Technologies Inc. Common Stock,Finance,nasdaq_smid
 BMRC,Bank of Marin Bancorp Common Stock,Finance,nasdaq_smid
 BMRN,BioMarin Pharmaceutical Inc. Common Stock,Health Care,nasdaq_smid
+BMY,Bristol Myers Squibb,Health Care,sp500
 BNED,Barnes & Noble Education Inc Common Stock,Consumer Discretionary,nasdaq_smid
 BNL,"Broadstone Net Lease, Inc.",Real Estate,nasdaq_smid+sp600
 BNTC,Benitec Biopharma Inc. Common Stock,Health Care,nasdaq_smid
+BNY,BNY Mellon,Financials,sp500
 BOBS,Bob's Discount Furniture Inc. Common Stock,Consumer Discretionary,nasdaq_smid
 BOC,Boston Omaha Corporation Class A Common Stock,Finance,nasdaq_smid
 BOH,Bank of Hawaii,Financials,nasdaq_smid+sp600
@@ -371,15 +382,15 @@ BOOT,"Boot Barn Holdings, Inc.",Consumer Discretionary,nasdaq_smid+sp600
 BOW,Bowhead Specialty Holdings Inc. Common Stock,Finance,nasdaq_smid
 BOX,"Box, Inc.",Information Technology,nasdaq_smid+sp600
 BPOP,Popular Inc. Common Stock,Finance,nasdaq_smid
-BPOPM,Popular Inc. Popular Capital Trust II - 6.125% Cumulative Monthly Income Trust Preferred Securities,Finance,nasdaq_smid
 BPRN,Princeton Bancorp Inc. Common Stock (PA),Finance,nasdaq_smid
-BR,Broadridge Financial Solutions Inc. Common Stock,Consumer Discretionary,nasdaq_smid
+BR,Broadridge Financial Solutions,Industrials,nasdaq_smid+sp500
 BRBR,BellRing Brands Inc. Common Stock ,Consumer Staples,nasdaq_smid
 BRBS,Blue Ridge Bankshares Inc. Common Stock,Finance,nasdaq_smid
 BRC,Brady Corporation,Industrials,nasdaq_smid+sp600
 BRCB,Black Rock Coffee Bar Inc. Class A Common Stock,Consumer Discretionary,nasdaq_smid
+BRK-B,Berkshire Hathaway,Financials,sp500
 BRKR,Bruker Corporation Common Stock,Industrials,nasdaq_smid
-BRO,Brown & Brown Inc. Common Stock,Finance,nasdaq_smid
+BRO,Brown & Brown,Financials,nasdaq_smid+sp500
 BROS,Dutch Bros Inc. Class A Common Stock,Consumer Discretionary,nasdaq_smid
 BRSL,Brightstar Lottery PLC Trading under the Legal Name to begin at the market open on July 21 2025. Ordinary Shares,Consumer Discretionary,nasdaq_smid
 BRSP,BrightSpire Capital Inc. Class A Common Stock,Real Estate,nasdaq_smid
@@ -387,63 +398,63 @@ BRUN,Boost Run Inc. Class A Common Stock,Technology,nasdaq_smid
 BRVE,Braveheart Bio Inc. Common Stock,Health Care,nasdaq_smid
 BRX,Brixmor Property Group Inc. Common Stock,Real Estate,nasdaq_smid
 BRZE,Braze Inc. Class A Common Stock,Technology,nasdaq_smid
-BSM,Black Stone Minerals L.P. Common units representing limited partner interests,Energy,nasdaq_smid
 BSRR,Sierra Bancorp Common Stock,Finance,nasdaq_smid
 BST,BlackRock Science and Technology Trust Common Shares of Beneficial Interest,Finance,nasdaq_smid
 BSTZ,BlackRock Science and Technology Term Trust Common Shares of Beneficial Interest,Finance,nasdaq_smid
 BSVN,Bank7 Corp. Common stock,Finance,nasdaq_smid
+BSX,Boston Scientific,Health Care,sp500
 BSY,Bentley Systems Incorporated Class B Common Stock,Technology,nasdaq_smid
 BTGO,BitGo Holdings Inc. Class A Common Stock,Finance,nasdaq_smid
 BTSG,BrightSpring Health Services Inc. Common Stock,Health Care,nasdaq_smid
-BTSGU,BrightSpring Health Services Inc. Tangible Equity Unit,Health Care,nasdaq_smid
 BTU,"Peabody Energy, Inc.",Energy,nasdaq_smid+sp600
 BTX,BlackRock Technology and Private Equity Term Trust Common Shares of Beneficial Interest,,nasdaq_smid
 BTZ,BlackRock Credit Allocation Income Trust,Finance,nasdaq_smid
 BULL,Webull Corporation Class A Ordinary Shares,Finance,nasdaq_smid
-BULLW,Webull Corporation Warrants,Finance,nasdaq_smid
 BURL,Burlington Stores Inc. Common Stock,Consumer Discretionary,nasdaq_smid
 BUSE,First Busey Corporation Class A Common Stock,Finance,nasdaq_smid
-BUSEP,First Busey Corporation Depositary Shares Each Representing a 1/40thInterest in a Share of 8.25% Fixed-Rate Series B Non-Cumulative Perpetual Preferred Stock $0.001 par value,Finance,nasdaq_smid
 BV,BrightView Holdings Inc. Common Stock,Consumer Staples,nasdaq_smid
 BVS,Bioventus Inc. Class A Common Stock,Health Care,nasdaq_smid
 BW,Babcock & Wilcox Enterprises Inc. Common Stock,Industrials,nasdaq_smid
 BWA,BorgWarner Inc. Common Stock,Consumer Discretionary,nasdaq_smid
 BWB,Bridgewater Bancshares Inc. Common Stock,Finance,nasdaq_smid
-BWBBP,Bridgewater Bancshares Inc. Depositary Shares Each Representing a 1/100th Interest in a Share of 5.875% Non-Cumulative Perpetual Preferred Stock Series A,Finance,nasdaq_smid
 BWFG,Bankwell Financial Group Inc. Common Stock,Finance,nasdaq_smid
 BWIN,The Baldwin Insurance Group Inc. Class A Common Stock,Finance,nasdaq_smid
 BWXT,BWX Technologies Inc. Common Stock,Industrials,nasdaq_smid
+BX,Blackstone Inc.,Financials,sp500
 BXC,Bluelinx Holdings Inc. Common Stock,Consumer Discretionary,nasdaq_smid
 BXMT,"Blackstone Mortgage Trust, Inc.",Financials,nasdaq_smid+sp600
-BXP,BXP Inc. Common Stock,Real Estate,nasdaq_smid
+BXP,"BXP, Inc.",Real Estate,nasdaq_smid+sp500
 BY,Byline Bancorp Inc. Common Stock,Finance,nasdaq_smid
 BYD,Boyd Gaming Corporation Common Stock,Consumer Discretionary,nasdaq_smid
+C,Citigroup,Financials,sp500
 CAC,Camden National Corporation Common Stock,Finance,nasdaq_smid
 CACC,Credit Acceptance,Financials,nasdaq_smid+sp600
 CACI,CACI International Inc. Class A Common Stock,Technology,nasdaq_smid
 CADL,Candel Therapeutics Inc. Common Stock,Health Care,nasdaq_smid
 CAG,Conagra Brands,Consumer Staples,nasdaq_smid+sp600
+CAH,Cardinal Health,Health Care,sp500
 CAI,Caris Life Sciences Inc. Common Stock,Health Care,nasdaq_smid
 CAKE,"The Cheesecake Factory, Inc.",Consumer Discretionary,nasdaq_smid+sp600
 CAL,Caleres Inc. Common Stock,Consumer Discretionary,nasdaq_smid
 CALM,"Cal-Maine Foods, Inc.",Consumer Staples,nasdaq_smid+sp600
 CALX,Calix,Information Technology,nasdaq_smid+sp600
 CALY,Callaway Golf Company,Consumer Discretionary,nasdaq_smid+sp600
-CAPL,CrossAmerica Partners LP Common Units representing limited partner interests,Energy,nasdaq_smid
 CAPR,Capricor Therapeutics Inc. Common Stock,Health Care,nasdaq_smid
 CAR,Avis Budget Group Inc. Common Stock,Consumer Discretionary,nasdaq_smid
 CARE,Carter Bankshares Inc. Common Stock,Finance,nasdaq_smid
 CARG,CarGurus,Communication Services,nasdaq_smid+sp600
 CARL,Carlsmed Inc. Common Stock,Health Care,nasdaq_smid
-CARR,Carrier Global Corporation Common Stock ,Industrials,nasdaq_smid
+CARR,Carrier Global,Industrials,nasdaq_smid+sp500
 CARS,Cars.com Inc. Common Stock ,Technology,nasdaq_smid
 CART,Maplebear Inc. Common Stock,Consumer Discretionary,nasdaq_smid
 CASH,"Pathward Financial, Inc.",Financials,nasdaq_smid+sp600
 CASK,Sempreon Inc. Common Stock,Consumer Staples,nasdaq_smid
 CASS,Cass Information Systems Inc Common Stock,Consumer Discretionary,nasdaq_smid
-CASY,Casey's General Stores Inc. Common Stock,Consumer Discretionary,nasdaq_smid
+CASY,Casey's,Consumer Staples,nasdaq_smid+sp500
+CAT,Caterpillar Inc.,Industrials,sp500
 CATY,Cathay General Bancorp,Financials,nasdaq_smid+sp600
 CAVA,CAVA Group Inc. Common Stock,Consumer Discretionary,nasdaq_smid
+CB,Chubb Limited,Financials,sp500
 CBAN,Colony Bankcorp Inc. Common Stock,Finance,nasdaq_smid
 CBC,Central Bancompany Inc. Class A Common Stock,Finance,nasdaq_smid
 CBIO,Crescent Biopharma Inc. Common Stock,Health Care,nasdaq_smid
@@ -452,7 +463,8 @@ CBL,CBL & Associates Properties Inc. Common Stock,Real Estate,nasdaq_smid
 CBLL,CeriBell Inc. Common Stock,Health Care,nasdaq_smid
 CBNA,Chain Bridge Bancorp Inc. Class A Common Stock,Finance,nasdaq_smid
 CBNK,Capital Bancorp Inc. Common Stock,Finance,nasdaq_smid
-CBRE,CBRE Group Inc Common Stock Class A,Finance,nasdaq_smid
+CBOE,Cboe Global Markets,Financials,sp500
+CBRE,CBRE Group,Real Estate,nasdaq_smid+sp500
 CBRL,Cracker Barrel,Consumer Discretionary,nasdaq_smid+sp600
 CBRS,Cerebras Systems Inc. Class A Common Stock,Technology,nasdaq_smid
 CBSH,Commerce Bancshares Inc. Common Stock,Finance,nasdaq_smid
@@ -464,23 +476,23 @@ CCB,Coastal Financial Corporation Common Stock,Finance,nasdaq_smid
 CCBG,Capital City Bank Group Common Stock,Finance,nasdaq_smid
 CCC,CCC Intelligent Solutions Holdings Inc. Common Stock,Technology,nasdaq_smid
 CCCC,C4 Therapeutics Inc. Common Stock,Health Care,nasdaq_smid
-CCI,Crown Castle Inc. Common Stock,Real Estate,nasdaq_smid
+CCI,Crown Castle,Real Estate,nasdaq_smid+sp500
 CCK,Crown Holdings Inc.,Industrials,nasdaq_smid
-CCL,Carnival Corporation Ltd. Common Shares,Consumer Discretionary,nasdaq_smid
+CCL,Carnival Corporation,Consumer Discretionary,nasdaq_smid+sp500
 CCNE,CNB Financial Corporation Common Stock,Finance,nasdaq_smid
-CCNEP,CNB Financial Corporation Depositary Shares each representing a 1/40th ownership interest in a share of 7.125% Series A Fixed-Rate Non-Cumulative Perpetual Preferred Stock,Finance,nasdaq_smid
 CCOI,"Cogent Communications Holdings, Inc.",Communication Services,sp600
 CCS,"Century Communities, Inc.",Consumer Discretionary,nasdaq_smid+sp600
 CCSI,Consensus Cloud Solutions Inc. Common Stock,Technology,nasdaq_smid
 CDE,Coeur Mining Inc. Common Stock,Basic Materials,nasdaq_smid
 CDNA,CareDx Inc. Common Stock,Health Care,nasdaq_smid
 CDNL,Cardinal Infrastructure Group Inc. Class A Common Stock,Industrials,nasdaq_smid
+CDNS,Cadence Design Systems,Information Technology,sp500
 CDP,COPT Defense Properties Common Shares of Beneficial Interest,Real Estate,nasdaq_smid
 CDRE,Cadre Holdings Inc. Common Stock,Health Care,nasdaq_smid
-CDW,CDW Corporation Common Stock,Consumer Discretionary,nasdaq_smid
+CDW,CDW Corporation,Information Technology,nasdaq_smid+sp500
 CDZI,CADIZ Inc. Common Stock,Utilities,nasdaq_smid
-CDZIP,Cadiz Inc. Depositary Shares,Utilities,nasdaq_smid
 CE,Celanese,Materials,nasdaq_smid+sp600
+CEG,Constellation Energy,Utilities,sp500
 CELC,Celcuity Inc. Common Stock,Health Care,nasdaq_smid
 CELH,Celsius Holdings Inc. Common Stock,Consumer Staples,nasdaq_smid
 CENT,Central Garden & Pet Company,Consumer Staples,nasdaq_smid+sp600
@@ -490,21 +502,19 @@ CERS,Cerus Corporation Common Stock,Health Care,nasdaq_smid
 CERT,"Certara, Inc.",Health Care,nasdaq_smid+sp600
 CET,Central Securities Corporation Common Stock,Finance,nasdaq_smid
 CEVA,CEVA Inc. Common Stock,Technology,nasdaq_smid
-CF,CF Industries Holdings Inc. Common Stock,Industrials,nasdaq_smid
+CF,CF Industries,Materials,nasdaq_smid+sp500
 CFFI,C&F Financial Corporation Common Stock,Finance,nasdaq_smid
 CFFN,Capitol Federal Savings Bank,Financials,nasdaq_smid+sp600
-CFG,Citizens Financial Group Inc. Common Stock,Finance,nasdaq_smid
+CFG,Citizens Financial Group,Financials,nasdaq_smid+sp500
 CFR,Cullen/Frost Bankers Inc. Common Stock,Finance,nasdaq_smid
 CG,The Carlyle Group Inc. Common Stock,Finance,nasdaq_smid
-CGABL,The Carlyle Group Inc. 4.625% Subordinated Notes due 2061,Finance,nasdaq_smid
 CGBD,Carlyle Secured Lending Inc. Common Stock,Finance,nasdaq_smid
 CGEM,Cullinan Therapeutics Inc. Common Stock,Health Care,nasdaq_smid
 CGNX,Cognex Corporation Common Stock,Industrials,nasdaq_smid
 CGON,CG Oncology Inc. Common stock,Health Care,nasdaq_smid
-CHAD,DeFi Development Corp. Variable Rate Series C Perpetual Preferred Stock,Finance,nasdaq_smid
 CHCO,City Holding Company,Financials,nasdaq_smid+sp600
 CHCT,Community Healthcare Trust Incorporated Common Stock,Real Estate,nasdaq_smid
-CHD,Church & Dwight Company Inc. Common Stock,Consumer Discretionary,nasdaq_smid
+CHD,Church & Dwight,Consumer Staples,nasdaq_smid+sp500
 CHDN,Churchill Downs Incorporated Common Stock,Consumer Discretionary,nasdaq_smid
 CHE,Chemed Corp,Health Care,nasdaq_smid
 CHEF,"Chefs' Warehouse, Inc.",Consumer Staples,nasdaq_smid+sp600
@@ -513,22 +523,20 @@ CHMG,Chemung Financial Corp Common Stock,Finance,nasdaq_smid
 CHPT,ChargePoint Holdings Inc. Common Stock,Miscellaneous,nasdaq_smid
 CHRD,Chord Energy Corporation Common Stock,Energy,nasdaq_smid
 CHRN,ChronoScale Holdings Corporation Common Stock,Industrials,nasdaq_smid
-CHRW,C.H. Robinson Worldwide Inc. Common Stock,Industrials,nasdaq_smid
-CHSCO,CHS Inc. Class B Cumulative Redeemable Preferred Stock,Industrials,nasdaq_smid
-CHSCP,CHS Inc. 8%  Cumulative Redeemable Preferred Stock,Industrials,nasdaq_smid
-CHTR,Charter Communications Inc. Class A Common Stock New,Telecommunications,nasdaq_smid
-CHTRP,Charter Communications Inc. Series A Cumulative Redeemable Preferred Stock,Telecommunications,nasdaq_smid
+CHRW,C.H. Robinson,Industrials,nasdaq_smid+sp500
+CHTR,Charter Communications,Communication Services,nasdaq_smid+sp500
 CHWY,Chewy Inc. Class A Common Stock,Consumer Discretionary,nasdaq_smid
 CHYM,Chime Financial Inc. Class A Common Stock,Finance,nasdaq_smid
-CIEN,Ciena Corporation Common Stock,Utilities,nasdaq_smid
+CI,Cigna,Health Care,sp500
+CIEN,Ciena,Information Technology,nasdaq_smid+sp500
 CIFR,Cipher Digital Inc. Common Stock,Finance,nasdaq_smid
 CII,BlackRock Enhanced Large Cap Core Fund Inc. Common Stock,Finance,nasdaq_smid
 CIM,Chimera Investment Corporation Common Stock,Real Estate,nasdaq_smid
-CIMN,Chimera Investment Corporation 9.000% Senior Notes due 2029,Real Estate,nasdaq_smid
-CINF,Cincinnati Financial Corporation Common Stock,Finance,nasdaq_smid
+CINF,Cincinnati Financial,Financials,nasdaq_smid+sp500
 CION,CION Investment Corporation Common Stock,Finance,nasdaq_smid
 CIVB,Civista Bancshares Inc. Common Stock,Finance,nasdaq_smid
 CIX,CompX International Inc. Common Stock,Consumer Discretionary,nasdaq_smid
+CL,Colgate-Palmolive,Consumer Staples,sp500
 CLBK,Columbia Financial Inc. Common Stock,Finance,nasdaq_smid
 CLDT,Chatham Lodging Trust (REIT) Common Shares of Beneficial Interest,Real Estate,nasdaq_smid
 CLDX,Celldex Therapeutics Inc.,Health Care,nasdaq_smid
@@ -540,19 +548,19 @@ CLMT,Calumet Inc. Common Stock,Energy,nasdaq_smid
 CLNE,Clean Energy Fuels Corp. Common Stock,Utilities,nasdaq_smid
 CLOV,Clover Health Investments Corp. Class A Common Stock,Health Care,nasdaq_smid
 CLSK,"CleanSpark, Inc.",Information Technology,nasdaq_smid+sp600
-CLX,Clorox Company (The) Common Stock,Consumer Discretionary,nasdaq_smid
+CLX,Clorox,Consumer Staples,nasdaq_smid+sp500
 CLYM,Climb Bio Inc. Common Stock,Health Care,nasdaq_smid
 CMC,Commercial Metals Company Common Stock,Industrials,nasdaq_smid
 CMCO,Columbus McKinnon Corporation Common Stock,Industrials,nasdaq_smid
-CMG,Chipotle Mexican Grill Inc. Common Stock,Consumer Discretionary,nasdaq_smid
+CMCSA,Comcast,Communication Services,sp500
+CME,CME Group,Financials,sp500
+CMG,Chipotle Mexican Grill,Consumer Discretionary,nasdaq_smid+sp500
+CMI,Cummins,Industrials,sp500
 CMP,Compass Minerals Intl Inc Common Stock,Industrials,nasdaq_smid
 CMRC,Commerce.com Inc. Series 1 Common Stock,Technology,nasdaq_smid
-CMS,CMS Energy Corporation Common Stock,Utilities,nasdaq_smid
-CMSA,CMS Energy Corporation 5.625% Junior Subordinated Notes due 2078,Utilities,nasdaq_smid
-CMSC,CMS Energy Corporation 5.875% Junior Subordinated Notes due 2078,Utilities,nasdaq_smid
-CMSD,CMS Energy Corporation 5.875% Junior Subordinated Notes due 2079,Utilities,nasdaq_smid
+CMS,CMS Energy,Utilities,nasdaq_smid+sp500
 CNA,CNA Financial Corporation Common Stock,Finance,nasdaq_smid
-CNC,Centene Corporation Common Stock,Health Care,nasdaq_smid
+CNC,Centene Corporation,Health Care,nasdaq_smid+sp500
 CNK,"Cinemark Holdings, Inc.",Communication Services,nasdaq_smid+sp600
 CNL,Collective Mining Ltd. Common Shares,,nasdaq_smid
 CNM,Core & Main Inc. Class A Common Stock,Consumer Discretionary,nasdaq_smid
@@ -560,8 +568,7 @@ CNMD,CONMED Corporation,Health Care,nasdaq_smid+sp600
 CNNE,Cannae Holdings Inc. Common Stock,Consumer Discretionary,nasdaq_smid
 CNO,CNO Financial Group Inc. Common Stock,Finance,nasdaq_smid
 CNOB,ConnectOne Bancorp Inc. Common Stock,Finance,nasdaq_smid
-CNOBP,ConnectOne Bancorp Inc. Depositary Shares each representing a 1/40th interest in a share of 5.25% Fixed-Rate Reset Non-Cumulative Perpetual Preferred Stock Series A,Finance,nasdaq_smid
-CNP,CenterPoint Energy Inc (Holding Co) Common Stock,Utilities,nasdaq_smid
+CNP,CenterPoint Energy,Utilities,nasdaq_smid+sp500
 CNR,"Core Natural Resources, Inc.",Energy,nasdaq_smid+sp600
 CNS,"Cohen & Steers, Inc.",Financials,nasdaq_smid+sp600
 CNX,CNX Resources Corporation Common Stock,Energy,nasdaq_smid
@@ -570,11 +577,12 @@ CNXN,"PC Connection, Inc.",Information Technology,nasdaq_smid+sp600
 COAG,Hemab Therapeutics Holdings Inc. Common Stock,Health Care,nasdaq_smid
 COCO,The Vita Coco Company,Consumer Staples,nasdaq_smid+sp600
 CODI,D/B/A Compass Diversified Holdings Shares of Beneficial Interest,Consumer Discretionary,nasdaq_smid
+COF,Capital One,Financials,sp500
 COFS,ChoiceOne Financial Services Inc. Common Stock,Finance,nasdaq_smid
 COGT,Cogent Biosciences Inc. Common Stock,Health Care,nasdaq_smid
-COHR,Coherent Corp. Common Stock,Technology,nasdaq_smid
+COHR,Coherent Corp.,Information Technology,nasdaq_smid+sp500
 COHU,"Cohu, Inc.",Information Technology,nasdaq_smid+sp600
-COIN,Coinbase Global Inc. Class A Common Stock,Finance,nasdaq_smid
+COIN,Coinbase,Financials,nasdaq_smid+sp500
 COKE,Coca-Cola Consolidated Inc. Common Stock,Consumer Staples,nasdaq_smid
 COLB,Columbia Banking System Inc. Common Stock,Finance,nasdaq_smid
 COLD,Americold Realty Trust Inc. Common Stock,Real Estate,nasdaq_smid
@@ -582,23 +590,23 @@ COLL,"Collegium Pharmaceutical, Inc.",Health Care,nasdaq_smid+sp600
 COLM,Columbia Sportswear Company Common Stock,Consumer Discretionary,nasdaq_smid
 COMP,Compass Inc. Class A Common Stock,Finance,nasdaq_smid
 CON,"Concentra Group Holdings Parent, Inc.",Health Care,nasdaq_smid+sp600
-COO,The Cooper Companies Inc. Common Stock,Health Care,nasdaq_smid
+COO,Cooper Companies (The),Health Care,nasdaq_smid+sp500
+COP,ConocoPhillips,Energy,sp500
+COR,Cencora,Health Care,sp500
 CORT,Corcept Therapeutics Incorporated,Health Care,nasdaq_smid+sp600
 CORZ,Core Scientific Inc. Common Stock,Finance,nasdaq_smid
-CORZW,Core Scientific Inc. Tranche 1 Warrants,Finance,nasdaq_smid
-CORZZ,Core Scientific Inc. Tranche 2 Warrants,Finance,nasdaq_smid
 COSO,CoastalSouth Bancshares Inc. Common Stock,Finance,nasdaq_smid
+COST,Costco,Consumer Staples,sp500
 COTY,Coty,Consumer Staples,nasdaq_smid+sp600
 COUR,Coursera Inc. Common Stock,Technology,nasdaq_smid
-CPAY,Corpay Inc. Common Stock,Consumer Discretionary,nasdaq_smid
+CPAY,Corpay,Financials,nasdaq_smid+sp500
 CPB,The Campbell's Company,Consumer Staples,nasdaq_smid+sp600
 CPF,Central Pacific Financial Corp.,Financials,nasdaq_smid+sp600
 CPK,Chesapeake Utilities Corp.,Utilities,nasdaq_smid+sp600
 CPNG,Coupang Inc. Class A Common Stock,Consumer Discretionary,nasdaq_smid
-CPRT,Copart Inc. (DE) Common Stock,Consumer Discretionary,nasdaq_smid
+CPRT,Copart,Industrials,nasdaq_smid+sp500
 CPS,Cooper-Standard Holdings Inc. Common Stock,Consumer Discretionary,nasdaq_smid
-CPT,Camden Property Trust Common Stock,Real Estate,nasdaq_smid
-CQP,Cheniere Energy Partners LP Common Units,Utilities,nasdaq_smid
+CPT,Camden Property Trust,Real Estate,nasdaq_smid+sp500
 CR,Crane Company Common Stock,Industrials,nasdaq_smid
 CRAI,CRA International Inc. Common Stock,Consumer Discretionary,nasdaq_smid
 CRBG,Corebridge Financial Inc. Common Stock,Finance,nasdaq_smid
@@ -607,9 +615,11 @@ CRCL,Circle Internet Group Inc. Class A Common Stock,Finance,nasdaq_smid
 CRCT,Cricut Inc. Class A Common Stock,Technology,nasdaq_smid
 CRDO,Credo Technology Group Holding Ltd Ordinary Shares,Technology,nasdaq_smid
 CRGY,Crescent Energy Company,Energy,nasdaq_smid+sp600
+CRH,CRH plc,Materials,sp500
 CRI,"Carter's, Inc.",Consumer Discretionary,nasdaq_smid+sp600
 CRK,"Comstock Resources, Inc.",Energy,nasdaq_smid+sp600
-CRL,Charles River Laboratories International Inc. Common Stock,Health Care,nasdaq_smid
+CRL,Charles River Laboratories,Health Care,nasdaq_smid+sp500
+CRM,Salesforce,Information Technology,sp500
 CRMD,CorMedix Inc. Common Stock,Health Care,nasdaq_smid
 CRNC,Cerence Inc. Common Stock,Technology,nasdaq_smid
 CROX,Crocs Inc. Common Stock,Consumer Discretionary,nasdaq_smid
@@ -618,8 +628,10 @@ CRSR,Corsair Gaming,Information Technology,nasdaq_smid+sp600
 CRUS,Cirrus Logic Inc. Common Stock,Technology,nasdaq_smid
 CRVL,CorVel Corporation,Health Care,nasdaq_smid+sp600
 CRVS,Corvus Pharmaceuticals Inc. Common Stock,Health Care,nasdaq_smid
+CRWD,CrowdStrike,Information Technology,sp500
 CRWV,CoreWeave Inc. Class A Common Stock,Technology,nasdaq_smid
-CSGP,CoStar Group Inc. Common Stock,Finance,nasdaq_smid
+CSCO,Cisco,Information Technology,sp500
+CSGP,CoStar Group,Real Estate,nasdaq_smid+sp500
 CSL,Carlisle Companies Incorporated Common Stock,Industrials,nasdaq_smid
 CSQ,Calamos Strategic Total Return Common Stock,Finance,nasdaq_smid
 CSR,Centerspace Trust,Real Estate,sp600
@@ -627,6 +639,8 @@ CSTL,Castle Biosciences Inc. Common Stock,Health Care,nasdaq_smid
 CSV,Carriage Services Inc. Common Stock,Consumer Discretionary,nasdaq_smid
 CSW,"CSW Industrials, Inc.",Industrials,nasdaq_smid+sp600
 CSWC,Capital Southwest Corporation Common Stock,Consumer Discretionary,nasdaq_smid
+CSX,CSX Corporation,Industrials,sp500
+CTAS,Cintas,Industrials,sp500
 CTBI,Community Trust Bancorp Inc. Common Stock,Finance,nasdaq_smid
 CTEV,Claritev Corporation Class A Common Stock,Consumer Discretionary,nasdaq_smid
 CTGO,Contango Silver & Gold Inc. Common Stock,Basic Materials,nasdaq_smid
@@ -638,11 +652,10 @@ CTRE,CareTrust REIT Inc. Common Stock,Real Estate,nasdaq_smid
 CTRI,Centuri Holdings Inc. Common Stock,Utilities,nasdaq_smid
 CTRN,Citi Trends Inc. Common Stock,Consumer Discretionary,nasdaq_smid
 CTS,CTS Corporation,Information Technology,nasdaq_smid+sp600
-CTSH,Cognizant Technology Solutions Corporation Class A Common Stock,Technology,nasdaq_smid
+CTSH,Cognizant,Information Technology,nasdaq_smid+sp500
 CTVA,Corteva Inc. Common Stock ,Consumer Staples,nasdaq_smid
 CTY,City Therapeutics Inc. Common Stock,Health Care,nasdaq_smid
 CUB,Lionheart Holdings Class A Ordinary Shares,Industrials,nasdaq_smid
-CUBB,Customers Bancorp Inc 5.375% Subordinated Notes Due 2034,Finance,nasdaq_smid
 CUBE,CubeSmart Common Shares,Real Estate,nasdaq_smid
 CUBI,"Customers Bancorp, Inc.",Financials,nasdaq_smid+sp600
 CURB,Curbline Properties Corp.,Real Estate,nasdaq_smid+sp600
@@ -653,7 +666,10 @@ CVCO,"Cavco Industries, Inc.",Consumer Discretionary,nasdaq_smid+sp600
 CVI,"CVR Energy, Inc.",Energy,nasdaq_smid+sp600
 CVLG,Covenant Logistics Group Inc. Class A Common Stock,Industrials,nasdaq_smid
 CVLT,Commvault Systems Inc. Common Stock,Technology,nasdaq_smid
+CVNA,Carvana,Consumer Discretionary,sp500
+CVS,CVS Health,Health Care,sp500
 CVSA,Covista Inc.,Consumer Discretionary,nasdaq_smid+sp600
+CVX,Chevron Corporation,Energy,sp500
 CW,Curtiss-Wright Corporation Common Stock,Technology,nasdaq_smid
 CWBC,Community West Bancshares Common Stock,Finance,nasdaq_smid
 CWEN,"Clearway Energy, Inc. (Class C)",Utilities,nasdaq_smid+sp600
@@ -672,9 +688,12 @@ CYTK,Cytokinetics Incorporated Common Stock,Health Care,nasdaq_smid
 CZFS,Citizens Financial Services Inc. Common Stock,Finance,nasdaq_smid
 CZNC,Citizens & Northern Corp Common Stock,Finance,nasdaq_smid
 CZR,Caesars Entertainment,Consumer Discretionary,nasdaq_smid+sp600
+D,Dominion Energy,Utilities,sp500
 DAKT,Daktronics Inc. Common Stock,Consumer Discretionary,nasdaq_smid
+DAL,Delta Air Lines,Industrials,sp500
 DAN,Dana Incorporated,Consumer Discretionary,nasdaq_smid+sp600
 DAR,Darling Ingredients Inc. Common Stock,Consumer Staples,nasdaq_smid
+DASH,DoorDash,Consumer Discretionary,sp500
 DAVE,"Dave, Inc.",Financials,nasdaq_smid+sp600
 DBD,Diebold Nixdorf,Information Technology,nasdaq_smid+sp600
 DBI,Designer Brands Inc. Class A Common Stock,Consumer Discretionary,nasdaq_smid
@@ -686,55 +705,56 @@ DCI,Donaldson Company Inc. Common Stock,Industrials,nasdaq_smid
 DCO,Ducommun Incorporated Common Stock,Industrials,nasdaq_smid
 DCOM,"Dime Community Bancshares, Inc.",Financials,nasdaq_smid+sp600
 DCTH,Delcath Systems Inc. Common Stock,Health Care,nasdaq_smid
-DD,DuPont de Nemours Inc. Common Stock,Industrials,nasdaq_smid
+DD,DuPont,Industrials,nasdaq_smid+sp500
+DDOG,Datadog,Information Technology,sp500
+DE,Deere & Company,Industrials,sp500
 DEA,"Easterly Government Properties, Inc.",Real Estate,nasdaq_smid+sp600
 DEC,Diversified Energy Company Common Stock,,nasdaq_smid
-DECK,Deckers Outdoor Corporation Common Stock,Consumer Discretionary,nasdaq_smid
+DECK,Deckers Brands,Consumer Discretionary,nasdaq_smid+sp500
 DEI,Douglas Emmett,Real Estate,nasdaq_smid+sp600
+DELL,Dell Technologies,Information Technology,sp500
 DFH,"Dream Finders Homes, Inc.",Consumer Discretionary,nasdaq_smid+sp600
 DFIN,"Donnelley Financial Solutions, Inc.",Financials,nasdaq_smid+sp600
 DFTX,Definium Therapeutics Inc. Common Shares,Health Care,nasdaq_smid
-DG,Dollar General Corporation Common Stock,Consumer Discretionary,nasdaq_smid
+DG,Dollar General,Consumer Staples,nasdaq_smid+sp500
 DGICA,Donegal Group Inc. Class A Common Stock,Finance,nasdaq_smid
 DGICB,Donegal Group Inc. Class B Common Stock,Finance,nasdaq_smid
 DGII,Digi International Inc.,Information Technology,nasdaq_smid+sp600
-DGX,Quest Diagnostics Incorporated Common Stock,Health Care,nasdaq_smid
+DGX,Quest Diagnostics,Health Care,nasdaq_smid+sp500
 DHC,Diversified Healthcare Trust Common Shares of Beneficial Interest,Real Estate,nasdaq_smid
-DHCNI,Diversified Healthcare Trust 5.625% Senior Notes due 2042,Real Estate,nasdaq_smid
-DHCNL,Diversified Healthcare Trust 6.25% Senior Notes Due 2046,Real Estate,nasdaq_smid
-DHI,D.R. Horton Inc. Common Stock,Consumer Discretionary,nasdaq_smid
+DHI,D. R. Horton,Consumer Discretionary,nasdaq_smid+sp500
+DHR,Danaher Corporation,Health Care,sp500
 DIN,Dine Brands Global Inc. Common Stock,Consumer Discretionary,nasdaq_smid
 DINO,HF Sinclair Corporation Common Stock,Energy,nasdaq_smid
 DIOD,Diodes Incorporated,Information Technology,nasdaq_smid+sp600
+DIS,Walt Disney Company (The),Communication Services,sp500
 DJCO,Daily Journal Corp. (S.C.) Common Stock,Consumer Discretionary,nasdaq_smid
 DJT,Trump Media & Technology Group Corp. Common Stock,Technology,nasdaq_smid
-DJTWW,Trump Media & Technology Group Corp. Warrants,Technology,nasdaq_smid
 DK,Delek US Holdings Inc. Common Stock,Energy,nasdaq_smid
-DKL,Delek Logistics Partners L.P. Common Units representing Limited Partner Interests,Energy,nasdaq_smid
 DKNG,DraftKings Inc. Class A Common Stock,Consumer Discretionary,nasdaq_smid
 DKS,Dick's Sporting Goods Inc Common Stock,Consumer Discretionary,nasdaq_smid
 DLB,Dolby Laboratories Common Stock,Miscellaneous,nasdaq_smid
-DLTR,Dollar Tree Inc. Common Stock,Consumer Discretionary,nasdaq_smid
+DLR,Digital Realty,Real Estate,sp500
+DLTR,Dollar Tree,Consumer Staples,nasdaq_smid+sp500
 DLX,Deluxe Corporation,Industrials,nasdaq_smid+sp600
 DLY,DoubleLine Yield Opportunities Fund Common Shares of Beneficial Interest,Finance,nasdaq_smid
 DMAC,DiaMedica Therapeutics Inc. Common Stock,Health Care,nasdaq_smid
 DMC,Del Monte Corporation,Consumer Staples,sp600
-DMLP,Dorchester Minerals L.P. Common Units Representing Limited Partnership Interests,Energy,nasdaq_smid
 DNA,Ginkgo Bioworks Holdings Inc. Class A Common Stock,Health Care,nasdaq_smid
 DNLI,Denali Therapeutics Inc. Common Stock,Health Care,nasdaq_smid
 DNOW,NOW Inc,Industrials,nasdaq_smid+sp600
 DNTH,Dianthus Therapeutics Inc. Common Stock,Health Care,nasdaq_smid
 DNUT,Krispy Kreme Inc. Common Stock,Consumer Staples,nasdaq_smid
-DOC,Healthpeak Properties Inc. Common Stock,Real Estate,nasdaq_smid
+DOC,Healthpeak Properties,Real Estate,nasdaq_smid+sp500
 DOCN,DigitalOcean Holdings Inc. Common Stock,Technology,nasdaq_smid
 DOCS,Doximity Inc. Class A Common Stock,Technology,nasdaq_smid
 DOCU,DocuSign Inc. Common Stock,Technology,nasdaq_smid
 DORM,"Dorman Products, Inc.",Consumer Discretionary,nasdaq_smid+sp600
-DOV,Dover Corporation Common Stock,Industrials,nasdaq_smid
-DOW,Dow Inc. Common Stock ,Industrials,nasdaq_smid
-DPZ,Domino's Pizza Inc Common Stock,Consumer Discretionary,nasdaq_smid
+DOV,Dover Corporation,Industrials,nasdaq_smid+sp500
+DOW,Dow Inc.,Materials,nasdaq_smid+sp500
+DPZ,Domino's,Consumer Discretionary,nasdaq_smid+sp500
 DRH,DiamondRock Hospitality Company,Real Estate,nasdaq_smid+sp600
-DRI,Darden Restaurants Inc. Common Stock,Consumer Discretionary,nasdaq_smid
+DRI,Darden Restaurants,Consumer Discretionary,nasdaq_smid+sp500
 DRVN,Driven Brands Holdings Inc. Common Stock,Consumer Discretionary,nasdaq_smid
 DSGN,Design Therapeutics Inc. Common Stock,Health Care,nasdaq_smid
 DSGR,Distribution Solutions Group Inc. Common Stock,Consumer Discretionary,nasdaq_smid
@@ -742,43 +762,44 @@ DSL,DoubleLine Income Solutions Fund Common Shares of Beneficial Interests,Finan
 DSP,Viant Technology Inc. Class A Common Stock,Technology,nasdaq_smid
 DT,Dynatrace Inc. Common Stock,Technology,nasdaq_smid
 DTB,DTE Energy Company 2020 Series G 4.375% Junior Subordinated Debentures due 2080,Utilities,nasdaq_smid
-DTE,DTE Energy Company Common Stock,Utilities,nasdaq_smid
+DTE,DTE Energy,Utilities,nasdaq_smid+sp500
 DTG,DTE Energy Company 2021 Series E 4.375% Junior Subordinated Debentures,Utilities,nasdaq_smid
 DTM,DT Midstream Inc. Common Stock ,Utilities,nasdaq_smid
 DTW,DTE Energy Company 2017 Series E 5.25% Junior Subordinated Debentures due 2077,Utilities,nasdaq_smid
+DUK,Duke Energy,Utilities,sp500
 DUKB,Duke Energy Corporation 5.625% Junior Subordinated Debentures due 2078,Utilities,nasdaq_smid
 DUOL,Duolingo Inc. Class A Common Stock,Technology,nasdaq_smid
 DV,DoubleVerify Holdings Inc.,Communication Services,nasdaq_smid+sp600
-DVA,DaVita Inc. Common Stock,Health Care,nasdaq_smid
-DVN,Devon Energy Corporation Common Stock,Energy,nasdaq_smid
+DVA,DaVita,Health Care,nasdaq_smid+sp500
+DVN,Devon Energy,Energy,nasdaq_smid+sp500
 DX,Dynex Capital Inc. Common Stock,Real Estate,nasdaq_smid
 DXC,DXC Technology,Information Technology,nasdaq_smid+sp600
-DXCM,DexCom Inc. Common Stock,Health Care,nasdaq_smid
+DXCM,Dexcom,Health Care,nasdaq_smid+sp500
 DXPE,"DXP Enterprises, Inc.",Industrials,nasdaq_smid+sp600
 DY,Dycom Industries Inc. Common Stock,Industrials,nasdaq_smid
 DYN,Dyne Therapeutics Inc. Common Stock,Health Care,nasdaq_smid
 EAI,Entergy Arkansas LLC First Mortgage Bonds 4.875% Series Due September 1 2066,Utilities,nasdaq_smid
 EAT,"Brinker International, Inc.",Consumer Discretionary,nasdaq_smid+sp600
+EBAY,eBay Inc.,Consumer Discretionary,sp500
 EBC,"Eastern Bankshares, Inc.",Financials,nasdaq_smid+sp600
 EBF,Ennis Inc. Common Stock,Consumer Discretionary,nasdaq_smid
 EBS,Emergent BioSolutions Inc. Common Stock,Health Care,nasdaq_smid
 ECAT,BlackRock ESG Capital Allocation Term Trust Common Shares of Beneficial Interest,Finance,nasdaq_smid
-ECCC,Eagle Point Credit Company 6.50% Series C Term Preferred Stock due 2031,Finance,nasdaq_smid
-ECCV,Eagle Point Credit Company 5.375% Notes due 2029,Finance,nasdaq_smid
 ECG,"Everus Construction Group, Inc.",Industrials,nasdaq_smid+sp600
-ECHO,EchoStar  Corporation Common Stock,Consumer Discretionary,nasdaq_smid
+ECHO,EchoStar,Communication Services,nasdaq_smid+sp500
+ECL,Ecolab,Materials,sp500
 ECPG,"Encore Capital Group, Inc.",Financials,nasdaq_smid+sp600
 ECVT,Ecovyst Inc. Common Stock,Industrials,nasdaq_smid
-ED,Consolidated Edison Inc. Common Stock,Utilities,nasdaq_smid
+ED,Consolidated Edison,Utilities,nasdaq_smid+sp500
 EDIT,Editas Medicine Inc. Common Stock,Health Care,nasdaq_smid
 EE,Excelerate Energy Inc. Class A Common Stock,Utilities,nasdaq_smid
 EEFT,Euronet Worldwide Inc. Common Stock,Finance,nasdaq_smid
 EFC,"Ellington Financial, Inc.",Financials,nasdaq_smid+sp600
 EFOR,Everforth Inc.,Information Technology,nasdaq_smid+sp600
 EFSC,Enterprise Financial Services Corporation Common Stock,Finance,nasdaq_smid
-EFSCP,Enterprise Financial Services Corporation Depositary Shares Each Representing a 1/40th Interest in a Share of 5% Fixed Rate Non-Cumulative Perpetual Preferred Stock Series A,Finance,nasdaq_smid
 EFT,Eaton Vance Floating Rate Income Trust Common Shares of Beneficial Interest,Finance,nasdaq_smid
-EFX,Equifax Inc. Common Stock,Finance,nasdaq_smid
+EFX,Equifax,Industrials,nasdaq_smid+sp500
+EG,Everest Group,Financials,sp500
 EGBN,Eagle Bancorp Inc,Financials,nasdaq_smid+sp600
 EGHT,8x8 Inc Common Stock,Technology,nasdaq_smid
 EGP,EastGroup Properties Inc. Common Stock,Real Estate,nasdaq_smid
@@ -786,19 +807,21 @@ EGY,VAALCO Energy Inc.  Common Stock,Energy,nasdaq_smid
 EHC,Encompass Health Corporation Common Stock,Health Care,nasdaq_smid
 EIG,"Employers Holdings, Inc.",Financials,nasdaq_smid+sp600
 EIKN,Eikon Therapeutics Inc. Common Stock,Health Care,nasdaq_smid
-EIX,Edison International Common Stock,Utilities,nasdaq_smid
-EL,Estee Lauder Companies Inc. (The) Common Stock,Consumer Discretionary,nasdaq_smid
+EIX,Edison International,Utilities,nasdaq_smid+sp500
+EL,Estée Lauder Companies (The),Consumer Staples,nasdaq_smid+sp500
 ELAN,Elanco Animal Health Incorporated Common Stock,Health Care,nasdaq_smid
 ELC,Entergy Louisiana Inc. Collateral Trust Mortgage Bonds 4.875 % Series due September 1 2066,Utilities,nasdaq_smid
 ELF,e.l.f. Beauty Inc. Common Stock,Consumer Discretionary,nasdaq_smid
 ELMT,The Elmet Group Co. Common Stock,Industrials,nasdaq_smid
 ELS,Equity Lifestyle Properties Inc. Common Stock,Real Estate,nasdaq_smid
+ELV,Elevance Health,Health Care,sp500
 ELVN,Enliven Therapeutics Inc. Common Stock,Health Care,nasdaq_smid
 EMAT,Evolution Metals & Technologies Corp. Common Stock,Miscellaneous,nasdaq_smid
 EMBC,Embecta Corp. Common Stock,Health Care,nasdaq_smid
-EME,EMCOR Group Inc. Common Stock,Industrials,nasdaq_smid
+EME,Emcor,Industrials,nasdaq_smid+sp500
 EMN,Eastman Chemical Company,Materials,nasdaq_smid+sp600
 EMP,Entergy Mississippi LLC First Mortgage Bonds 4.90% Series Due October 1 2066,Utilities,nasdaq_smid
+EMR,Emerson Electric,Industrials,sp500
 ENJ,Entergy New Orleans LLC First Mortgage Bonds 5.0% Series due December 1 2052,Utilities,nasdaq_smid
 ENO,Entergy New Orleans LLC First Mortgage Bonds 5.50% Series due April 1 2066,Utilities,nasdaq_smid
 ENOV,Enovis,Health Care,nasdaq_smid+sp600
@@ -810,9 +833,9 @@ ENTA,Enanta Pharmaceuticals Inc. Common Stock,Health Care,nasdaq_smid
 ENTG,Entegris Inc. Common Stock,Industrials,nasdaq_smid
 ENVA,"Enova International, Inc.",Financials,nasdaq_smid+sp600
 ENVX,Enovix Corporation Common Stock,Miscellaneous,nasdaq_smid
+EOG,EOG Resources,Energy,sp500
 EOLS,Evolus Inc. Common Stock,Health Care,nasdaq_smid
 EOSE,Eos Energy Enterprises Inc. Class A Common Stock,Miscellaneous,nasdaq_smid
-EOSEW,Eos Energy Enterprises Inc. Warrant,Miscellaneous,nasdaq_smid
 EPAC,Enerpac Tool Group,Industrials,nasdaq_smid+sp600
 EPAM,EPAM Systems,Information Technology,nasdaq_smid+sp600
 EPC,Edgewell Personal Care,Consumer Staples,nasdaq_smid+sp600
@@ -820,23 +843,26 @@ EPR,EPR Properties Common Stock,Real Estate,nasdaq_smid
 EPRT,"Essential Properties Realty Trust, Inc.",Real Estate,nasdaq_smid+sp600
 EQBK,Equity Bancshares Inc. Class A Common Stock,Finance,nasdaq_smid
 EQH,Equitable Holdings Inc. Common Stock,Finance,nasdaq_smid
+EQIX,Equinix,Real Estate,sp500
 EQPT,EquipmentShare.com Inc Class A Common Stock,Consumer Discretionary,nasdaq_smid
-EQT,EQT Corporation Common Stock,Energy,nasdaq_smid
+EQT,EQT Corporation,Energy,nasdaq_smid+sp500
 ERAS,Erasca Inc. Common Stock,Health Care,nasdaq_smid
-ERIE,Erie Indemnity Company Class A Common Stock,Finance,nasdaq_smid
+ERIE,Erie Indemnity,Financials,nasdaq_smid+sp500
 ERII,Energy Recovery Inc. Common Stock,Technology,nasdaq_smid
-ES,Eversource Energy (D/B/A) Common Stock,Utilities,nasdaq_smid
+ES,Eversource Energy,Utilities,nasdaq_smid+sp500
 ESAB,ESAB Corporation Common Stock,Industrials,nasdaq_smid
 ESE,ESCO Technologies Inc.,Industrials,nasdaq_smid+sp600
 ESI,Element Solutions,Materials,nasdaq_smid+sp600
 ESQ,Esquire Financial Holdings Inc. Common Stock,Finance,nasdaq_smid
 ESRT,Empire State Realty Trust Inc. Class A Common Stock,Real Estate,nasdaq_smid
-ESS,Essex Property Trust Inc. Common Stock,Real Estate,nasdaq_smid
+ESS,Essex Property Trust,Real Estate,nasdaq_smid+sp500
 ESTC,Elastic N.V. Ordinary Shares,Technology,nasdaq_smid
 ETB,Eaton Vance Tax-Managed Buy-Write Income Fund Eaton Vance Tax-Managed Buy-Write Income Fund Common Shares of Beneficial Interest,Finance,nasdaq_smid
 ETD,Ethan Allen Interiors Inc. Common Stock,Consumer Discretionary,nasdaq_smid
+ETN,Eaton Corporation,Industrials,sp500
 ETO,Eaton Vance Tax-Advantage Global Dividend Opp Common Stock,Finance,nasdaq_smid
 ETON,Eton Pharmaceuticals Inc. Common Stock,Health Care,nasdaq_smid
+ETR,Entergy,Utilities,sp500
 ETRA,Electra Therapeutics Inc. Common stock,Health Care,nasdaq_smid
 ETSY,Etsy,Consumer Discretionary,nasdaq_smid+sp600
 ETV,Eaton Vance Corporation Eaton Vance Tax-Managed Buy-Write Opportunities Fund Common Shares of Beneficial Interest,Finance,nasdaq_smid
@@ -850,36 +876,36 @@ EVH,Evolent Health Inc Class A Common Stock,Consumer Discretionary,nasdaq_smid
 EVLV,Evolv Technologies Holdings Inc. Class A Common Stock,Technology,nasdaq_smid
 EVN,Eaton Vance Municipal Income Trust Common Stock,Finance,nasdaq_smid
 EVR,Evercore Inc. Class A Common Stock,Finance,nasdaq_smid
-EVRG,Evergy Inc. Common Stock,Utilities,nasdaq_smid
+EVRG,Evergy,Utilities,nasdaq_smid+sp500
 EVTC,"EVERTEC, Inc.",Financials,sp600
+EW,Edwards Lifesciences,Health Care,sp500
 EWBC,East West Bancorp Inc. Common Stock,Finance,nasdaq_smid
 EWTX,Edgewise Therapeutics Inc. Common Stock,Health Care,nasdaq_smid
-EXC,Exelon Corporation Common Stock,Utilities,nasdaq_smid
-EXE,Expand Energy Corporation Common Stock,Energy,nasdaq_smid
+EXC,Exelon,Utilities,nasdaq_smid+sp500
+EXE,Expand Energy,Energy,nasdaq_smid+sp500
 EXEL,Exelixis Inc. Common Stock,Health Care,nasdaq_smid
 EXLS,ExlService Holdings Inc. Common Stock,Consumer Discretionary,nasdaq_smid
 EXP,Eagle Materials Inc Common Stock,Industrials,nasdaq_smid
-EXPD,Expeditors International of Washington Inc. Common Stock,Industrials,nasdaq_smid
-EXPE,Expedia Group Inc. Common Stock,Consumer Discretionary,nasdaq_smid
+EXPD,Expeditors International,Industrials,nasdaq_smid+sp500
+EXPE,Expedia Group,Consumer Discretionary,nasdaq_smid+sp500
 EXPO,Exponent Inc. Common Stock,Consumer Discretionary,nasdaq_smid
-EXR,Extra Space Storage Inc Common Stock,Real Estate,nasdaq_smid
+EXR,Extra Space Storage,Real Estate,sp500
 EXTR,"Extreme Networks, Inc.",Information Technology,nasdaq_smid+sp600
 EYE,National Vision Holdings,Consumer Discretionary,nasdaq_smid+sp600
 EZPW,"EZCORP, Inc.",Financials,nasdaq_smid+sp600
-F,Ford Motor Company Common Stock,Industrials,nasdaq_smid
+F,Ford Motor Company,Consumer Discretionary,nasdaq_smid+sp500
 FA,First Advantage Corporation,Industrials,nasdaq_smid+sp600
 FAC,Factorial Energy Inc. Class A Common Stock,Miscellaneous,nasdaq_smid
 FAF,First American Corporation (New) Common Stock,Finance,nasdaq_smid
-FANG,Diamondback Energy Inc. Common Stock,Energy,nasdaq_smid
+FANG,Diamondback Energy,Energy,nasdaq_smid+sp500
+FAST,Fastenal,Industrials,sp500
 FBIN,Fortune Brands Innovations Inc. Common Stock,Basic Materials,nasdaq_smid
-FBIOP,Fortress Biotech Inc. 9.375% Series A Cumulative Redeemable Perpetual Preferred Stock,Health Care,nasdaq_smid
 FBIZ,First Business Financial Services Inc. Common Stock,Finance,nasdaq_smid
 FBK,FB Financial Corp.,Financials,nasdaq_smid+sp600
 FBNC,First Bancorp (Southern Pines NC),Financials,nasdaq_smid+sp600
 FBP,First BanCorp (Puerto Rico),Financials,sp600
 FBRT,"Franklin BSP Realty Trust, Inc.",Real Estate,nasdaq_smid+sp600
 FBYD,Falcon's Beyond Global Inc. Class A Common Stock,Consumer Discretionary,nasdaq_smid
-FBYDP,Falcon's Beyond Global Inc. 11% Series B Cumulative Convertible Preferred Stock,Consumer Discretionary,nasdaq_smid
 FCBC,First Community Bankshares Inc. (VA) Common Stock,Finance,nasdaq_smid
 FCCO,First Community Corporation Common Stock,Finance,nasdaq_smid
 FCEL,FuelCell Energy Inc. Common Stock,Energy,nasdaq_smid
@@ -888,39 +914,40 @@ FCFS,FirstCash Holdings Inc. Common Stock,Consumer Discretionary,nasdaq_smid
 FCN,FTI Consulting Inc. Common Stock,Consumer Discretionary,nasdaq_smid
 FCNCA,First Citizens BancShares Inc. Class A Common Stock,Finance,nasdaq_smid
 FCPT,"Four Corners Property Trust, Inc.",Real Estate,nasdaq_smid+sp600
+FCX,Freeport-McMoRan,Materials,sp500
 FDBC,Fidelity D & D Bancorp Inc. Common Stock,Finance,nasdaq_smid
 FDMT,4D Molecular Therapeutics Inc. Common Stock,Health Care,nasdaq_smid
-FDS,FactSet Research Systems Inc. Common Stock,Technology,nasdaq_smid
+FDS,FactSet,Financials,nasdaq_smid+sp500
 FDUS,Fidus Investment Corporation Common Stock,Finance,nasdaq_smid
-FDXF,FedEx Freight Holding Company Inc. Common Stock,Consumer Discretionary,nasdaq_smid
-FE,FirstEnergy Corp. Common Stock,Utilities,nasdaq_smid
+FDX,FedEx,Industrials,sp500
+FDXF,FedEx Freight,Industrials,nasdaq_smid+sp500
+FE,FirstEnergy,Utilities,nasdaq_smid+sp500
 FEIM,Frequency Electronics Inc. Common Stock,Industrials,nasdaq_smid
 FELE,Franklin Electric,Industrials,nasdaq_smid+sp600
 FENC,Fennec Pharmaceuticals Inc. Common Stock,Health Care,nasdaq_smid
+FERG,Ferguson Enterprises,Industrials,sp500
 FET,Forum Energy Technologies Inc. Common Stock,Consumer Discretionary,nasdaq_smid
 FFBC,First Financial Bancorp,Financials,nasdaq_smid+sp600
 FFIN,First Financial Bankshares Inc. Common Stock,Finance,nasdaq_smid
-FFIV,F5 Inc. Common Stock,Telecommunications,nasdaq_smid
+FFIV,"F5, Inc.",Information Technology,nasdaq_smid+sp500
 FG,"F&G Annuities & Life, Inc.",Financials,nasdaq_smid+sp600
-FGBIP,First Guaranty Bancshares Inc. 6.75% Series A Fixed-Rate Non-Cumulative Perpetual Preferred Stock,Finance,nasdaq_smid
-FGN,F&G Annuities & Life Inc. 7.950% Senior Notes due 2053,Finance,nasdaq_smid
 FHB,"First Hawaiian, Inc.",Financials,nasdaq_smid+sp600
 FHI,Federated Hermes Inc. Common Stock,Finance,nasdaq_smid
 FHN,First Horizon Corporation Common Stock,Finance,nasdaq_smid
 FIBK,"First Interstate BancSystem, Inc.",Financials,nasdaq_smid+sp600
-FICO,Fair Isaac Corporation Common Stock,Consumer Discretionary,nasdaq_smid
+FICO,Fair Isaac,Information Technology,nasdaq_smid+sp500
 FIG,Figma Inc. Class A Common Stock,Technology,nasdaq_smid
 FIGS,FIGS Inc. Class A Common Stock,Consumer Discretionary,nasdaq_smid
-FINV,FinVolution Group American Depositary Shares,Finance,nasdaq_smid
 FIP,FTAI Infrastructure Inc. Common Stock ,Industrials,nasdaq_smid
-FIS,Fidelity National Information Services Inc. Common Stock,Consumer Discretionary,nasdaq_smid
+FIS,Fidelity National Information Services,Financials,nasdaq_smid+sp500
 FISI,Financial Institutions Inc. Common Stock,Finance,nasdaq_smid
-FISV,Fiserv Inc. Common Stock,Consumer Discretionary,nasdaq_smid
-FITB,Fifth Third Bancorp Common Stock,Finance,nasdaq_smid
+FISV,Fiserv,Financials,nasdaq_smid+sp500
+FITB,Fifth Third Bancorp,Financials,nasdaq_smid+sp500
 FIVE,Five Below Inc. Common Stock,Consumer Discretionary,nasdaq_smid
 FIVN,"Five9, Inc.",Information Technology,nasdaq_smid+sp600
-FIX,Comfort Systems USA Inc. Common Stock,Industrials,nasdaq_smid
+FIX,Comfort Systems USA,Industrials,nasdaq_smid+sp500
 FIZZ,National Beverage Corp.,Consumer Staples,nasdaq_smid+sp600
+FLEX,Flex Ltd.,Information Technology,sp500
 FLG,Flagstar Bank N.A. Common Stock,Finance,nasdaq_smid
 FLGT,Fulgent Genetics Inc. Common Stock,Health Care,nasdaq_smid
 FLNC,Fluence Energy Inc. Class A Common Stock,Miscellaneous,nasdaq_smid
@@ -928,7 +955,6 @@ FLO,Flowers Foods,Consumer Staples,nasdaq_smid+sp600
 FLOC,Flowco Holdings Inc. Class A Common Stock,Consumer Discretionary,nasdaq_smid
 FLR,Fluor Corporation Common Stock,Industrials,nasdaq_smid
 FLS,Flowserve Corporation Common Stock,Industrials,nasdaq_smid
-FLY,Firefly Aerospace Inc. Common Stock,Industrials,nasdaq_smid
 FLYW,Flywire Corporation Voting Common Stock,Consumer Discretionary,nasdaq_smid
 FMAO,Farmers & Merchants Bancorp Inc. Common Stock,Finance,nasdaq_smid
 FMBH,First Mid Bancshares Inc. Common Stock,Finance,nasdaq_smid
@@ -945,8 +971,8 @@ FOR,Forestar Group Inc Common Stock ,Finance,nasdaq_smid
 FORM,"FormFactor, Inc.",Information Technology,nasdaq_smid+sp600
 FOSL,Fossil Group Inc. Common Stock,Consumer Discretionary,nasdaq_smid
 FOUR,Shift4 Payments Inc. Class A Common Stock,Consumer Discretionary,nasdaq_smid
-FOX,Fox Corporation Class B Common Stock,Industrials,nasdaq_smid
-FOXA,Fox Corporation Class A Common Stock,Industrials,nasdaq_smid
+FOX,Fox Corporation (Class B),Communication Services,nasdaq_smid+sp500
+FOXA,Fox Corporation (Class A),Communication Services,nasdaq_smid+sp500
 FOXF,Fox Factory,Consumer Discretionary,nasdaq_smid+sp600
 FPH,Five Point Holdings LLC Class A Common Shares,Finance,nasdaq_smid
 FPI,Farmland Partners Inc. Common Stock,Real Estate,nasdaq_smid
@@ -965,31 +991,30 @@ FRPH,FRP Holdings Inc. Common Stock,Finance,nasdaq_smid
 FRPT,Freshpet,Consumer Staples,nasdaq_smid+sp600
 FRSH,Freshworks Inc. Class A Common Stock,Technology,nasdaq_smid
 FRST,Primis Financial Corp. Common Stock,Finance,nasdaq_smid
-FRT,Federal Realty Investment Trust Common Stock,Real Estate,nasdaq_smid
+FRT,Federal Realty Investment Trust,Real Estate,nasdaq_smid+sp500
 FRVO,Fervo Energy Company Class A common stock,Utilities,nasdaq_smid
 FSBC,Five Star Bancorp Common Stock,Finance,nasdaq_smid
 FSBW,FS Bancorp Inc. Common Stock,Finance,nasdaq_smid
 FSCO,FS Credit Opportunities Corp. Common Stock,Finance,nasdaq_smid
 FSK,FS KKR Capital Corp. Common Stock,Finance,nasdaq_smid
-FSLR,First Solar Inc. Common Stock,Technology,nasdaq_smid
+FSLR,First Solar,Information Technology,nasdaq_smid+sp500
 FSLY,Fastly Inc. Class A Common Stock,Technology,nasdaq_smid
 FSS,Federal Signal Corporation,Industrials,nasdaq_smid+sp600
 FSTR,L.B. Foster Company Common Stock,Industrials,nasdaq_smid
 FSUN,FirstSun Capital Bancorp Common Stock,Finance,nasdaq_smid
 FTAI,FTAI Aviation Ltd. Common Stock,Industrials,nasdaq_smid
-FTAIM,FTAI Aviation Ltd. 9.500% Fixed-Rate Reset Series D Cumulative Perpetual Redeemable Preferred Shares,Industrials,nasdaq_smid
 FTDR,"Frontdoor, Inc.",Consumer Discretionary,nasdaq_smid+sp600
 FTH,Faeth Therapeutics Inc. Common Stock,Health Care,nasdaq_smid
 FTHY,First Trust High Yield Opportunities 2027 Term Fund Common Stock,Finance,nasdaq_smid
 FTK,Flotek Industries Inc. Common Stock,Industrials,nasdaq_smid
+FTNT,Fortinet,Information Technology,sp500
 FTRE,Fortrea,Health Care,nasdaq_smid+sp600
 FTS,Fortis Inc. Common Shares,Utilities,nasdaq_smid
-FTV,Fortive Corporation Common Stock ,Industrials,nasdaq_smid
+FTV,Fortive,Industrials,nasdaq_smid+sp500
 FTW,Presidio Production Company Class A Common Stock,Energy,nasdaq_smid
 FUBO,FuboTV Inc. Class A Common Stock,Consumer Discretionary,nasdaq_smid
 FUL,H.B. Fuller Company,Materials,nasdaq_smid+sp600
 FULT,Fulton Financial Corporation,Financials,nasdaq_smid+sp600
-FULTP,Fulton Financial Corporation Depositary Shares Each Representing a 1/40th Interest in a Share of Fixed Rate Non-Cumulative Perpetual Preferred Stock Series A,Finance,nasdaq_smid
 FUN,Six Flags,Consumer Discretionary,nasdaq_smid+sp600
 FVR,FrontView REIT Inc. Common Stock,Real Estate,nasdaq_smid
 FWDI,Forward Industries Inc. Common Stock,Finance,nasdaq_smid
@@ -1000,7 +1025,6 @@ FWRG,First Watch Restaurant Group Inc. Common Stock,Consumer Discretionary,nasda
 GAB,Gabelli Equity Trust Inc. (The) Common Stock,Finance,nasdaq_smid
 GABC,German American Bancorp Inc. Common Stock,Finance,nasdaq_smid
 GAIN,Gladstone Investment Corporation Business Development Company,Finance,nasdaq_smid
-GAINZ,Gladstone Investment Corporation 4.875% Notes due 2028,Finance,nasdaq_smid
 GALT,Galectin Therapeutics Inc. Common Stock,Health Care,nasdaq_smid
 GAM,General American Investors Inc. Common Stock,Finance,nasdaq_smid
 GAP,Gap Inc. (The) Common Stock,Consumer Discretionary,nasdaq_smid
@@ -1014,22 +1038,21 @@ GCBC,Greene County Bancorp Inc. Common Stock,Finance,nasdaq_smid
 GCMG,GCM Grosvenor Inc. Class A Common Stock,Finance,nasdaq_smid
 GCO,Genesco Inc. Common Stock,Consumer Discretionary,nasdaq_smid
 GCT,GigaCloud Technology Inc Class A Ordinary Shares,Consumer Discretionary,nasdaq_smid
-GDDY,GoDaddy Inc. Class A Common Stock,Technology,nasdaq_smid
+GD,General Dynamics,Industrials,sp500
+GDDY,GoDaddy,Information Technology,nasdaq_smid+sp500
 GDOT,Green Dot Corporation Class A Common Stock $0.001 par value,Finance,nasdaq_smid
 GDRX,GoodRx Holdings Inc. Class A Common Stock,Technology,nasdaq_smid
 GDV,Gabelli Dividend & Income Trust Common Shares of Beneficial Interest,Finance,nasdaq_smid
 GDYN,Grid Dynamics Holdings Inc. Class A Common Stock,Technology,nasdaq_smid
+GE,GE Aerospace,Industrials,sp500
 GEF,Greif Inc. Class A Common Stock,,nasdaq_smid
 GEF-B,Greif Inc. Corporation Class B Common Stock,,nasdaq_smid
-GEGGL,Great Elm Group Inc.  7.25% Notes due 2027,Technology,nasdaq_smid
-GEHC,GE HealthCare Technologies Inc. Common Stock ,Health Care,nasdaq_smid
-GEL,Genesis Energy L.P. Common Units,Energy,nasdaq_smid
-GEMI,Gemini Space Station Inc. Class A Common Stock,Finance,nasdaq_smid
-GEN,Gen Digital Inc. Common Stock,Technology,nasdaq_smid
+GEHC,GE HealthCare,Health Care,nasdaq_smid+sp500
+GEN,Gen Digital,Information Technology,nasdaq_smid+sp500
 GENB,Generate Biomedicines Inc. Common Stock,Health Care,nasdaq_smid
-GENVR,Gen Digital Inc. Contingent Value Rights,Technology,nasdaq_smid
 GEO,"GEO Group, Inc.",Industrials,nasdaq_smid+sp600
 GERN,Geron Corporation Common Stock,Health Care,nasdaq_smid
+GEV,GE Vernova,Industrials,sp500
 GEVO,Gevo Inc. Common Stock,Industrials,nasdaq_smid
 GFF,Griffon Corporation,Industrials,nasdaq_smid+sp600
 GFS,GlobalFoundries Inc. Ordinary Shares,Technology,nasdaq_smid
@@ -1040,24 +1063,26 @@ GHC,Graham Holdings Company Common Stock,Real Estate,nasdaq_smid
 GHM,Graham Corporation Common Stock,Industrials,nasdaq_smid
 GIC,Global Industrial Company Common Stock,Industrials,nasdaq_smid
 GIII,"G-III Apparel Group, Ltd.",Consumer Discretionary,nasdaq_smid+sp600
-GIS,General Mills Inc. Common Stock,Consumer Staples,nasdaq_smid
+GILD,Gilead Sciences,Health Care,sp500
+GIS,General Mills,Consumer Staples,nasdaq_smid+sp500
 GJS,Goldman Sachs Group Securities STRATS Trust for Goldman Sachs Group Securities Series 2006-2,Finance,nasdaq_smid
 GKOS,Glaukos Corp.,Health Care,nasdaq_smid+sp600
-GL,Globe Life Inc. Common Stock,Finance,nasdaq_smid
+GL,Globe Life,Financials,nasdaq_smid+sp500
 GLAD,Gladstone Capital Corporation Common Stock,Consumer Discretionary,nasdaq_smid
 GLIBA,Liberty Capital Corporation Series A GCI Group Common Stock,Telecommunications,nasdaq_smid
 GLIBK,Liberty Capital Corporation Series C GCI Group Common Stock,Telecommunications,nasdaq_smid
 GLOB,Globant S.A. Common Shares,Technology,nasdaq_smid
-GLP,Global Partners LP Common Units representing Limited Partner Interests,Energy,nasdaq_smid
 GLPI,Gaming and Leisure Properties Inc. Common Stock,Real Estate,nasdaq_smid
 GLUE,Monte Rosa Therapeutics Inc. Common Stock,Health Care,nasdaq_smid
+GLW,Corning Inc.,Information Technology,sp500
 GLXY,Galaxy Digital Inc. Class A Common Stock,Finance,nasdaq_smid
+GM,General Motors,Consumer Discretionary,sp500
 GME,GameStop Corporation Common Stock,Consumer Discretionary,nasdaq_smid
 GMED,Globus Medical Inc. Class A Common Stock,Health Care,nasdaq_smid
 GNE,Genie Energy Ltd. Class B Common Stock Stock,Utilities,nasdaq_smid
 GNK,Genco Shipping & Trading Limited Ordinary Shares New (Marshall Islands),Consumer Discretionary,nasdaq_smid
 GNL,"Global Net Lease, Inc.",Real Estate,nasdaq_smid+sp600
-GNRC,Generac Holdlings Inc. Common Stock,Consumer Discretionary,nasdaq_smid
+GNRC,Generac,Industrials,nasdaq_smid+sp500
 GNTX,Gentex Corporation Common Stock,Consumer Discretionary,nasdaq_smid
 GNW,"Genworth Financial, Inc.",Financials,nasdaq_smid+sp600
 GO,Grocery Outlet,Consumer Staples,nasdaq_smid+sp600
@@ -1065,22 +1090,23 @@ GOGO,Gogo Inc. Common Stock,Consumer Discretionary,nasdaq_smid
 GOLD,Gold.com Inc. Common Stock,Industrials,nasdaq_smid
 GOLF,Acushnet Company,Consumer Discretionary,nasdaq_smid+sp600
 GOOD,Gladstone Commercial Corporation Real Estate Investment Trust,Real Estate,nasdaq_smid
-GOODN,Gladstone Commercial Corporation 6.625% Series E Cumulative Redeemable Preferred Stock,Real Estate,nasdaq_smid
-GOODO,Gladstone Commercial Corporation 6.00% Series G Cumulative Redeemable Preferred Stock par value $0.001 per share,Real Estate,nasdaq_smid
-GPC,Genuine Parts Company Common Stock,Consumer Discretionary,nasdaq_smid
-GPCR,Structure Therapeutics Inc. American Depositary Shares,Health Care,nasdaq_smid
+GOOG,Alphabet Inc. (Class C),Communication Services,sp500
+GOOGL,Alphabet Inc. (Class A),Communication Services,sp500
+GPC,Genuine Parts Company,Consumer Discretionary,nasdaq_smid+sp500
 GPGI,GPGI Inc. Class A Common Stock,Finance,nasdaq_smid
 GPI,"Group 1 Automotive, Inc.",Consumer Discretionary,nasdaq_smid+sp600
 GPK,Graphic Packaging Holding Company,Consumer Discretionary,nasdaq_smid
-GPN,Global Payments Inc. Common Stock,Consumer Discretionary,nasdaq_smid
+GPN,Global Payments,Financials,nasdaq_smid+sp500
 GPOR,Gulfport Energy Corporation,Energy,nasdaq_smid+sp600
 GPRE,Green Plains Inc. Common Stock,Industrials,nasdaq_smid
 GRAL,GRAIL Inc. Common Stock ,Health Care,nasdaq_smid
 GRBK,"Green Brick Partners, Inc.",Consumer Discretionary,nasdaq_smid+sp600
 GRC,Gorman-Rupp Company (The) Common Stock,Industrials,nasdaq_smid
 GRDN,Guardian Pharmacy Services Inc. Class A Common Stock,Consumer Staples,nasdaq_smid
+GRMN,Garmin,Consumer Discretionary,sp500
 GRNT,Granite Ridge Resources Inc. Common Stock,Energy,nasdaq_smid
 GRPN,Groupon Inc. Common Stock,Consumer Discretionary,nasdaq_smid
+GS,Goldman Sachs,Financials,sp500
 GSAT,Globalstar Inc. Common Stock,Consumer Discretionary,nasdaq_smid
 GSBC,Great Southern Bancorp Inc. Common Stock,Finance,nasdaq_smid
 GSBD,Goldman Sachs BDC Inc. Common Stock,Finance,nasdaq_smid
@@ -1094,33 +1120,30 @@ GTY,Getty Realty Corp.,Real Estate,nasdaq_smid+sp600
 GUT,Gabelli Utility Trust (The) Common Stock,Finance,nasdaq_smid
 GVA,"Granite Construction, Inc.",Industrials,nasdaq_smid+sp600
 GWRE,Guidewire Software Inc. Common Stock,Technology,nasdaq_smid
+GWW,W. W. Grainger,Industrials,sp500
 GXO,GXO Logistics Inc. Common Stock ,Consumer Discretionary,nasdaq_smid
 GYRE,Gyre Therapeutics Inc. Common Stock,Health Care,nasdaq_smid
 H,Hyatt Hotels Corporation Class A Common Stock,Consumer Discretionary,nasdaq_smid
 HAE,Haemonetics Corporation Common Stock,Health Care,nasdaq_smid
 HAFC,Hanmi Financial Corporation,Financials,nasdaq_smid+sp600
-HAL,Halliburton Company Common Stock,Energy,nasdaq_smid
+HAL,Halliburton,Energy,nasdaq_smid+sp500
 HALO,Halozyme Therapeutics Inc. Common Stock,Health Care,nasdaq_smid
 HAPN,Happen Inc. Common Stock,Finance,nasdaq_smid
-HAS,Hasbro Inc. Common Stock,Consumer Discretionary,nasdaq_smid
+HAS,Hasbro,Consumer Discretionary,nasdaq_smid+sp500
 HASI,"Hannon Armstrong Sustainable Infrastructure Capital, Inc.",Financials,nasdaq_smid+sp600
 HAWK,HawkEye 360 Inc. Common Stock,Technology,nasdaq_smid
 HAYW,"Hayward Holdings, Inc.",Industrials,nasdaq_smid+sp600
-HBAN,Huntington Bancshares Incorporated Common Stock,Finance,nasdaq_smid
-HBANL,Huntington Bancshares Incorporated Depositary Shares Each Representing a 1/40th Interest in a Share of 6.875% Series J Non-Cumulative Perpetual Preferred Stock,Finance,nasdaq_smid
-HBANM,Huntington Bancshares Incorporated Depositary Shares each representing a 1/1000th interest in a share of Huntington Series I Preferred Stock,Finance,nasdaq_smid
-HBANP,Huntington Bancshares Incorporated Depositary Shares 4.500% Series H Non-Cumulative Perpetual Preferred Stock,Finance,nasdaq_smid
-HBANZ,Huntington Bancshares Incorporated Depositary Shares Each Representing a 1/1000th Interest in a Share of 5.50% Series L Non-Cumulative Perpetual Preferred Stock,Finance,nasdaq_smid
+HBAN,Huntington Bancshares,Financials,nasdaq_smid+sp500
 HBB,Hamilton Beach Brands Holding Company Class A Common Stock ,Consumer Discretionary,nasdaq_smid
 HBCP,Home Bancorp Inc. Common Stock,Finance,nasdaq_smid
 HBNC,Horizon Bancorp Inc. Common Stock,Finance,nasdaq_smid
 HBT,HBT Financial Inc. Common Stock,Finance,nasdaq_smid
+HCA,HCA Healthcare,Health Care,sp500
 HCC,"Warrior Met Coal, Inc.",Materials,nasdaq_smid+sp600
 HCI,"HCI Group, Inc.",Financials,nasdaq_smid+sp600
 HCKT,Hackett Group Inc (The). Common Stock,Consumer Discretionary,nasdaq_smid
-HCMA,HCM III Acquisition Corp. Class A Ordinary Share,Consumer Discretionary,nasdaq_smid
 HCSG,"Healthcare Services Group, Inc.",Industrials,nasdaq_smid+sp600
-HCXY,Hercules Capital Inc. 6.25% Notes due 2033,Finance,nasdaq_smid
+HD,Home Depot (The),Consumer Discretionary,sp500
 HE,"Hawaiian Electric Industries, Inc.",Utilities,nasdaq_smid+sp600
 HEI,Heico Corporation Common Stock,Industrials,nasdaq_smid
 HESM,Hess Midstream LP Class A Representing Limited Partner Interests,Energy,nasdaq_smid
@@ -1129,8 +1152,8 @@ HGTY,Hagerty Inc. Class A Common Stock,Finance,nasdaq_smid
 HGV,Hilton Grand Vacations Inc. Common Stock ,Consumer Discretionary,nasdaq_smid
 HHH,Howard Hughes Holdings Inc. Common Stock,Real Estate,nasdaq_smid
 HIFS,Hingham Institution for Savings Common Stock,Finance,nasdaq_smid
-HIG,The Hartford Insurance Group Inc. Common Stock,Finance,nasdaq_smid
-HII,Huntington Ingalls Industries Inc. Common Stock,Industrials,nasdaq_smid
+HIG,Hartford (The),Financials,nasdaq_smid+sp500
+HII,Huntington Ingalls Industries,Industrials,nasdaq_smid+sp500
 HIMS,Hims & Hers Health Inc. Class A Common Stock,Health Care,nasdaq_smid
 HIPO,Hippo Holdings Inc. Common Stock,Finance,nasdaq_smid
 HIW,Highwoods Properties,Real Estate,nasdaq_smid+sp600
@@ -1140,6 +1163,7 @@ HLIO,Helios Technologies Inc. Common Stock,Industrials,nasdaq_smid
 HLIT,Harmonic Inc.,Information Technology,nasdaq_smid+sp600
 HLMN,Hillman Solutions Corp. Common Stock,Consumer Discretionary,nasdaq_smid
 HLNE,Hamilton Lane Incorporated Class A Common Stock,Finance,nasdaq_smid
+HLT,Hilton Worldwide,Consumer Discretionary,sp500
 HLX,"Helix Energy Solutions Group, Inc.",Energy,sp600
 HMH,HMH Holding Inc. Class A Common Stock,Consumer Discretionary,nasdaq_smid
 HMN,Horace Mann Educators Corporation,Financials,nasdaq_smid+sp600
@@ -1149,48 +1173,49 @@ HNRG,Hallador Energy Company Common Stock,Utilities,nasdaq_smid
 HNST,The Honest Company Inc. Common Stock,Consumer Discretionary,nasdaq_smid
 HOG,Harley-Davidson Inc. Common Stock,Consumer Discretionary,nasdaq_smid
 HOMB,Home BancShares Inc. Common Stock,Finance,nasdaq_smid
-HONA,Honeywell Aerospace Inc. Common Stock ,Industrials,nasdaq_smid
+HON,Honeywell Technologies,Industrials,sp500
+HONA,Honeywell Aerospace,Industrials,sp500
+HOOD,Robinhood Markets,Financials,sp500
 HOPE,"Hope Bancorp, Inc.",Financials,nasdaq_smid+sp600
 HOS,Hornbeck Offshore Services Inc. Common Stock,Energy,nasdaq_smid
 HOV,Hovnanian Enterprises Inc. Class A Common Stock,Consumer Discretionary,nasdaq_smid
 HP,"Helmerich & Payne, Inc.",Energy,nasdaq_smid+sp600
+HPE,Hewlett Packard Enterprise,Information Technology,sp500
 HPK,HighPeak Energy Inc. Common Stock,Energy,nasdaq_smid
 HPP,Hudson Pacific Properties Inc. Common Stock,Finance,nasdaq_smid
-HPQ,HP Inc. Common Stock,Technology,nasdaq_smid
+HPQ,HP Inc.,Information Technology,nasdaq_smid+sp500
 HQH,abrdn Healthcare Investors Shares of Beneficial Interest,Finance,nasdaq_smid
 HQL,abrdn Life Sciences Investors Shares of Beneficial Interest,Finance,nasdaq_smid
 HQY,HealthEquity Inc. Common Stock,Consumer Discretionary,nasdaq_smid
 HR,Healthcare Realty Trust Incorporated Common Stock,Real Estate,nasdaq_smid
 HRB,H&R Block Inc. Common Stock,Consumer Discretionary,nasdaq_smid
 HRI,Herc Holdings Inc. Common Stock ,Industrials,nasdaq_smid
-HRL,Hormel Foods Corporation Common Stock,Consumer Staples,nasdaq_smid
+HRL,Hormel Foods,Consumer Staples,nasdaq_smid+sp500
 HRMY,"Harmony Biosciences Holdings, Inc.",Health Care,nasdaq_smid+sp600
 HROW,Harrow Inc. Common Stock,Health Care,nasdaq_smid
 HRTG,Heritage Insurance Holdings Inc. Common Stock,Finance,nasdaq_smid
-HSIC,Henry Schein Inc. Common Stock,Health Care,nasdaq_smid
-HST,Host Hotels & Resorts Inc. Common Stock,Real Estate,nasdaq_smid
+HSIC,Henry Schein,Health Care,nasdaq_smid+sp500
+HST,Host Hotels & Resorts,Real Estate,nasdaq_smid+sp500
 HSTM,"HealthStream, Inc.",Health Care,nasdaq_smid+sp600
-HSY,The Hershey Company Common Stock,Consumer Staples,nasdaq_smid
+HSY,Hershey Company (The),Consumer Staples,nasdaq_smid+sp500
 HTB,HomeTrust Bancshares Inc. Common Stock,Finance,nasdaq_smid
-HTFC,Horizon Technology Finance Corporation 6.25% Notes due 2027,Finance,nasdaq_smid
 HTFL,Heartflow Inc. Common Stock,Health Care,nasdaq_smid
 HTGC,Hercules Capital Inc. Common Stock,Finance,nasdaq_smid
 HTH,Hilltop Holdings Inc.,Financials,nasdaq_smid+sp600
 HTLD,"Heartland Express, Inc.",Industrials,nasdaq_smid+sp600
 HTO,H2O America,Utilities,nasdaq_smid+sp600
 HTZ,Hertz Global Holdings Inc Common Stock,Consumer Discretionary,nasdaq_smid
-HTZWW,Hertz Global Holdings Inc Warrant,Consumer Discretionary,nasdaq_smid
-HUBB,Hubbell Inc Common Stock,Technology,nasdaq_smid
+HUBB,Hubbell Incorporated,Industrials,nasdaq_smid+sp500
 HUBG,"Hub Group, Inc.",Industrials,nasdaq_smid+sp600
 HUBS,HubSpot Inc. Common Stock,Technology,nasdaq_smid
+HUM,Humana,Health Care,sp500
 HUN,Huntsman Corporation Common Stock,Industrials,nasdaq_smid
 HURN,Huron Consulting Group Inc. Common Stock,Consumer Discretionary,nasdaq_smid
 HUT,Hut 8 Corp. Common Stock,Finance,nasdaq_smid
-HUYA,HUYA Inc. American depositary shares each  representing one Class A ordinary share,Technology,nasdaq_smid
 HVT,Haverty Furniture Companies Inc. Common Stock,Consumer Discretionary,nasdaq_smid
 HWC,Hancock Whitney Corporation Common Stock,Finance,nasdaq_smid
-HWCPZ,Hancock Whitney Corporation 6.25% Subordinated Notes due 2060,Finance,nasdaq_smid
 HWKN,"Hawkins, Inc.",Materials,nasdaq_smid+sp600
+HWM,Howmet Aerospace,Industrials,sp500
 HXL,Hexcel Corporation Common Stock,Industrials,nasdaq_smid
 HY,Hyster-Yale Inc. Class A common stock,Industrials,nasdaq_smid
 HYLN,Hyliion Holdings Corp. Class A Common Stock,Consumer Discretionary,nasdaq_smid
@@ -1200,10 +1225,12 @@ IA,Innovative Solutions and Support Inc. Common Stock,Technology,nasdaq_smid
 IAM,Iambic Therapeutics Inc. Common Stock,Health Care,nasdaq_smid
 IART,Integra Lifesciences Holdings,Health Care,nasdaq_smid+sp600
 IBCP,Independent Bank Corporation Common Stock,Finance,nasdaq_smid
-IBKR,Interactive Brokers Group Inc. Class A Common Stock,Finance,nasdaq_smid
+IBKR,Interactive Brokers,Financials,nasdaq_smid+sp500
+IBM,IBM,Information Technology,sp500
 IBP,"Installed Building Products, Inc.",Consumer Discretionary,nasdaq_smid+sp600
 IBRX,ImmunityBio Inc. Common Stock,Health Care,nasdaq_smid
 IBTA,Ibotta Inc. Class A Common Stock,Consumer Discretionary,nasdaq_smid
+ICE,Intercontinental Exchange,Financials,sp500
 ICFI,ICF International Inc. Common Stock,Consumer Discretionary,nasdaq_smid
 ICHR,"Ichor Holdings, Ltd.",Information Technology,nasdaq_smid+sp600
 ICUI,ICU Medical,Health Care,nasdaq_smid+sp600
@@ -1211,29 +1238,29 @@ IDA,IDACORP Inc. Common Stock,Utilities,nasdaq_smid
 IDCC,InterDigital Inc. Common Stock,Miscellaneous,nasdaq_smid
 IDR,Idaho Strategic Resources Inc. Common Stock,Basic Materials,nasdaq_smid
 IDT,IDT Corporation Class B Common Stock,Telecommunications,nasdaq_smid
+IDXX,Idexx Laboratories,Health Care,sp500
 IDYA,IDEAYA Biosciences Inc. Common Stock,Health Care,nasdaq_smid
 IEP,Icahn Enterprises L.P. Common Stock,Energy,nasdaq_smid
 IESC,IES Holdings Inc. Common Stock,Industrials,nasdaq_smid
-IEX,IDEX Corporation Common Stock,Industrials,nasdaq_smid
-IFF,International Flavors & Fragrances Inc. Common Stock,Industrials,nasdaq_smid
+IEX,IDEX Corporation,Industrials,nasdaq_smid+sp500
+IFF,International Flavors & Fragrances,Materials,nasdaq_smid+sp500
 IIIN,Insteel Industries Inc. Common Stock,Industrials,nasdaq_smid
 IIIV,i3 Verticals Inc. Class A Common Stock,Technology,nasdaq_smid
 IIM,Invesco Value Municipal Income Trust Common Stock,Finance,nasdaq_smid
 IIPR,"Innovative Industrial Properties, Inc.",Real Estate,nasdaq_smid+sp600
-ILMN,Illumina Inc. Common Stock,Health Care,nasdaq_smid
+ILMN,"Illumina, Inc.",Health Care,nasdaq_smid+sp500
 ILPT,Industrial Logistics Properties Trust Common Shares of Beneficial Interest,Real Estate,nasdaq_smid
 IMKTA,Ingles Markets Incorporated Class A Common Stock,Consumer Staples,nasdaq_smid
 IMMX,Immix Biopharma Inc. Common Stock,Health Care,nasdaq_smid
 IMNM,Immunome Inc. Common Stock,Health Care,nasdaq_smid
 IMVT,Immunovant Inc. Common Stock,Health Care,nasdaq_smid
 INBX,Inhibrx Biosciences Inc. Common Stock,Health Care,nasdaq_smid
-INCY,Incyte Corp. Common Stock,Health Care,nasdaq_smid
+INCY,Incyte,Health Care,nasdaq_smid+sp500
 INDB,Independent Bank Corp.,Financials,nasdaq_smid+sp600
 INDI,indie Semiconductor Inc. Class A Common Stock,Technology,nasdaq_smid
 INDP,Indaptus Therapeutics Inc. Common Stock,Health Care,nasdaq_smid
 INDV,Indivior,Health Care,sp600
 INFQ,Infleqtion Inc. Common Stock,Technology,nasdaq_smid
-INFQ-WS,Infleqtion Inc. Warrants each whole warrant exercisable for one share of Common Stock at an exercise price of $11.50 per share,Technology,nasdaq_smid
 INGM,Ingram Micro Holding Corporation Common Stock,Technology,nasdaq_smid
 INGR,Ingredion Incorporated Common Stock,Consumer Staples,nasdaq_smid
 INN,Summit Hotel Properties Inc. Common Stock,Real Estate,nasdaq_smid
@@ -1244,8 +1271,10 @@ INSM,Insmed Incorporated Common Stock,Health Care,nasdaq_smid
 INSP,"Inspire Medical Systems, Inc.",Health Care,nasdaq_smid+sp600
 INSW,"International Seaways, Inc.",Energy,nasdaq_smid+sp600
 INTA,Intapp Inc. Common Stock,Technology,nasdaq_smid
+INTC,Intel,Information Technology,sp500
+INTU,Intuit,Information Technology,sp500
 INVA,"Innoviva, Inc.",Health Care,nasdaq_smid+sp600
-INVH,Invitation Homes Inc. Common Stock,Finance,nasdaq_smid
+INVH,Invitation Homes,Real Estate,nasdaq_smid+sp500
 INVX,"Innovex International, Inc.",Energy,nasdaq_smid+sp600
 IOND,Ionic Digital Inc. Class A Common Stock,Finance,nasdaq_smid
 IONQ,IonQ Inc. Common Stock,Technology,nasdaq_smid
@@ -1253,58 +1282,62 @@ IONS,Ionis Pharmaceuticals Inc. Common Stock,Health Care,nasdaq_smid
 IOSP,"Innospec, Inc.",Materials,nasdaq_smid+sp600
 IOT,Samsara Inc. Class A Common Stock,Technology,nasdaq_smid
 IOVA,Iovance Biotherapeutics Inc. Common Stock,Health Care,nasdaq_smid
-IP,International Paper Company Common Stock,Basic Materials,nasdaq_smid
+IP,International Paper,Materials,nasdaq_smid+sp500
 IPAR,"Inter Parfums, Inc.",Consumer Staples,nasdaq_smid+sp600
 IPGP,IPG Photonics Corporation Common Stock,Technology,nasdaq_smid
 IPI,Intrepid Potash Inc Common Stock,Industrials,nasdaq_smid
 IPSC,Century Therapeutics Inc. Common Stock,Health Care,nasdaq_smid
 IPX,IperionX Limited American Depositary Share,Basic Materials,nasdaq_smid
 IQI,Invesco Quality Municipal Income Trust Common Stock,Finance,nasdaq_smid
-IQV,IQVIA Holdings Inc. Common Stock,Health Care,nasdaq_smid
-IR,Ingersoll Rand Inc. Common Stock,Industrials,nasdaq_smid
+IQV,IQVIA,Health Care,nasdaq_smid+sp500
+IR,Ingersoll Rand,Industrials,nasdaq_smid+sp500
 IRD,Opus Genetics Inc. Common Stock,Health Care,nasdaq_smid
 IRDM,Iridium Communications,Communication Services,nasdaq_smid+sp600
 IRLA,IRulya Therapeutics Inc. Common Stock,Health Care,nasdaq_smid
-IRM,Iron Mountain Incorporated (Delaware)Common Stock REIT,Real Estate,nasdaq_smid
+IRM,Iron Mountain,Real Estate,nasdaq_smid+sp500
 IRMD,iRadimed Corporation Common Stock,Health Care,nasdaq_smid
 IRON,Disc Medicine Inc. Common Stock,Health Care,nasdaq_smid
 IRT,Independence Realty Trust Inc. Common Stock,Real Estate,nasdaq_smid
 IRTC,iRhythm Holdings Inc. Common Stock,Health Care,nasdaq_smid
 IRWD,Ironwood Pharmaceuticals Inc. Class A Common Stock,Health Care,nasdaq_smid
 ISBA,Isabella Bank Corporation Common stock,Finance,nasdaq_smid
+ISRG,Intuitive Surgical,Health Care,sp500
 ISTR,Investar Holding Corporation Common Stock,Finance,nasdaq_smid
-IT,Gartner Inc. Common Stock,Consumer Discretionary,nasdaq_smid
+IT,Gartner,Information Technology,nasdaq_smid+sp500
 ITG,ITG Inc. Class A Common Stock,Industrials,nasdaq_smid
 ITGR,Integer Holdings Corporation,Health Care,nasdaq_smid+sp600
 ITIC,Investors Title Company Common Stock,Finance,nasdaq_smid
 ITRI,"Itron, Inc.",Information Technology,nasdaq_smid+sp600
 ITT,ITT Inc. Common Stock ,Industrials,nasdaq_smid
+ITW,Illinois Tool Works,Industrials,sp500
 IVR,INVESCO MORTGAGE CAPITAL INC Common Stock,Real Estate,nasdaq_smid
 IVT,InvenTrust Properties,Real Estate,nasdaq_smid+sp600
-IVZ,Invesco Ltd Common Stock,Finance,nasdaq_smid
-J,Jacobs Solutions Inc. Common Stock,Industrials,nasdaq_smid
+IVZ,Invesco,Financials,nasdaq_smid+sp500
+J,Jacobs Solutions,Industrials,nasdaq_smid+sp500
 JAKK,JAKKS Pacific Inc. Common Stock,Consumer Discretionary,nasdaq_smid
 JAN,Janus Living Inc. Class A-1 Common Stock,Real Estate,nasdaq_smid
 JANX,Janux Therapeutics Inc. Common Stock,Health Care,nasdaq_smid
 JBGS,JBG Smith,Real Estate,nasdaq_smid+sp600
-JBHT,J.B. Hunt Transport Services Inc. Common Stock,Industrials,nasdaq_smid
+JBHT,J.B. Hunt,Industrials,nasdaq_smid+sp500
 JBI,Janus International Group Inc. Common Stock,Industrials,nasdaq_smid
 JBIO,Jade Biosciences Inc. Common Stock,Health Care,nasdaq_smid
-JBL,Jabil Inc. Common Stock,Technology,nasdaq_smid
+JBL,Jabil,Information Technology,nasdaq_smid+sp500
 JBLU,JetBlue,Industrials,nasdaq_smid+sp600
 JBSS,"John B. Sanfilippo & Son, Inc.",Consumer Staples,nasdaq_smid+sp600
 JBTM,JBT Marel Corporation,Industrials,nasdaq_smid+sp600
 JCAP,Jefferson Capital Inc. Common Stock,Finance,nasdaq_smid
+JCI,Johnson Controls,Industrials,sp500
 JEF,Jefferies Financial Group Inc. Common Stock,Finance,nasdaq_smid
 JILL,J. Jill Inc. Common Stock,Consumer Discretionary,nasdaq_smid
 JJSF,J&J Snack Foods Corp.,Consumer Staples,nasdaq_smid+sp600
-JKHY,Jack Henry & Associates Inc. Common Stock,Technology,nasdaq_smid
+JKHY,Jack Henry & Associates,Financials,nasdaq_smid+sp500
 JLL,Jones Lang LaSalle Incorporated Common Stock,Finance,nasdaq_smid
 JMSB,John Marshall Bancorp Inc. Common Stock,Finance,nasdaq_smid
+JNJ,Johnson & Johnson,Health Care,sp500
 JOBY,Joby Aviation Inc. Common Stock,Industrials,nasdaq_smid
 JOE,St. Joe Company,Real Estate,nasdaq_smid+sp600
 JOUT,Johnson Outdoors Inc. Class A Common Stock,Consumer Discretionary,nasdaq_smid
-JSM,Navient LLC 6% Senior Notes due December 15 2043,Finance,nasdaq_smid
+JPM,JPMorgan Chase,Financials,sp500
 JXN,"Jackson Financial, Inc.",Financials,nasdaq_smid+sp600
 KAI,Kadant Inc.,Industrials,nasdaq_smid+sp600
 KALU,Kaiser Aluminum Corporation,Materials,nasdaq_smid+sp600
@@ -1313,22 +1346,25 @@ KBDC,Kayne Anderson BDC Inc. Common Stock,,nasdaq_smid
 KBH,KB Home Common Stock,Consumer Discretionary,nasdaq_smid
 KBR,KBR Inc. Common Stock,Industrials,nasdaq_smid
 KD,Kyndryl Holdings Inc. Common Stock,Technology,nasdaq_smid
-KDP,Keurig Dr Pepper Inc. Common Stock,Consumer Staples,nasdaq_smid
+KDP,Keurig Dr Pepper,Consumer Staples,nasdaq_smid+sp500
 KE,Kimball Electronics Inc. Common Stock,Technology,nasdaq_smid
 KELYA,Kelly Services Inc. Class A Common Stock,Consumer Discretionary,nasdaq_smid
 KELYB,Kelly Services Inc. Class B Common Stock,Consumer Discretionary,nasdaq_smid
 KEX,Kirby Corporation Common Stock,Consumer Discretionary,nasdaq_smid
-KEY,KeyCorp Common Stock,Finance,nasdaq_smid
-KEYS,Keysight Technologies Inc. Common Stock,Industrials,nasdaq_smid
+KEY,KeyCorp,Financials,nasdaq_smid+sp500
+KEYS,Keysight Technologies,Information Technology,nasdaq_smid+sp500
 KFRC,Kforce Inc. Common Stock,Consumer Discretionary,nasdaq_smid
 KFY,Korn/Ferry International,Industrials,nasdaq_smid+sp600
 KGS,"Kodiak Gas Services, Inc.",Energy,nasdaq_smid+sp600
-KHC,The Kraft Heinz Company Common Stock,Consumer Staples,nasdaq_smid
+KHC,Kraft Heinz,Consumer Staples,nasdaq_smid+sp500
 KIDS,OrthoPediatrics Corp. Common Stock,Health Care,nasdaq_smid
-KIM,Kimco Realty Corporation (HC) Common Stock,Real Estate,nasdaq_smid
-KKRS,KKR Group Finance Co. IX LLC 4.625% Subordinated Notes due 2061,Finance,nasdaq_smid
+KIM,Kimco Realty,Real Estate,nasdaq_smid+sp500
+KKR,KKR & Co.,Financials,sp500
+KLAC,KLA Corporation,Information Technology,sp500
 KLIC,"Kulicke and Soffa Industries, Inc.",Information Technology,sp600
 KLRA,Kailera Therapeutics Inc. Common Stock,Health Care,nasdaq_smid
+KMB,Kimberly-Clark,Consumer Staples,sp500
+KMI,Kinder Morgan,Energy,sp500
 KMPB,Kemper Corporation 5.875% Fixed-Rate Reset Junior Subordinated Debentures due 2062,Finance,nasdaq_smid
 KMPR,Kemper Corporation,Financials,nasdaq_smid+sp600
 KMT,Kennametal,Industrials,nasdaq_smid+sp600
@@ -1340,19 +1376,19 @@ KNSA,Kiniksa Pharmaceuticals International plc Class A Ordinary Shares,Health Ca
 KNSL,Kinsale Capital Group Inc. Common Stock,Finance,nasdaq_smid
 KNTK,"Kinetik Holdings, Inc.",Energy,nasdaq_smid+sp600
 KNX,Knight-Swift Transportation Holdings Inc.,Industrials,nasdaq_smid
+KO,Coca-Cola Company (The),Consumer Staples,sp500
 KOD,Kodiak Sciences Inc Common Stock,Health Care,nasdaq_smid
 KODK,Eastman Kodak Company Common New,Consumer Discretionary,nasdaq_smid
 KOP,"Koppers Holdings, Inc.",Materials,nasdaq_smid+sp600
 KOPN,Kopin Corporation Common Stock,Technology,nasdaq_smid
 KPLT,Katapult Holdings Inc. Common Stock,Consumer Discretionary,nasdaq_smid
-KR,Kroger Company (The) Common Stock,Consumer Staples,nasdaq_smid
+KR,Kroger,Consumer Staples,nasdaq_smid+sp500
 KRC,Kilroy Realty Corporation Common Stock,Real Estate,nasdaq_smid
 KREF,KKR Real Estate Finance Trust Inc. Common Stock,Real Estate,nasdaq_smid
 KRG,Kite Realty Group Trust Common Stock,Real Estate,nasdaq_smid
 KRMN,Karman Holdings,Industrials,nasdaq_smid+sp600
 KRNY,Kearny Financial Corp Common Stock,Finance,nasdaq_smid
 KRO,Kronos Worldwide Inc Common Stock,Basic Materials,nasdaq_smid
-KRP,Kimbell Royalty Partners Common Units Representing Limited Partner Interests,Energy,nasdaq_smid
 KRSA,Korsana Biosciences Inc. Common Stock,Health Care,nasdaq_smid
 KRT,Karat Packaging Inc. Common Stock,Industrials,nasdaq_smid
 KRUS,Kura Sushi USA Inc. Class A Common Stock,Consumer Discretionary,nasdaq_smid
@@ -1367,13 +1403,11 @@ KWR,Quaker Chemical Corporation,Materials,nasdaq_smid+sp600
 KYMR,Kymera Therapeutics Inc. Common Stock,Health Care,nasdaq_smid
 KYN,Kayne Anderson Energy Infrastructure Fund Inc.,Finance,nasdaq_smid
 KYTX,Kyverna Therapeutics Inc. Common Stock,Health Care,nasdaq_smid
-L,Loews Corporation Common Stock,Finance,nasdaq_smid
+L,Loews Corporation,Financials,nasdaq_smid+sp500
 LAD,Lithia Motors Inc. Common Stock,Consumer Discretionary,nasdaq_smid
 LADR,Ladder Capital Corp Class A Common Stock,Real Estate,nasdaq_smid
 LAMR,Lamar Advertising Company Class A Common Stock,Real Estate,nasdaq_smid
 LAND,Gladstone Land Corporation Common Stock,Real Estate,nasdaq_smid
-LANDO,Gladstone Land Corporation 6.00% Series B Cumulative Redeemable Preferred Stock,Real Estate,nasdaq_smid
-LANDP,Gladstone Land Corporation 6.00% Series C Cumulative Redeemable Preferred Stock,Real Estate,nasdaq_smid
 LASR,nLIGHT Inc. Common Stock,Technology,nasdaq_smid
 LAUR,"Laureate Education, Inc.",Consumer Discretionary,nasdaq_smid+sp600
 LAW,CS Disco Inc. Common Stock,Technology,nasdaq_smid
@@ -1382,60 +1416,63 @@ LBRT,"Liberty Energy, Inc.",Energy,nasdaq_smid+sp600
 LBRX,LB Pharmaceuticals Inc Common Stock,Health Care,nasdaq_smid
 LCID,Lucid Group Inc. Common Stock,Industrials,nasdaq_smid
 LCII,LCI Industries,Consumer Discretionary,nasdaq_smid+sp600
-LDOS,Leidos Holdings Inc. Common Stock,Technology,nasdaq_smid
+LDOS,Leidos,Industrials,nasdaq_smid+sp500
 LEA,Lear Corporation Common Stock,Consumer Discretionary,nasdaq_smid
 LECO,Lincoln Electric Holdings Inc. Common Shares,Industrials,nasdaq_smid
 LEG,Leggett & Platt,Consumer Discretionary,sp600
 LEGH,Legacy Housing Corporation Common Stock (TX),Consumer Discretionary,nasdaq_smid
-LEGN,Legend Biotech Corporation American Depositary Shares,Health Care,nasdaq_smid
-LEN,Lennar Corporation Class A Common Stock,Consumer Discretionary,nasdaq_smid
+LEN,Lennar,Consumer Discretionary,nasdaq_smid+sp500
 LEN-B,Lennar Corporation Class B,Consumer Discretionary,nasdaq_smid
 LEO,BNY Mellon Strategic Municipals Inc. Common Stock,Finance,nasdaq_smid
 LEU,Centrus Energy Corp.,Energy,nasdaq_smid+sp600
 LEVI,Levi Strauss & Co Class A Common Stock,Consumer Discretionary,nasdaq_smid
-LFMDP,LifeMD Inc. 8.875% Series A Cumulative Perpetual Preferred Stock,Health Care,nasdaq_smid
 LFST,Lifestance Health,Health Care,nasdaq_smid+sp600
 LFTO,Liftoff Mobile Inc. Common Stock,Technology,nasdaq_smid
 LFUS,Littelfuse Inc. Common Stock,Energy,nasdaq_smid
 LGIH,LGI Homes,Consumer Discretionary,nasdaq_smid+sp600
 LGN,Legence Corp. Class A Common stock,Consumer Discretionary,nasdaq_smid
 LGND,"Ligand Pharmaceuticals, Inc.",Health Care,nasdaq_smid+sp600
-LH,Labcorp Holdings Inc. Common Stock,Health Care,nasdaq_smid
-LHX,L3Harris Technologies Inc. Common Stock,Industrials,nasdaq_smid
+LH,Labcorp,Health Care,nasdaq_smid+sp500
+LHX,L3Harris,Industrials,nasdaq_smid+sp500
 LIF,Life360,Information Technology,nasdaq_smid+sp600
 LIFE,Ethos Technologies Inc. Class A Common Stock,Finance,nasdaq_smid
-LII,Lennox International Inc. Common Stock,Industrials,nasdaq_smid
+LII,Lennox International,Industrials,nasdaq_smid+sp500
 LILA,Liberty Latin America Ltd. Class A Common Stock,Telecommunications,nasdaq_smid
 LILAK,Liberty Latin America Ltd. Class C Common Stock,Telecommunications,nasdaq_smid
 LILAP,Liberty Latin America Ltd. 9.0% Fixed Rate Cumulative Perpetual Redeemable Series A Preference Shares,Telecommunications,nasdaq_smid
 LIME,Neutron Holdings Inc. Common Stock,Technology,nasdaq_smid
+LIN,Linde plc,Materials,sp500
 LINC,Lincoln Educational Services Corporation Common Stock,Real Estate,nasdaq_smid
 LIND,Lindblad Expeditions Holdings Inc. Common Stock,Consumer Discretionary,nasdaq_smid
 LINE,Lineage Inc. Common Stock,Real Estate,nasdaq_smid
-LITE,Lumentum Holdings Inc. Common Stock,Telecommunications,nasdaq_smid
+LITE,Lumentum,Information Technology,nasdaq_smid+sp500
 LKFN,Lakeland Financial,Financials,nasdaq_smid+sp600
 LKQ,LKQ Corporation,Consumer Discretionary,nasdaq_smid+sp600
+LLY,Lilly (Eli),Health Care,sp500
 LLYVA,Liberty Live Holdings Inc. Series A Liberty Live Group Common Stock,Consumer Discretionary,nasdaq_smid
 LLYVK,Liberty Live Holdings Inc. Series C Liberty Live Group Common Stock,Consumer Discretionary,nasdaq_smid
 LMAT,LeMaitre Vascular,Health Care,nasdaq_smid+sp600
 LMB,Limbach Holdings Inc. Common Stock,Consumer Discretionary,nasdaq_smid
 LMND,Lemonade Inc. Common Stock,Finance,nasdaq_smid
 LMRI,Lumexa Imaging Holdings Inc. Common Stock,Health Care,nasdaq_smid
+LMT,Lockheed Martin,Industrials,sp500
 LNC,Lincoln Financial,Financials,nasdaq_smid+sp600
 LNN,Lindsay Corporation,Materials,nasdaq_smid+sp600
-LNT,Alliant Energy Corporation Common Stock,Utilities,nasdaq_smid
+LNT,Alliant Energy,Utilities,nasdaq_smid+sp500
 LNTH,Lantheus Holdings Inc. Common Stock,Health Care,nasdaq_smid
 LOAR,Loar Holdings Inc. Common Stock,Industrials,nasdaq_smid
 LOB,Live Oak Bancshares Inc. Common Stock,Finance,nasdaq_smid
 LOCO,El Pollo Loco Holdings Inc. Common Stock,Consumer Discretionary,nasdaq_smid
 LOGI,Logitech International S.A. Ordinary Shares,Technology,nasdaq_smid
 LOPE,Grand Canyon Education Inc. Common Stock,Real Estate,nasdaq_smid
+LOW,Lowe's,Consumer Discretionary,sp500
 LPG,Dorian LPG Ltd.,Energy,nasdaq_smid+sp600
 LPLA,LPL Financial Holdings Inc. Common Stock,Finance,nasdaq_smid
 LPTH,LightPath Technologies Inc. Class A Common Stock,Technology,nasdaq_smid
 LPX,Louisiana-Pacific Corporation Common Stock,Basic Materials,nasdaq_smid
 LQDA,Liquidia Corporation,Health Care,nasdaq_smid+sp600
 LQDT,"Liquidity Services, Inc.",Industrials,nasdaq_smid+sp600
+LRCX,Lam Research,Information Technology,sp500
 LRN,"Stride, Inc.",Consumer Discretionary,nasdaq_smid+sp600
 LSCC,Lattice Semiconductor Corporation Common Stock,Technology,nasdaq_smid
 LSTR,Landstar System Inc. Common Stock,Industrials,nasdaq_smid
@@ -1443,25 +1480,28 @@ LTC,"LTC Properties, Inc.",Real Estate,nasdaq_smid+sp600
 LTGO,Latigo Biotherapeutics Inc. Common Stock,Health Care,nasdaq_smid
 LTH,"Life Time Group Holdings, Inc.",Consumer Discretionary,nasdaq_smid+sp600
 LUCK,Lucky Strike Entertainment Corporation Class A Common Stock,Consumer Discretionary,nasdaq_smid
+LULU,Lululemon Athletica,Consumer Discretionary,sp500
 LUMN,Lumen Technologies,Communication Services,nasdaq_smid+sp600
 LUNR,Intuitive Machines Inc. Class A Common Stock,Industrials,nasdaq_smid
-LUV,Southwest Airlines Company Common Stock,Consumer Discretionary,nasdaq_smid
-LVS,Las Vegas Sands Corp. Common Stock,Consumer Discretionary,nasdaq_smid
+LUV,Southwest Airlines,Industrials,nasdaq_smid+sp500
+LVS,Las Vegas Sands,Consumer Discretionary,nasdaq_smid+sp500
 LW,Lamb Weston,Consumer Staples,nasdaq_smid+sp600
 LWAY,Lifeway Foods Inc. Common Stock,Consumer Staples,nasdaq_smid
 LWLG,Lightwave Logic Inc. Common Stock,Industrials,nasdaq_smid
 LXP,Lexington Realty Trust,Real Estate,sp600
 LXRX,Lexicon Pharmaceuticals Inc. Common Stock,Health Care,nasdaq_smid
 LXU,LSB Industries Inc. Common Stock,Basic Materials,nasdaq_smid
+LYB,LyondellBasell,Materials,sp500
 LYCA,Lycia Therapeutics Inc. Common Stock,Health Care,nasdaq_smid
 LYEL,Lyell Immunopharma Inc. Common Stock,Health Care,nasdaq_smid
 LYFT,"Lyft, Inc.",Industrials,nasdaq_smid+sp600
 LYTS,LSI Industries Inc. Common Stock,Consumer Discretionary,nasdaq_smid
-LYV,Live Nation Entertainment Inc. Common Stock,Consumer Discretionary,nasdaq_smid
+LYV,Live Nation Entertainment,Communication Services,nasdaq_smid+sp500
 LZ,"LegalZoom.com, Inc.",Industrials,nasdaq_smid+sp600
 LZB,"La-Z-Boy, Inc.",Consumer Discretionary,nasdaq_smid+sp600
 M,Macy's Inc Common Stock,Consumer Discretionary,nasdaq_smid
-MAA,Mid-America Apartment Communities Inc. Common Stock,Real Estate,nasdaq_smid
+MA,Mastercard,Financials,sp500
+MAA,Mid-America Apartment Communities,Real Estate,nasdaq_smid+sp500
 MAC,Macerich,Real Estate,nasdaq_smid+sp600
 MAGN,Magnera Corporation Common Stock,Basic Materials,nasdaq_smid
 MAIN,Main Street Capital Corporation Common Stock,Finance,nasdaq_smid
@@ -1470,8 +1510,9 @@ MAMA,Mama's Creations Inc. Common Stock,Consumer Staples,nasdaq_smid
 MAN,ManpowerGroup,Industrials,nasdaq_smid+sp600
 MANE,Veradermics Incorporated Common Stock,Health Care,nasdaq_smid
 MANH,Manhattan Associates Inc. Common Stock,Technology,nasdaq_smid
+MAR,Marriott International,Consumer Discretionary,sp500
 MARA,"MARA Holdings, Inc.",Information Technology,nasdaq_smid+sp600
-MAS,Masco Corporation Common Stock,Industrials,nasdaq_smid
+MAS,Masco,Industrials,nasdaq_smid+sp500
 MASS,908 Devices Inc. Common Stock,Industrials,nasdaq_smid
 MAT,Mattel Inc. Common Stock,Consumer Discretionary,nasdaq_smid
 MATV,Mativ Holdings Inc. Common Stock,Basic Materials,nasdaq_smid
@@ -1482,48 +1523,44 @@ MAZE,Maze Therapeutics Inc. Common Stock,Health Care,nasdaq_smid
 MBC,"MasterBrand, Inc.",Industrials,nasdaq_smid+sp600
 MBGL,"Mobility Global, Inc.",Industrials,nasdaq_smid+sp600
 MBIN,Merchants Bancorp,Financials,nasdaq_smid+sp600
-MBINL,Merchants Bancorp Depositary Shares Each Representing a 1/40thInterest in a Share of 7.25% Fixed Rate Series E Non-CumulativePerpetual Preferred Stock without par value,Finance,nasdaq_smid
-MBINM,Merchants Bancorp Depositary Shares Each Representing a 1/40th Interest in a Share of 8.25% Fixed-Rate Reset Series D Non-Cumulative Perpetual Preferred Stock,Finance,nasdaq_smid
-MBINN,Merchants Bancorp Depositary Shares Preferred Series C,Finance,nasdaq_smid
 MBUU,Malibu Boats Inc. Class A Common Stock,Industrials,nasdaq_smid
 MBWM,Mercantile Bank Corporation Common Stock,Finance,nasdaq_smid
 MBX,MBX Biosciences Inc. Common Stock,Health Care,nasdaq_smid
 MC,Moelis & Company,Financials,nasdaq_smid+sp600
 MCB,Metropolitan Bank Holding Corp. Common Stock,Finance,nasdaq_smid
 MCBS,MetroCity Bankshares Inc. Common Stock,Finance,nasdaq_smid
+MCD,McDonald's,Consumer Discretionary,sp500
 MCFT,MasterCraft Boat Holdings Inc. Common Stock,Industrials,nasdaq_smid
 MCHB,Mechanics Bancorp Class A Common Stock,Finance,nasdaq_smid
-MCHP,Microchip Technology Incorporated Common Stock,Technology,nasdaq_smid
-MCHPP,Microchip Technology Incorporated Depositary Shares Each Representing a 1/20th Interest in a Share of 7.50% Series A Mandatory Convertible Preferred Stock,Technology,nasdaq_smid
+MCHP,Microchip Technology,Information Technology,nasdaq_smid+sp500
 MCI,Barings Corporate Investors Common Stock,Finance,nasdaq_smid
+MCK,McKesson,Health Care,sp500
+MCO,Moody's Corporation,Financials,sp500
 MCRI,"Monarch Casino & Resort, Inc.",Consumer Discretionary,nasdaq_smid+sp600
 MCS,Marcus Corporation (The) Common Stock,Consumer Discretionary,nasdaq_smid
 MCY,Mercury General,Financials,nasdaq_smid+sp600
 MD,Pediatrix Medical Group,Health Care,nasdaq_smid+sp600
 MDB,MongoDB Inc. Class A Common Stock,Technology,nasdaq_smid
 MDGL,Madrigal Pharmaceuticals Inc. Common Stock,Health Care,nasdaq_smid
+MDLZ,Mondelez International,Consumer Staples,sp500
+MDT,Medtronic,Health Care,sp500
 MDU,"MDU Resources Group, Inc.",Utilities,nasdaq_smid+sp600
 MDXG,MiMedx Group Inc Common Stock,Health Care,nasdaq_smid
 MEC,Mayville Engineering Company Inc. Common Stock,Industrials,nasdaq_smid
 MEDP,Medpace Holdings Inc. Common Stock,Health Care,nasdaq_smid
 MEI,Methode Electronics Inc. Common Stock,Technology,nasdaq_smid
+MET,MetLife,Financials,sp500
+META,Meta Platforms,Communication Services,sp500
 METC,Ramaco Resources Inc. Class A Common Stock,Energy,nasdaq_smid
 MFA,MFA Financial Inc.,Real Estate,nasdaq_smid
-MFAN,MFA Financial Inc. 8.875% Senior Notes due 2029,Real Estate,nasdaq_smid
-MFAO,MFA Financial Inc. 9.000% Senior Notes due 2029,Real Estate,nasdaq_smid
 MFIC,MidCap Financial Investment Corporation Common Stock,Finance,nasdaq_smid
-MFICL,MidCap Financial Investment Corporation 8.00% Notes due 2028,Finance,nasdaq_smid
 MFP,"Midera Food Processing, Inc.",Industrials,nasdaq_smid+sp600
 MG,Mistras Group Inc Common Stock,Consumer Discretionary,nasdaq_smid
 MGEE,"MGE Energy, Inc.",Utilities,nasdaq_smid+sp600
 MGF,Aberdeen Government Markets Income Fund Common Shares of Beneficial Interest,Finance,nasdaq_smid
-MGM,MGM Resorts International Common Stock,Consumer Discretionary,nasdaq_smid
+MGM,MGM Resorts,Consumer Discretionary,nasdaq_smid+sp500
 MGNI,Magnite Inc. Common Stock,Technology,nasdaq_smid
-MGR,Affiliated Managers Group Inc. 5.875% Junior Subordinated Notes due 2059,Finance,nasdaq_smid
-MGRB,Affiliated Managers Group Inc. 4.750% Junior Subordinated Notes due 2060,Finance,nasdaq_smid
 MGRC,McGrath RentCorp Common Stock,Consumer Discretionary,nasdaq_smid
-MGRD,Affiliated Managers Group Inc. 4.200% Junior Subordinated Notes due 2061,Finance,nasdaq_smid
-MGRE,Affiliated Managers Group Inc. 6.750% Junior Subordinated Notes due 2064,Finance,nasdaq_smid
 MGTX,MeiraGTx Holdings plc Ordinary Shares,Health Care,nasdaq_smid
 MGY,"Magnolia Oil & Gas, Corp.",Energy,nasdaq_smid+sp600
 MHD,Blackrock MuniHoldings Fund Inc. Common Stock,Finance,nasdaq_smid
@@ -1535,10 +1572,8 @@ MIN,Aberdeen Intermediate Income Fund Common Shares of Beneficial Interest,Finan
 MIR,"Mirion Technologies, Inc.",Information Technology,nasdaq_smid+sp600
 MIRM,Mirum Pharmaceuticals Inc. Common Stock,Health Care,nasdaq_smid
 MITK,Mitek Systems Inc. Common Stock,Technology,nasdaq_smid
-MITN,TPG Mortgage Investment Trust Inc. 9.500% Senior Notes due 2029,Real Estate,nasdaq_smid
-MITP,TPG Mortgage Investment Trust Inc. 9.500% Senior Notes due 2029,Real Estate,nasdaq_smid
 MIY,Blackrock MuniYield Michigan Quality Fund Inc. Common Stock,Finance,nasdaq_smid
-MKC,McCormick & Company Incorporated Common Stock,Consumer Staples,nasdaq_smid
+MKC,McCormick & Company,Consumer Staples,nasdaq_smid+sp500
 MKC-V,McCormick & Company Incorporated Common Stock,Consumer Staples,nasdaq_smid
 MKL,Markel Group Inc. Common Stock,Finance,nasdaq_smid
 MKSI,MKS Inc. Common Stock,Industrials,nasdaq_smid
@@ -1547,49 +1582,60 @@ MKTX,MarketAxess,Financials,nasdaq_smid+sp600
 MLAB,Mesa Laboratories Inc. Common Stock,Industrials,nasdaq_smid
 MLI,Mueller Industries Inc. Common Stock,Industrials,nasdaq_smid
 MLKN,"MillerKnoll, Inc.",Industrials,nasdaq_smid+sp600
-MLM,Martin Marietta Materials Inc. Common Stock,Industrials,nasdaq_smid
+MLM,Martin Marietta Materials,Materials,nasdaq_smid+sp500
 MLP,Maui Land & Pineapple Company Inc. Common Stock,Finance,nasdaq_smid
 MLR,Miller Industries Inc. Common Stock,Consumer Discretionary,nasdaq_smid
 MLTX,MoonLake Immunotherapeutics Class A Ordinary Shares,Health Care,nasdaq_smid
 MLYS,Mineralys Therapeutics Inc. Common Stock,Health Care,nasdaq_smid
 MMED,MiniMed Group Inc. Common Stock,Health Care,nasdaq_smid
 MMI,"Marcus & Millichap, Inc.",Real Estate,nasdaq_smid+sp600
+MMM,3M,Industrials,sp500
 MMS,Maximus Inc. Common Stock,Consumer Discretionary,nasdaq_smid
 MMSI,"Merit Medical Systems, Inc.",Health Care,nasdaq_smid+sp600
 MNKD,MannKind Corporation Common Stock,Health Care,nasdaq_smid
 MNPR,Monopar Therapeutics Inc. Common Stock,Health Care,nasdaq_smid
-MNR,Mach Natural Resources LP Common Units representing Limited Partner Interests,Energy,nasdaq_smid
 MNRO,Monro Inc. Common Stock,Consumer Discretionary,nasdaq_smid
+MNST,Monster Beverage,Consumer Staples,sp500
 MNTK,Montauk Renewables Inc. Common Stock,Utilities,nasdaq_smid
 MNTN,MNTN Inc. Class A Common Stock,Consumer Discretionary,nasdaq_smid
+MO,Altria,Consumer Staples,sp500
 MOBI,Mobia Medical Inc. Common Stock,Health Care,nasdaq_smid
 MOD,Modine Manufacturing Company Common Stock,Consumer Discretionary,nasdaq_smid
 MOG-B,Moog Inc. Class B Common Stock,Industrials,nasdaq_smid
 MOH,Molina Healthcare Inc Common Stock,Health Care,nasdaq_smid
 MORN,Morningstar Inc. Common Stock,Finance,nasdaq_smid
-MOS,Mosaic Company (The) Common Stock,Industrials,nasdaq_smid
+MOS,Mosaic Company (The),Materials,nasdaq_smid+sp500
 MOV,Movado Group Inc. Common Stock,Consumer Discretionary,nasdaq_smid
 MP,MP Materials Corp. Common Stock,Basic Materials,nasdaq_smid
 MPB,Mid Penn Bancorp Common Stock,Finance,nasdaq_smid
+MPC,Marathon Petroleum,Energy,sp500
 MPLT,MapLight Therapeutics Inc. Common Stock,Health Care,nasdaq_smid
 MPT,Medical Properties Trust,Real Estate,nasdaq_smid+sp600
+MPWR,Monolithic Power Systems,Information Technology,sp500
 MQ,Marqeta Inc. Class A Common Stock,Technology,nasdaq_smid
 MQY,Blackrock MuniYield Quality Fund Inc. Common Stock,Finance,nasdaq_smid
 MRCY,Mercury Systems,Industrials,nasdaq_smid+sp600
+MRK,Merck & Co.,Health Care,sp500
+MRNA,Moderna,Health Care,sp500
 MRP,"Millrose Properties, Inc.",Real Estate,nasdaq_smid+sp600
+MRSH,Marsh McLennan,Financials,sp500
 MRTN,"Marten Transport, Ltd.",Industrials,nasdaq_smid+sp600
 MRVI,Maravai LifeSciences Holdings Inc. Class A Common Stock,Health Care,nasdaq_smid
+MRVL,Marvell Technology,Information Technology,sp500
+MS,Morgan Stanley,Financials,sp500
 MSA,MSA Safety Incorporated Common Stock,Health Care,nasdaq_smid
 MSBI,Midland States Bancorp Inc. Common Stock,Finance,nasdaq_smid
-MSBIP,Midland States Bancorp Inc. Depositary Shares Each Representing a 1/40th Interest in a Share of 7.750% Fixed-Rate Reset Non-Cumulative Perpetual Preferred Stock Series A,Finance,nasdaq_smid
-MSCI,MSCI Inc. Common Stock,Consumer Discretionary,nasdaq_smid
+MSCI,MSCI,Financials,nasdaq_smid+sp500
 MSEX,Middlesex Water Company,Utilities,nasdaq_smid+sp600
+MSFT,Microsoft,Information Technology,sp500
 MSGE,Madison Square Garden Entertainment Corp. Class A Common Stock,Consumer Discretionary,nasdaq_smid
 MSGK,MSG Knickerbockers Corp.,Communication Services,nasdaq_smid+sp600
 MSGR,MSG Rangers Corp. Class A Common Stock,Consumer Discretionary,nasdaq_smid
+MSI,Motorola Solutions,Information Technology,sp500
 MSM,MSC Industrial Direct Company Inc. Common Stock,Industrials,nasdaq_smid
-MTB,M&T Bank Corporation Common Stock,Finance,nasdaq_smid
+MTB,M&T Bank,Financials,nasdaq_smid+sp500
 MTCH,Match Group,Communication Services,nasdaq_smid+sp600
+MTD,Mettler Toledo,Health Care,sp500
 MTDR,Matador Resources Company Common Stock,Energy,nasdaq_smid
 MTG,MGIC Investment Corporation Common Stock,Finance,nasdaq_smid
 MTH,Meritage Homes Corporation,Consumer Discretionary,nasdaq_smid+sp600
@@ -1600,6 +1646,7 @@ MTUS,Metallus Inc,Materials,nasdaq_smid+sp600
 MTW,Manitowoc Company Inc. (The) Common Stock,Industrials,nasdaq_smid
 MTX,Minerals Technologies,Materials,nasdaq_smid+sp600
 MTZ,MasTec Inc. Common Stock,Industrials,nasdaq_smid
+MU,Micron Technology,Information Technology,sp500
 MUA,Blackrock MuniAssets Fund Inc Common Stock,Finance,nasdaq_smid
 MUC,Blackrock MuniHoldings California Quality Fund Inc.  Common Stock,Finance,nasdaq_smid
 MUJ,Blackrock MuniHoldings New Jersey Quality Fund Inc. Common Stock,Finance,nasdaq_smid
@@ -1628,54 +1675,53 @@ NBIX,Neurocrine Biosciences Inc. Common Stock,Health Care,nasdaq_smid
 NBN,Northeast Bank Common Stock,Finance,nasdaq_smid
 NBTB,"NBT Bancorp, Inc.",Financials,nasdaq_smid+sp600
 NCDL,Nuveen Churchill Direct Lending Corp. Common Stock,,nasdaq_smid
-NCLH,Norwegian Cruise Line Holdings Ltd. Ordinary Shares,Consumer Discretionary,nasdaq_smid
+NCLH,Norwegian Cruise Line Holdings,Consumer Discretionary,nasdaq_smid+sp500
 NCNO,nCino Inc. Common Stock,Technology,nasdaq_smid
 NCV,Virtus Convertible & Income Fund Common Shares of Beneficial Interest,Finance,nasdaq_smid
 NCZ,Virtus Convertible & Income Fund II Common Shares of Beneficial Interest,Finance,nasdaq_smid
-NDSN,Nordson Corporation Common Stock,Industrials,nasdaq_smid
+NDAQ,"Nasdaq, Inc.",Financials,sp500
+NDSN,Nordson Corporation,Industrials,nasdaq_smid+sp500
 NE,Noble Corporation,Energy,nasdaq_smid+sp600
 NECB,NorthEast Community Bancorp Inc. Common Stock,Finance,nasdaq_smid
+NEE,NextEra Energy,Utilities,sp500
+NEM,Newmont,Materials,sp500
 NEO,"NeoGenomics Laboratories, Inc.",Health Care,nasdaq_smid+sp600
 NEOG,Neogen,Health Care,nasdaq_smid+sp600
 NESR,National Energy Services Reunited Corp Ordinary Shares,Energy,nasdaq_smid
 NEU,NewMarket Corp Common Stock,Industrials,nasdaq_smid
 NEWT,NewtekOne Inc. Common Stock,Finance,nasdaq_smid
-NEWTG,NewtekOne Inc. 8.50% Fixed Rate Senior Notes due 2029,Finance,nasdaq_smid
-NEWTI,NewtekOne Inc. 8.00% Fixed Rate Senior Notes due 2028,Finance,nasdaq_smid
-NEWTP,NewtekOne Inc. Depositary Shares Non-Cumulative Perpetual Preferred Stock Series B,Finance,nasdaq_smid
 NEXT,NextDecade Corporation Common Stock,Utilities,nasdaq_smid
-NFEGP,New Fortress Energy Inc. Series A Mandatorily Convertible Preferred Stock,Utilities,nasdaq_smid
 NFG,National Fuel Gas Company Common Stock,Utilities,nasdaq_smid
-NGL,NGL ENERGY PARTNERS LP Common Units representing Limited Partner Interests,Utilities,nasdaq_smid
+NFLX,Netflix,Communication Services,sp500
 NGS,Natural Gas Services Group Inc. Common Stock,Energy,nasdaq_smid
 NGVC,Natural Grocers by Vitamin Cottage Inc. Common Stock,Consumer Staples,nasdaq_smid
 NGVT,"Ingevity, Corp.",Materials,nasdaq_smid+sp600
 NHC,"National Healthcare, Corp.",Health Care,nasdaq_smid+sp600
 NHI,"National Health Investors, Inc.",Real Estate,nasdaq_smid+sp600
 NHP,National Healthcare Properties Inc. Common Stock,Real Estate,nasdaq_smid
-NI,NiSource Inc Common Stock,Utilities,nasdaq_smid
+NI,NiSource,Utilities,nasdaq_smid+sp500
 NIC,Nicolet Bankshares,Financials,nasdaq_smid+sp600
 NIE,Virtus Equity & Convertible Income Fund Common Shares of Beneficial Interest,Finance,nasdaq_smid
-NIO,NIO Inc. American depositary shares each  representing one Class A ordinary share,Industrials,nasdaq_smid
 NIQ,NIQ Global Intelligence plc Ordinary Shares,Technology,nasdaq_smid
 NJR,NewJersey Resources Corporation Common Stock,Utilities,nasdaq_smid
+NKE,"Nike, Inc.",Consumer Discretionary,sp500
 NKTR,Nektar Therapeutics  Common Stock,Health Care,nasdaq_smid
 NL,NLI Holdings Inc. Common Stock,Basic Materials,nasdaq_smid
 NLY,Annaly Capital Management Inc. Common Stock,Real Estate,nasdaq_smid
 NMAX,Newsmax Inc. Class B Common Stock,Industrials,nasdaq_smid
 NMFC,New Mountain Finance Corporation Common Stock,Finance,nasdaq_smid
-NMFCZ,New Mountain Finance Corporation 8.250% Notes due 2028,,nasdaq_smid
 NMIH,"NMI Holdings, Inc.",Financials,nasdaq_smid+sp600
 NMRK,Newmark Group Inc. Class A Common Stock,Finance,nasdaq_smid
 NN,NextNav Inc. Common Stock,Industrials,nasdaq_smid
 NNE,Nano Nuclear Energy Inc. Common Stock,Utilities,nasdaq_smid
 NNI,Nelnet Inc. Common Stock,Finance,nasdaq_smid
 NNN,NNN REIT Inc. Common Stock,Real Estate,nasdaq_smid
+NOC,Northrop Grumman,Industrials,sp500
 NODK,NI Holdings Inc. Common Stock,Finance,nasdaq_smid
 NOG,"Northern Oil and Gas, Inc.",Energy,nasdaq_smid+sp600
 NOV,NOV Inc. Common Stock,Consumer Discretionary,nasdaq_smid
 NOVT,Novanta Inc. Common Stock,Miscellaneous,nasdaq_smid
-NOVTU,Novanta Inc. Tangible Equity Units,Miscellaneous,nasdaq_smid
+NOW,ServiceNow,Information Technology,sp500
 NP,Neptune Insurance Holdings Inc. Class A Common Stock,Finance,nasdaq_smid
 NPB,Northpointe Bancshares Inc. Common Stock,Finance,nasdaq_smid
 NPCE,Neuropace Inc. Common Stock,Health Care,nasdaq_smid
@@ -1684,31 +1730,32 @@ NPKI,NPK International Inc. Common Stock,Industrials,nasdaq_smid
 NPO,"EnPro Industries, Inc.",Industrials,nasdaq_smid+sp600
 NRC,NRC Health Common Stock,Health Care,nasdaq_smid
 NRDS,NerdWallet Inc. Class A Common Stock,Technology,nasdaq_smid
-NRG,NRG Energy Inc. Common Stock,Utilities,nasdaq_smid
+NRG,NRG Energy,Utilities,nasdaq_smid+sp500
 NRGV,Energy Vault Holdings Inc. Common Stock,Miscellaneous,nasdaq_smid
 NRIM,Northrim BanCorp Inc Common Stock,Finance,nasdaq_smid
 NRIX,Nurix Therapeutics Inc. Common stock,Health Care,nasdaq_smid
 NRP,Natural Resource Partners LP Limited Partnership,Energy,nasdaq_smid
+NSC,Norfolk Southern,Industrials,sp500
 NSIT,"Insight Enterprises, Inc.",Industrials,nasdaq_smid+sp600
-NSLRL,Neostellar Capital Corp. 6.00% Notes due 2026,Finance,nasdaq_smid
 NSP,Insperity,Industrials,nasdaq_smid+sp600
 NSSC,Napco Security Technologies,Information Technology,nasdaq_smid+sp600
-NTAP,NetApp Inc. Common Stock,Technology,nasdaq_smid
+NTAP,NetApp,Information Technology,nasdaq_smid+sp500
 NTCT,"NETSCOUT Systems, Inc.",Information Technology,nasdaq_smid+sp600
 NTGR,NETGEAR Inc. Common Stock,Utilities,nasdaq_smid
 NTLA,Intellia Therapeutics Inc. Common Stock,Health Care,nasdaq_smid
 NTNX,Nutanix Inc. Class A Common Stock,Technology,nasdaq_smid
 NTRA,Natera Inc. Common Stock,Health Care,nasdaq_smid
-NTRS,Northern Trust Corporation Common Stock,Finance,nasdaq_smid
-NTRSO,Northern Trust Corporation Depositary Shares Each Representing a 1/1000th Interest in a Share of Series E Non-Cumulative Perpetual Preferred Stock,Finance,nasdaq_smid
+NTRS,Northern Trust,Financials,nasdaq_smid+sp500
 NTSK,Netskope Inc. Class A Common Stock,Technology,nasdaq_smid
 NTST,NETSTREIT Corp.,Real Estate,nasdaq_smid+sp600
+NUE,Nucor,Materials,sp500
 NUTX,Nutex Health Inc. Common Stock,Consumer Discretionary,nasdaq_smid
 NUVB,Nuvation Bio Inc. Class A Common Stock,Health Care,nasdaq_smid
 NVAX,Novavax Inc. Common Stock,Health Care,nasdaq_smid
 NVCT,Nuvectis Pharma Inc. Common Stock,Health Care,nasdaq_smid
+NVDA,Nvidia,Information Technology,sp500
 NVEC,NVE Corporation Common Stock,Technology,nasdaq_smid
-NVR,NVR Inc. Common Stock,Consumer Discretionary,nasdaq_smid
+NVR,"NVR, Inc.",Consumer Discretionary,nasdaq_smid+sp500
 NVST,Envista Holdings Corporation Common Stock,Health Care,nasdaq_smid
 NVTS,Navitas Semiconductor Corporation Common Stock,Technology,nasdaq_smid
 NWBI,"Northwest Bancshares, Inc.",Financials,nasdaq_smid+sp600
@@ -1717,15 +1764,17 @@ NWFL,Norwood Financial Corp. Common Stock,Finance,nasdaq_smid
 NWL,Newell Brands,Consumer Discretionary,nasdaq_smid+sp600
 NWN,NW Natural,Utilities,nasdaq_smid+sp600
 NWPX,NWPX Infrastructure Inc. Common Stock,Industrials,nasdaq_smid
-NWS,News Corporation Class B Common Stock,Consumer Discretionary,nasdaq_smid
-NWSA,News Corporation Class A Common Stock,Consumer Discretionary,nasdaq_smid
+NWS,News Corp (Class B),Communication Services,nasdaq_smid+sp500
+NWSA,News Corp (Class A),Communication Services,nasdaq_smid+sp500
 NX,Quanex Building Products Corporation,Industrials,nasdaq_smid+sp600
 NXDR,Nextdoor Holdings Inc. Class A Common Stock,Technology,nasdaq_smid
 NXP,Nuveen Select Tax Free Income Portfolio Common Stock,Finance,nasdaq_smid
+NXPI,NXP Semiconductors,Information Technology,sp500
 NXRT,"NexPoint Residential Trust, Inc.",Real Estate,nasdaq_smid+sp600
 NXST,Nexstar Media Group Inc. Common Stock,Industrials,nasdaq_smid
 NXT,Nextpower Inc. Common Stock,Technology,nasdaq_smid
 NYT,New York Times Company (The) Common Stock,Consumer Discretionary,nasdaq_smid
+O,Realty Income,Real Estate,sp500
 OABI,OmniAb Inc. Common Stock,Health Care,nasdaq_smid
 OBDC,Blue Owl Capital Corporation Common Stock,Finance,nasdaq_smid
 OBIO,Orchestra BioMed Holdings Inc. Ordinary Shares,Health Care,nasdaq_smid
@@ -1738,11 +1787,10 @@ OCSL,Oaktree Specialty Lending Corporation Common Stock,Finance,nasdaq_smid
 OCTV,Octave Intelligence plc Class B Ordinary Shares,Technology,nasdaq_smid
 OCUL,Ocular Therapeutix Inc. Common Stock,Health Care,nasdaq_smid
 ODC,Oil-Dri Corporation Of America Common Stock,Consumer Discretionary,nasdaq_smid
-ODFL,Old Dominion Freight Line Inc. Common Stock,Industrials,nasdaq_smid
+ODFL,Old Dominion,Industrials,nasdaq_smid+sp500
 ODTX,Odyssey Therapeutics Inc. Common Stock,Health Care,nasdaq_smid
 OFG,OFG Bancorp,Financials,sp600
 OFRM,Once Upon a Farm PBC Common Stock,Consumer Staples,nasdaq_smid
-OFSSH,OFS Capital Corporation 4.95% Notes due 2028,Finance,nasdaq_smid
 OGE,OGE Energy Corp Common Stock,Utilities,nasdaq_smid
 OGN,Organon & Co.,Health Care,nasdaq_smid+sp600
 OGS,ONE Gas Inc. Common Stock,Utilities,nasdaq_smid
@@ -1751,22 +1799,21 @@ OI,"O-I Glass, Inc.",Materials,nasdaq_smid+sp600
 OIG,Orion180 Insurance Group Inc. Class A common stock,Finance,nasdaq_smid
 OII,"Oceaneering International, Inc.",Energy,nasdaq_smid+sp600
 OIS,Oil States International Inc. Common Stock,Consumer Discretionary,nasdaq_smid
+OKE,Oneok,Energy,sp500
 OKLO,Oklo Inc. Class A common stock,Utilities,nasdaq_smid
-OKTA,Okta Inc. Class A Common Stock,Technology,nasdaq_smid
+OKTA,"Okta, Inc.",Information Technology,nasdaq_smid+sp500
 OLED,Universal Display Corporation Common Stock,Technology,nasdaq_smid
 OLLI,Ollie's Bargain Outlet Holdings Inc. Common Stock,Consumer Discretionary,nasdaq_smid
 OLMA,Olema Pharmaceuticals Inc. Common Stock,Health Care,nasdaq_smid
 OLN,Olin Corporation Common Stock,Industrials,nasdaq_smid
 OLP,One Liberty Properties Inc. Common Stock,Real Estate,nasdaq_smid
-OMC,Omnicom Group Inc. Common Stock,Consumer Discretionary,nasdaq_smid
+OMC,Omnicom Group,Communication Services,nasdaq_smid+sp500
 OMCL,Omnicell,Health Care,nasdaq_smid+sp600
 OMDA,Omada Health Inc. Common Stock,Health Care,nasdaq_smid
 OMER,Omeros Corporation Common Stock,Health Care,nasdaq_smid
 OMF,OneMain Holdings Inc. Common Stock,Finance,nasdaq_smid
-ON,ON Semiconductor Corporation Common Stock,Technology,nasdaq_smid
+ON,ON Semiconductor,Information Technology,nasdaq_smid+sp500
 ONB,Old National Bancorp Common Stock,Finance,nasdaq_smid
-ONBPO,Old National Bancorp Depositary Shares Each Representing a 1/40th Interest in a Share of Series C Preferred Stock,Finance,nasdaq_smid
-ONBPP,Old National Bancorp Depositary Shares Each Representing a 1/40th Interest in a Share of Series A Preferred Stock,Finance,nasdaq_smid
 ONDS,Ondas Inc. Common Stock,Technology,nasdaq_smid
 ONT,Onterris Inc. Common Stock,Consumer Discretionary,nasdaq_smid
 ONTO,Onto Innovation Inc. Common Stock,Industrials,nasdaq_smid
@@ -1782,9 +1829,11 @@ OPY,Oppenheimer Holdings Inc. Class A Common Stock (DE),Finance,nasdaq_smid
 ORA,Ormat Technologies Inc. Common Stock,Utilities,nasdaq_smid
 ORBS,Eightco Holdings Inc. Common Stock,Finance,nasdaq_smid
 ORC,Orchid Island Capital Inc. Common Stock,Real Estate,nasdaq_smid
+ORCL,Oracle Corporation,Information Technology,sp500
 ORI,Old Republic International Corporation Common Stock,Finance,nasdaq_smid
 ORIC,Oric Pharmaceuticals Inc. Common Stock,Health Care,nasdaq_smid
 ORKA,Oruka Therapeutics Inc. Common Stock,Health Care,nasdaq_smid
+ORLY,O'Reilly Automotive,Consumer Discretionary,sp500
 ORRF,Orrstown Financial Services Inc. Common Stock,Finance,nasdaq_smid
 OSBC,Old Second Bancorp Inc. Common Stock,Finance,nasdaq_smid
 OSCR,Oscar Health Inc. Class A Common Stock,Health Care,nasdaq_smid
@@ -1793,32 +1842,24 @@ OSK,Oshkosh Corporation (Holding Company)Common Stock,Industrials,nasdaq_smid
 OSPN,OneSpan Inc. Common Stock,Technology,nasdaq_smid
 OSW,OneSpaWorld Holdings Limited,Consumer Discretionary,sp600
 OTF,Blue Owl Technology Finance Corp. Common Stock,,nasdaq_smid
-OTIS,Otis Worldwide Corporation Common Stock ,Technology,nasdaq_smid
+OTIS,Otis Worldwide,Industrials,nasdaq_smid+sp500
 OTTR,Otter Tail Corporation,Utilities,nasdaq_smid+sp600
 OUST,Ouster Inc. Common Stock,Industrials,nasdaq_smid
 OUT,Outfront Media,Real Estate,nasdaq_smid+sp600
 OVID,Ovid Therapeutics Inc. Common Stock,Health Care,nasdaq_smid
 OWL,Blue Owl Capital Inc. Class A Common Stock,Finance,nasdaq_smid
 OXLC,Oxford Lane Capital Corp. Common Stock,Finance,nasdaq_smid
-OXLCL,Oxford Lane Capital Corp. 6.75% Notes due 2031,Finance,nasdaq_smid
-OXLCM,Oxford Lane Capital Corp. Preferred Stock Shares 8.25% Series 2031,Finance,nasdaq_smid
-OXLCN,Oxford Lane Capital Corp. 7.125% Series 2029 Term Preferred Stock,Finance,nasdaq_smid
-OXLCO,Oxford Lane Capital Corp. Preferred Stock Shares 6.00% Series 2029,Finance,nasdaq_smid
-OXLCZ,Oxford Lane Capital Corp. 5.00% Notes due 2027,Finance,nasdaq_smid
 OXM,Oxford Industries Inc. Common Stock,Industrials,nasdaq_smid
-OXSQG,Oxford Square Capital Corp. 5.50% Notes due 2028,Consumer Discretionary,nasdaq_smid
-OXY-WS,Occidental Petroleum Corporation Warrants ,Energy,nasdaq_smid
+OXY,Occidental Petroleum,Energy,sp500
 OZK,Bank OZK Common Stock,Finance,nasdaq_smid
-OZKAP,Bank OZK 4.625% Series A Non-Cumulative Perpetual Preferred Stock,Finance,nasdaq_smid
-P,Everpure Inc. Class A common stock,Technology,nasdaq_smid
-PAA,Plains All American Pipeline L.P. Common Units representing Limited Partner Interests,Energy,nasdaq_smid
+P,Everpure,Information Technology,nasdaq_smid+sp500
 PACB,Pacific Biosciences of California Inc. Common Stock,Industrials,nasdaq_smid
 PACK,Ranpak Holdings Corp Class A Common Stock,Consumer Discretionary,nasdaq_smid
 PACS,PACS Group Inc. Common Stock,Health Care,nasdaq_smid
 PAG,Penske Automotive Group Inc. Common Stock,Consumer Discretionary,nasdaq_smid
-PAGP,Plains GP Holdings L.P. Class A Units representing Limited Partner Interests,Energy,nasdaq_smid
 PAHC,Phibro Animal Health,Health Care,nasdaq_smid+sp600
 PANL,Pangaea Logistics Solutions Ltd. Common Shares,Consumer Discretionary,nasdaq_smid
+PANW,Palo Alto Networks,Information Technology,sp500
 PAR,PAR Technology Corporation Common Stock,Miscellaneous,nasdaq_smid
 PARR,"Par Pacific Holdings, Inc.",Energy,nasdaq_smid+sp600
 PATH,UiPath Inc. Class A Common Stock,Technology,nasdaq_smid
@@ -1827,7 +1868,7 @@ PAY,Paymentus Holdings Inc. Class A Common Stock,Consumer Discretionary,nasdaq_s
 PAYC,Paycom,Industrials,nasdaq_smid+sp600
 PAYO,Payoneer Global Inc.,Financials,nasdaq_smid+sp600
 PAYS,Paysign Inc. Common Stock,Technology,nasdaq_smid
-PAYX,Paychex Inc. Common Stock,Industrials,nasdaq_smid
+PAYX,Paychex,Industrials,nasdaq_smid+sp500
 PB,Prosperity Bancshares Inc. Common Stock,Finance,nasdaq_smid
 PBAM,Private Bancorp of America Inc. Common Stock,Finance,nasdaq_smid
 PBF,PBF Energy Inc. Class A Common Stock,Energy,nasdaq_smid
@@ -1837,12 +1878,12 @@ PBI,"Pitney Bowes, Inc.",Industrials,nasdaq_smid+sp600
 PBLS,Parabilis Medicines Inc. Common Stock,Health Care,nasdaq_smid
 PBT,Permian Basin Royalty Trust Common Stock,Energy,nasdaq_smid
 PBYI,Puma Biotechnology Inc Common Stock,Health Care,nasdaq_smid
+PCAR,Paccar,Industrials,sp500
 PCB,PCB Bancorp Common Stock,Finance,nasdaq_smid
-PCG,Pacific Gas & Electric Co. Common Stock,Utilities,nasdaq_smid
+PCG,PG&E Corporation,Utilities,nasdaq_smid+sp500
 PCOR,Procore Technologies Inc. Common Stock,Technology,nasdaq_smid
 PCRX,"Pacira BioSciences, Inc.",Health Care,nasdaq_smid+sp600
 PCT,PureCycle Technologies Inc. Common stock,Industrials,nasdaq_smid
-PCTTU,PureCycle Technologies Inc. Unit,Industrials,nasdaq_smid
 PCTY,Paylocity Holding Corporation Common Stock,Technology,nasdaq_smid
 PCVX,Vaxcyte Inc. Common Stock,Health Care,nasdaq_smid
 PD,PagerDuty Inc. Common Stock,Technology,nasdaq_smid
@@ -1854,26 +1895,30 @@ PDO,PIMCO Dynamic Income Opportunities Fund Common Shares of Beneficial Interest
 PEB,Pebblebrook Hotel Trust,Real Estate,nasdaq_smid+sp600
 PEBO,Peoples Bancorp Inc. Common Stock,Finance,nasdaq_smid
 PECO,Phillips Edison & Company,Real Estate,nasdaq_smid+sp600
-PEG,Public Service Enterprise Group Incorporated Common Stock,Utilities,nasdaq_smid
+PEG,Public Service Enterprise Group,Utilities,nasdaq_smid+sp500
 PEGA,Pegasystems Inc. Common Stock,Technology,nasdaq_smid
 PEN,Penumbra Inc. Common Stock,Health Care,nasdaq_smid
 PENG,"Penguin Solutions, Inc.",Information Technology,nasdaq_smid+sp600
 PENN,Penn Entertainment,Consumer Discretionary,nasdaq_smid+sp600
+PEP,PepsiCo,Consumer Staples,sp500
 PFBC,Preferred Bank,Financials,sp600
-PFG,Principal Financial Group Inc Common Stock,Finance,nasdaq_smid
+PFE,Pfizer,Health Care,sp500
+PFG,Principal Financial Group,Financials,nasdaq_smid+sp500
 PFGC,Performance Food Group Company Common Stock,Consumer Discretionary,nasdaq_smid
-PFH,Prudential Financial Inc. 4.125% Junior Subordinated Notes due 2060,Finance,nasdaq_smid
 PFIS,Peoples Financial Services Corp. Common Stock,Finance,nasdaq_smid
 PFLT,PennantPark Floating Rate Capital Ltd. Common Stock,Finance,nasdaq_smid
 PFS,"Provident Financial Services, Inc.",Financials,nasdaq_smid+sp600
 PFSI,PennyMac Financial Services Inc. Common Stock,Finance,nasdaq_smid
+PG,Procter & Gamble,Consumer Staples,sp500
 PGC,Peapack-Gladstone Financial Corporation Common Stock,Finance,nasdaq_smid
 PGEN,Precigen Inc. Common Stock,Health Care,nasdaq_smid
 PGNY,"Progyny, Inc.",Health Care,nasdaq_smid+sp600
+PGR,Progressive Corporation,Financials,sp500
 PGY,Pagaya Technologies Ltd. Class A Ordinary Shares,Finance,nasdaq_smid
+PH,Parker Hannifin,Industrials,sp500
 PHAT,Phathom Pharmaceuticals Inc. Common Stock,Health Care,nasdaq_smid
 PHIN,"PHINIA, Inc.",Consumer Discretionary,nasdaq_smid+sp600
-PHM,PulteGroup Inc. Common Stock,Consumer Discretionary,nasdaq_smid
+PHM,PulteGroup,Consumer Discretionary,nasdaq_smid+sp500
 PHR,Phreesia Inc. Common Stock,Consumer Discretionary,nasdaq_smid
 PI,"Impinj, Inc.",Information Technology,nasdaq_smid+sp600
 PII,Polaris Inc. Common Stock,Consumer Discretionary,nasdaq_smid
@@ -1882,39 +1927,40 @@ PIPR,Piper Sandler Companies,Financials,nasdaq_smid+sp600
 PJT,"PJT Partners, Inc.",Financials,nasdaq_smid+sp600
 PK,Park Hotels & Resorts Inc. Common Stock ,Consumer Discretionary,nasdaq_smid
 PKBK,Parke Bancorp Inc. Common Stock,Finance,nasdaq_smid
-PKE,Park Aerospace Corp. Common Stock,Industrials,nasdaq_smid
-PKG,Packaging Corporation of America Common Stock,Consumer Discretionary,nasdaq_smid
+PKG,Packaging Corporation of America,Materials,nasdaq_smid+sp500
 PKOH,Park-Ohio Holdings Corp. Common Stock,Industrials,nasdaq_smid
 PL,Planet Labs PBC Class A Common Stock,Technology,nasdaq_smid
 PLAB,"Photronics, Inc.",Information Technology,nasdaq_smid+sp600
 PLBC,Plumas Bancorp,Finance,nasdaq_smid
+PLD,Prologis,Real Estate,sp500
 PLMR,"Palomar Holdings, Inc.",Financials,nasdaq_smid+sp600
 PLNT,Planet Fitness Inc. Common Stock,Consumer Discretionary,nasdaq_smid
 PLOW,Douglas Dynamics Inc. Common Stock,Industrials,nasdaq_smid
 PLPC,Preformed Line Products Company Common Stock,Industrials,nasdaq_smid
 PLSE,Pulse Biosciences Inc Common Stock (DE),Health Care,nasdaq_smid
+PLTR,Palantir Technologies,Information Technology,sp500
 PLUG,Plug Power Inc. Common Stock,Energy,nasdaq_smid
 PLUS,"ePlus, Inc.",Information Technology,nasdaq_smid+sp600
 PLXS,Plexus Corp.,Information Technology,nasdaq_smid+sp600
+PM,Philip Morris International,Consumer Staples,sp500
 PMM,Franklin Managed Municipal Income Trust Shares of Beneficial Interest,Finance,nasdaq_smid
 PMO,Franklin Municipal Opportunities Trust Shares of Beneficial Interest,Finance,nasdaq_smid
 PMT,PennyMac Mortgage Investment Trust,Real Estate,nasdaq_smid+sp600
-PMTU,PennyMac Mortgage Investment Trust 8.50% Senior Notes due 2028,Real Estate,nasdaq_smid
+PNC,PNC Financial Services,Financials,sp500
 PNFP,Pinnacle Financial Partners Inc. Common stock,Finance,nasdaq_smid
+PNR,Pentair,Industrials,sp500
 PNTG,The Pennant Group Inc. Common Stock ,Health Care,nasdaq_smid
-PNW,Pinnacle West Capital Corporation Common Stock,Utilities,nasdaq_smid
-PODD,Insulet Corporation Common Stock,Health Care,nasdaq_smid
+PNW,Pinnacle West Capital,Utilities,nasdaq_smid+sp500
+PODD,Insulet Corporation,Health Care,nasdaq_smid+sp500
 POOL,Pool Corporation,Consumer Discretionary,nasdaq_smid+sp600
 POR,Portland General Electric Co Common Stock,Utilities,nasdaq_smid
 POST,Post Holdings Inc. Common Stock,Consumer Staples,nasdaq_smid
 POWI,Power Integrations,Information Technology,nasdaq_smid+sp600
 POWL,"Powell Industries, Inc.",Industrials,nasdaq_smid+sp600
-POWWP,Outdoor Holding Company 8.75% Series A Cumulative Redeemable Perpetual Preferred Stock,Industrials,nasdaq_smid
 PPC,Pilgrim's Pride Corporation Common Stock,Consumer Staples,nasdaq_smid
-PPG,PPG Industries Inc. Common Stock,Consumer Discretionary,nasdaq_smid
+PPG,PPG Industries,Materials,nasdaq_smid+sp500
 PPHC,Public Policy Holding Company Inc. Common Stock,,nasdaq_smid
-PPL,PPL Corporation Common Stock,Utilities,nasdaq_smid
-PPLC,PPL Corporation Corporate Units,Utilities,nasdaq_smid
+PPL,PPL Corporation,Utilities,nasdaq_smid+sp500
 PPLI,People Inc.,Communication Services,nasdaq_smid+sp600
 PPT,Franklin Premier Income Trust Shares of Beneficial Interest,Finance,nasdaq_smid
 PR,Permian Resources Corporation Class A Common Stock,Energy,nasdaq_smid
@@ -1926,8 +1972,6 @@ PRDO,Perdoceo Education Corp.,Consumer Discretionary,nasdaq_smid+sp600
 PRG,"PROG Holdings, Inc.",Financials,nasdaq_smid+sp600
 PRGO,Perrigo,Health Care,nasdaq_smid+sp600
 PRGS,Progress Software Corporation,Information Technology,nasdaq_smid+sp600
-PRH,Prudential Financial Inc. 5.950% Junior Subordinated Notes due 2062,Finance,nasdaq_smid
-PRHIZ,Presurance Holdings Inc. 9.75% Senior Unsecured Notes due 2028,Finance,nasdaq_smid
 PRI,Primerica Inc. Common Stock,Finance,nasdaq_smid
 PRIM,Primoris Services Corporation,Industrials,nasdaq_smid+sp600
 PRK,Park National Corp.,Financials,nasdaq_smid+sp600
@@ -1936,21 +1980,21 @@ PRLB,Protolabs,Industrials,nasdaq_smid+sp600
 PRMB,Primo Brands Corporation Class A Common Stock,Consumer Staples,nasdaq_smid
 PRME,Prime Medicine Inc. Common Stock,Health Care,nasdaq_smid
 PROK,ProKidney Corp. Class A Ordinary Shares,Health Care,nasdaq_smid
-PRS,Prudential Financial Inc. 5.625% Junior Subordinated Notes due 2058,Finance,nasdaq_smid
 PRSU,"Pursuit Attractions & Hospitality, Inc.",Consumer Discretionary,nasdaq_smid+sp600
 PRTA,Prothena Corporation plc Ordinary Shares,Health Care,nasdaq_smid
 PRTH,Priority Technology Holdings Inc. Common Stock,Consumer Discretionary,nasdaq_smid
-PRU,Prudential Financial Inc. Common Stock,Finance,nasdaq_smid
+PRU,Prudential Financial,Financials,nasdaq_smid+sp500
 PRVA,"Privia Health Group, Inc.",Health Care,nasdaq_smid+sp600
 PS,Pershing Square Inc. Common Stock,Finance,nasdaq_smid
+PSA,Public Storage,Real Estate,sp500
 PSEC,Prospect Capital Corporation Common Stock,Finance,nasdaq_smid
 PSIX,Power Solutions International Inc. Common Stock,Industrials,nasdaq_smid
 PSMT,PriceSmart,Consumer Staples,nasdaq_smid+sp600
 PSN,Parsons Corporation Common Stock,Technology,nasdaq_smid
 PSNL,Personalis Inc. Common Stock,Health Care,nasdaq_smid
 PSTL,Postal Realty Trust Inc. Class A Common Stock,Real Estate,nasdaq_smid
-PTA,Cohen & Steers Tax-Advantaged Preferred Securities and Income Fund Common Shares of Beneficial Interest,Finance,nasdaq_smid
-PTC,PTC Inc. Common Stock,Technology,nasdaq_smid
+PSX,Phillips 66,Energy,sp500
+PTC,PTC Inc.,Information Technology,nasdaq_smid+sp500
 PTCT,"PTC Therapeutics, Inc.",Health Care,nasdaq_smid+sp600
 PTEN,"Patterson-UTI Energy, Inc.",Energy,nasdaq_smid+sp600
 PTGX,"Protagonist Therapeutics, Inc.",Health Care,nasdaq_smid+sp600
@@ -1963,11 +2007,13 @@ PURR,Hyperliquid Strategies Inc Common Stock,Finance,nasdaq_smid
 PVH,PVH Corp. Common Stock,Industrials,nasdaq_smid
 PVLA,Palvella Therapeutics Inc. Common Stock,Health Care,nasdaq_smid
 PWP,Perella Weinberg Partners Class A Common Stock,Finance,nasdaq_smid
+PWR,Quanta Services,Industrials,sp500
 PXED,Phoenix Education Partners Inc. Common Stock,Real Estate,nasdaq_smid
-PYPL,PayPal Holdings Inc. Common Stock,Industrials,nasdaq_smid
+PYPL,PayPal,Financials,nasdaq_smid+sp500
 PZZA,Papa John's Pizza,Consumer Discretionary,nasdaq_smid+sp600
-Q,Qnity Electronics Inc. Common Stock,Technology,nasdaq_smid
+Q,Qnity Electronics,Information Technology,nasdaq_smid+sp500
 QBTS,D-Wave Quantum Inc. Common Stock,Technology,nasdaq_smid
+QCOM,Qualcomm,Information Technology,sp500
 QCRH,QCR Holdings Inc. Common Stock,Finance,nasdaq_smid
 QDEL,QuidelOrtho,Health Care,nasdaq_smid+sp600
 QLYS,Qualys Inc. Common Stock,Technology,nasdaq_smid
@@ -1996,16 +2042,16 @@ RCAT,Red Cat Holdings Inc. Common Stock,Technology,nasdaq_smid
 RCBC,River City Bank Common stock,Finance,nasdaq_smid
 RCEL,Avita Medical Inc. Common Stock,Health Care,nasdaq_smid
 RCKY,Rocky Brands Inc. Common Stock,Consumer Discretionary,nasdaq_smid
+RCL,Royal Caribbean Group,Consumer Discretionary,sp500
 RCUS,"Arcus Biosciences, Inc.",Health Care,nasdaq_smid+sp600
-RDDT,Reddit Inc. Class A Common Stock,Technology,nasdaq_smid
+RDDT,Reddit,Communication Services,nasdaq_smid+sp500
 RDN,"Radian Group, Inc.",Financials,nasdaq_smid+sp600
 RDNT,"RadNet, Inc.",Health Care,nasdaq_smid+sp600
 RDVT,Red Violet Inc. Common Stock ,Technology,nasdaq_smid
 RDW,Redwire Corporation Common Stock,Industrials,nasdaq_smid
 REAL,The RealReal Inc. Common Stock,Consumer Discretionary,nasdaq_smid
-REG,Regency Centers Corporation Common Stock,Real Estate,nasdaq_smid
-REGCO,Regency Centers Corporation 5.875% Series B Cumulative Redeemable Preferred Stock,Real Estate,nasdaq_smid
-REGCP,Regency Centers Corporation 6.25% Series A Cumulative Redeemable Preferred Stock,Real Estate,nasdaq_smid
+REG,Regency Centers,Real Estate,nasdaq_smid+sp500
+REGN,Regeneron Pharmaceuticals,Health Care,sp500
 RELY,Remitly,Financials,nasdaq_smid+sp600
 REPL,Replimune Group Inc. Common Stock,Health Care,nasdaq_smid
 REPX,Riley Exploration Permian Inc. Common Stock,Energy,nasdaq_smid
@@ -2014,7 +2060,7 @@ REX,REX American Resources Corporation,Energy,nasdaq_smid+sp600
 REXR,Rexford Industrial Realty Inc. Common Stock,Real Estate,nasdaq_smid
 REYN,Reynolds Consumer Products,Consumer Staples,nasdaq_smid+sp600
 REZI,"Resideo Technologies, Inc.",Industrials,nasdaq_smid+sp600
-RF,Regions Financial Corporation Common Stock,Finance,nasdaq_smid
+RF,Regions Financial Corporation,Financials,nasdaq_smid+sp500
 RFI,Cohen & Steers Total Return Realty Fund Inc. Common Stock,Finance,nasdaq_smid
 RGA,Reinsurance Group of America Incorporated Common Stock,Finance,nasdaq_smid
 RGEN,Repligen Corporation Common Stock,Health Care,nasdaq_smid
@@ -2022,23 +2068,19 @@ RGLD,Royal Gold Inc. Common Stock,Industrials,nasdaq_smid
 RGNX,REGENXBIO Inc. Common Stock,Health Care,nasdaq_smid
 RGR,Sturm Ruger & Company Inc. Common Stock,Industrials,nasdaq_smid
 RGTI,Rigetti Computing Inc. Common Stock,Technology,nasdaq_smid
-RGTIW,Rigetti Computing Inc. Warrants,Technology,nasdaq_smid
 RH,RH Common Stock,Consumer Discretionary,nasdaq_smid
 RHI,Robert Half,Industrials,nasdaq_smid+sp600
 RHLD,Resolute Holdings Management Common Stock ,Finance,nasdaq_smid
 RHP,Ryman Hospitality Properties,Real Estate,nasdaq_smid+sp600
 RIGL,Rigel Pharmaceuticals Inc. Common Stock,Health Care,nasdaq_smid
-RILYG,BRC Group Holdings Inc. 5.00% Senior Notes due 2026,Finance,nasdaq_smid
-RILYT,BRC Group Holdings Inc. 6.00% Senior Notes Due 2028,Finance,nasdaq_smid
-RILYZ,BRC Group Holdings Inc. 5.25% Senior Notes due 2028,Finance,nasdaq_smid
 RIOT,Riot Platforms Inc. Common Stock ,Finance,nasdaq_smid
 RITM,Rithm Capital,Financials,nasdaq_smid+sp600
 RIVN,Rivian Automotive Inc. Class A Common Stock,Industrials,nasdaq_smid
 RJET,Republic Airways Holdings Inc. Common Stock,Consumer Discretionary,nasdaq_smid
-RJF,Raymond James Financial Inc. Common Stock,Finance,nasdaq_smid
+RJF,Raymond James Financial,Financials,nasdaq_smid+sp500
 RKLB,Rocket Lab Corporation Common Stock,Industrials,nasdaq_smid
 RKT,Rocket Companies Inc. Class A Common Stock,Finance,nasdaq_smid
-RL,Ralph Lauren Corporation Common Stock,Industrials,nasdaq_smid
+RL,Ralph Lauren Corporation,Consumer Discretionary,nasdaq_smid+sp500
 RLAY,Relay Therapeutics Inc. Common Stock,Health Care,nasdaq_smid
 RLGT,Radiant Logistics Inc. Common Stock,Industrials,nasdaq_smid
 RLI,RLI Corp. Common Stock (DE),Finance,nasdaq_smid
@@ -2046,21 +2088,21 @@ RLJ,RLJ Lodging Trust Common Shares of Beneficial Interest $0.01 par value,Real 
 RLMD,Relmada Therapeutics Inc. Common Stock,Health Care,nasdaq_smid
 RM,Regional Management Corp. Common Stock,Finance,nasdaq_smid
 RMBS,Rambus Inc. Common Stock,Technology,nasdaq_smid
-RMD,ResMed Inc. Common Stock,Health Care,nasdaq_smid
+RMD,ResMed,Health Care,nasdaq_smid+sp500
 RMIX,Suncrete Inc. Class A Common Stock,Industrials,nasdaq_smid
 RMNI,Rimini Street Inc. (DE) Common Stock,Consumer Discretionary,nasdaq_smid
 RMR,The RMR Group Inc. Class A Common Stock,Consumer Discretionary,nasdaq_smid
 RMT,Royce Micro-Cap Trust Inc. Common Stock,Finance,nasdaq_smid
 RNG,"RingCentral, Inc.",Information Technology,nasdaq_smid+sp600
-RNP,Cohen & Steers REIT and Preferred and Income Fund Inc. Common Shares,Finance,nasdaq_smid
 RNST,Renasant Corp.,Financials,nasdaq_smid+sp600
 ROAD,"Construction Partners, Inc.",Industrials,nasdaq_smid+sp600
 ROCK,"Gibraltar Industries, Inc.",Industrials,nasdaq_smid+sp600
 ROG,Rogers Corporation,Information Technology,nasdaq_smid+sp600
-ROK,Rockwell Automation Inc. Common Stock,Industrials,nasdaq_smid
-ROL,Rollins Inc. Common Stock,Consumer Discretionary,nasdaq_smid
+ROK,Rockwell Automation,Industrials,nasdaq_smid+sp500
+ROL,"Rollins, Inc.",Industrials,nasdaq_smid+sp500
 ROOT,Root Inc. Class A Common Stock,Finance,nasdaq_smid
-ROP,Roper Technologies Inc. Common Stock,Industrials,nasdaq_smid
+ROP,Roper Technologies,Information Technology,nasdaq_smid+sp500
+ROST,Ross Stores,Consumer Discretionary,sp500
 RPAY,Repay Holdings Corporation Class A Common Stock,Consumer Discretionary,nasdaq_smid
 RPC,Ridgepost Capital Inc. Class A Common Stock,Finance,nasdaq_smid
 RPD,Rapid7 Inc. Common Stock,Technology,nasdaq_smid
@@ -2072,26 +2114,21 @@ RRC,Range Resources Corporation Common Stock,Energy,nasdaq_smid
 RRR,"Red Rock Resorts, Inc.",Consumer Discretionary,nasdaq_smid+sp600
 RRX,Regal Rexnord Corporation Common Stock,Industrials,nasdaq_smid
 RS,Reliance Inc. Common Stock,Industrials,nasdaq_smid
+RSG,Republic Services,Industrials,sp500
 RSI,"Rush Street Interactive, Inc.",Consumer Discretionary,nasdaq_smid+sp600
 RSVR,Reservoir Media Inc. Common Stock,Consumer Discretionary,nasdaq_smid
-RTO,Rentokil Initial plc American Depositary Shares (each representing five (5) Ordinary Shares),Consumer Discretionary,nasdaq_smid
+RTX,RTX Corporation,Industrials,sp500
 RUM,RUM Group Inc. Class A Common Stock,Technology,nasdaq_smid
-RUMBW,RUM Group Inc. Warrant,Technology,nasdaq_smid
 RUN,Sunrun,Industrials,nasdaq_smid+sp600
 RUSHA,Rush Enterprises,Industrials,nasdaq_smid+sp600
 RUSHB,Rush Enterprises Inc. Class B,Consumer Discretionary,nasdaq_smid
 RVLV,Revolve Group Inc. Class A Common Stock,Consumer Discretionary,nasdaq_smid
 RVMD,Revolution Medicines Inc. Common Stock,Health Care,nasdaq_smid
-RVMDW,Revolution Medicines Inc. Warrant,Health Care,nasdaq_smid
 RVT,Royce Small-Cap Trust Inc. Common Stock,Finance,nasdaq_smid
-RVTY,Revvity Inc. Common Stock,Industrials,nasdaq_smid
-RWAYL,Runway Growth Finance Corp. 7.50% Notes due 2027,Finance,nasdaq_smid
+RVTY,Revvity,Health Care,nasdaq_smid+sp500
 RWT,Redwood Trust Inc. Common Stock,Real Estate,nasdaq_smid
-RWTN,Redwood Trust Inc. 9.125% Senior Notes Due 2029,Real Estate,nasdaq_smid
-RWTO,Redwood Trust Inc. 9.00% Senior Notes Due 2029,Real Estate,nasdaq_smid
 RXO,"RXO, Inc.",Industrials,nasdaq_smid+sp600
 RXRX,Recursion Pharmaceuticals Inc. Class A Common Stock,Health Care,nasdaq_smid
-RXT,Rackspace Technology Inc. Common Stock,Technology,nasdaq_smid
 RYAM,Rayonier Advanced Materials Inc. Common Stock,Basic Materials,nasdaq_smid
 RYAN,Ryan Specialty Holdings Inc. Class A Common Stock,Finance,nasdaq_smid
 RYN,Rayonier Inc. REIT Common Stock,Real Estate,nasdaq_smid
@@ -2107,16 +2144,11 @@ SAH,"Sonic Automotive, Inc.",Consumer Discretionary,nasdaq_smid+sp600
 SAIA,Saia Inc. Common Stock,Industrials,nasdaq_smid
 SAIC,Science Applications International Corporation Common Stock,Technology,nasdaq_smid
 SAIL,SailPoint Inc. Common Stock,Technology,nasdaq_smid
-SAJ,Saratoga Investment Corp 8.00% Notes due 2027,Finance,nasdaq_smid
 SAM,Boston Beer Company Inc. (The) Common Stock,Consumer Staples,nasdaq_smid
 SANA,Sana Biotechnology Inc. Common Stock,Health Care,nasdaq_smid
 SANM,Sanmina Corporation Common Stock,Technology,nasdaq_smid
 SARO,StandardAero Inc. Common Stock,Industrials,nasdaq_smid
-SATA,Strive Inc. Variable Rate Series A Perpetual Preferred Stock,Finance,nasdaq_smid
-SATS,Strive Inc. 15% Series A Perpetual SATS Preferred Stock,Finance,nasdaq_smid
-SAY,Saratoga Investment Corp 8.125% Notes due 2027,Finance,nasdaq_smid
-SAZ,Saratoga Investment Corp 8.50% Notes due 2028,Finance,nasdaq_smid
-SBAC,SBA Communications Corporation Class A Common Stock,Real Estate,nasdaq_smid
+SBAC,SBA Communications,Real Estate,nasdaq_smid+sp500
 SBC,SBC Medical Group Holdings Incorporated Common Stock,Health Care,nasdaq_smid
 SBCF,Seacoast Banking Corporation of Florida,Financials,nasdaq_smid+sp600
 SBET,Sharplink Inc. Common Stock,Technology,nasdaq_smid
@@ -2125,18 +2157,15 @@ SBH,"Sally Beauty Holdings, Inc.",Consumer Discretionary,nasdaq_smid+sp600
 SBR,Sabine Royalty Trust Common Stock,Energy,nasdaq_smid
 SBRA,Sabra Health Care REIT Inc. Common Stock,Real Estate,nasdaq_smid
 SBSI,"Southside Bancshares, Inc.",Financials,nasdaq_smid+sp600
-SCCD,Sachem Capital Corp. 6.00% Notes due 2026,Real Estate,nasdaq_smid
-SCCE,Sachem Capital Corp. 6.00% Notes due 2027,Real Estate,nasdaq_smid
-SCCF,Sachem Capital Corp. 7.125% Notes due 2027,Real Estate,nasdaq_smid
-SCCG,Sachem Capital Corp. 8.00% Notes due 2027,Real Estate,nasdaq_smid
+SBUX,Starbucks,Consumer Discretionary,sp500
 SCHL,Scholastic Corporation,Consumer Discretionary,nasdaq_smid+sp600
+SCHW,Charles Schwab Corporation,Financials,sp500
 SCI,Service Corporation International Common Stock,Consumer Discretionary,nasdaq_smid
 SCL,Stepan Company,Materials,nasdaq_smid+sp600
 SCSC,"ScanSource, Inc.",Information Technology,nasdaq_smid+sp600
 SD,SandRidge Energy Inc. Common Stock,Energy,nasdaq_smid
 SDGR,"Schrödinger, Inc.",Health Care,nasdaq_smid+sp600
 SDHC,Smith Douglas Homes Corp. Class A Common Stock,Consumer Discretionary,nasdaq_smid
-SE,Sea Limited American Depositary Shares each representing one Class A Ordinary Share,Consumer Discretionary,nasdaq_smid
 SEB,Seaboard Corporation Common Stock,Industrials,nasdaq_smid
 SEDG,SolarEdge,Information Technology,sp600
 SEI,"Solaris Energy Infrastructure, Inc.",Energy,nasdaq_smid+sp600
@@ -2147,7 +2176,6 @@ SENS,Senseonics Holdings Inc. Common Stock,Health Care,nasdaq_smid
 SEPN,Septerna Inc. Common Stock,Health Care,nasdaq_smid
 SEZL,Sezzle,Financials,nasdaq_smid+sp600
 SF,Stifel Financial Corporation Common Stock,Finance,nasdaq_smid
-SFB,Stifel Financial Corporation 5.20% Senior Notes due 2047,Finance,nasdaq_smid
 SFBS,"ServisFirst Bancshares, Inc.",Financials,nasdaq_smid+sp600
 SFD,Smithfield Foods Inc. Common Stock,Consumer Staples,nasdaq_smid
 SFIX,Stitch Fix Inc. Class A Common Stock,Consumer Discretionary,nasdaq_smid
@@ -2170,30 +2198,29 @@ SHLS,Shoals Technologies Group Inc. Class A Common Stock,Technology,nasdaq_smid
 SHO,"Sunstone Hotel Investors, Inc.",Real Estate,nasdaq_smid+sp600
 SHOE,Shoe Station Group Inc. Common Stock,Consumer Discretionary,nasdaq_smid
 SHOO,"Steven Madden, Ltd.",Consumer Discretionary,nasdaq_smid+sp600
+SHW,Sherwin-Williams,Materials,sp500
 SI,Shoulder Innovations Inc. Common Stock,Health Care,nasdaq_smid
 SIBN,SI-BONE Inc. Common Stock,Health Care,nasdaq_smid
 SIG,Signet Jewelers,Consumer Discretionary,sp600
 SIGI,Selective Insurance Group Inc. Common Stock,Finance,nasdaq_smid
-SIGIP,Selective Insurance Group Inc. Depositary Shares each representing a 1/1000th interest in a share of 4.60% Non-Cumulative Preferred Stock Series B,Finance,nasdaq_smid
 SIRI,SiriusXM Holdings Inc. Common Stock,Consumer Discretionary,nasdaq_smid
 SITE,SiteOne Landscape Supply Inc. Common Stock,Consumer Discretionary,nasdaq_smid
 SITM,SiTime Corporation Common Stock,Technology,nasdaq_smid
-SJM,The J.M. Smucker Company Common Stock,Consumer Staples,nasdaq_smid
+SJM,J.M. Smucker Company (The),Consumer Staples,nasdaq_smid+sp500
 SKT,"Tanger Factory Outlet Centers, Inc.",Real Estate,nasdaq_smid+sp600
 SKWD,Skyward Specialty Insurance Group Inc. Common Stock,Finance,nasdaq_smid
 SKY,"Champion Homes, Inc.",Consumer Discretionary,nasdaq_smid+sp600
-SKYD,Skydance Corporation Class B Common Stock,Industrials,nasdaq_smid
+SKYD,Skydance,Communication Services,nasdaq_smid+sp500
 SKYH,Sky Harbour Group Corporation Class A Common Stock,Finance,nasdaq_smid
 SKYW,"SkyWest, Inc.",Industrials,nasdaq_smid+sp600
 SLAB,Silicon Laboratories Inc. Common Stock,Technology,nasdaq_smid
+SLB,Schlumberger,Energy,sp500
 SLDB,Solid Biosciences Inc. Common Stock,Health Care,nasdaq_smid
 SLDE,Slide Insurance Holdings Inc. Common Stock,Finance,nasdaq_smid
 SLDP,Solid Power Inc. Class A Common Stock,Miscellaneous,nasdaq_smid
 SLG,SL Green Realty,Real Estate,nasdaq_smid+sp600
 SLGN,Silgan Holdings Inc. Common Stock,Industrials,nasdaq_smid
 SLM,SLM Corporation Common Stock,Finance,nasdaq_smid
-SLMBP,SLM Corporation Floating Rate Non-Cumulative Preferred Stock Series B,Finance,nasdaq_smid
-SLNHP,Soluna Holdings Inc 9.0% Series A Cumulative Perpetual Preferred Stock ,Technology,nasdaq_smid
 SLRC,SLR Investment Corp. Common Stock,Finance,nasdaq_smid
 SLS,SELLAS Life Sciences Group Inc. Common Stock,Health Care,nasdaq_smid
 SLVM,Sylvamo Corp.,Materials,nasdaq_smid+sp600
@@ -2202,8 +2229,7 @@ SMA,SmartStop Self Storage REIT Inc. Common Stock,Real Estate,nasdaq_smid
 SMBC,Southern Missouri Bancorp Inc. Common Stock,Finance,nasdaq_smid
 SMBK,SmartFinancial Inc. Common Stock,Finance,nasdaq_smid
 SMC,Summit Midstream Corporation Common Stock,Utilities,nasdaq_smid
-SMCI,Super Micro Computer Inc. Common Stock,Technology,nasdaq_smid
-SMCIP,Super Micro Computer Inc. Depositary Shares representing a 1/20th Interest in a Share of 7% Series A Mandatory Convertible Preferred Stock,Technology,nasdaq_smid
+SMCI,Supermicro,Information Technology,nasdaq_smid+sp500
 SMG,Scotts Miracle-Gro Company (The) Common Stock,Industrials,nasdaq_smid
 SMMT,Summit Therapeutics Inc. Common Stock ,Health Care,nasdaq_smid
 SMP,"Standard Motor Products, Inc.",Consumer Discretionary,nasdaq_smid+sp600
@@ -2212,20 +2238,20 @@ SMR,NuScale Power Corporation Class A Common Stock,Industrials,nasdaq_smid
 SMRT,SmartRent Inc. Class A Common Stock,Technology,nasdaq_smid
 SMTC,Semtech Corporation Common Stock,Technology,nasdaq_smid
 SN,SharkNinja Inc. Ordinary Shares,Consumer Discretionary,nasdaq_smid
-SNA,Snap-On Incorporated Common Stock,Consumer Discretionary,nasdaq_smid
+SNA,Snap-on,Industrials,nasdaq_smid+sp500
 SNAP,Snap Inc. Class A Common Stock,Technology,nasdaq_smid
 SNDA,Sonida Senior Living Inc. Common Stock,Health Care,nasdaq_smid
+SNDK,Sandisk,Information Technology,sp500
 SNDR,Schneider National,Industrials,nasdaq_smid+sp600
 SNDX,Syndax Pharmaceuticals Inc. Common Stock,Health Care,nasdaq_smid
 SNEX,StoneX Group Inc.,Financials,nasdaq_smid+sp600
+SNPS,Synopsys,Information Technology,sp500
 SNX,TD SYNNEX Corporation Common Stock,Technology,nasdaq_smid
+SO,Southern Company,Utilities,sp500
 SOC,Sable Offshore Corp. Common Stock,Energy,nasdaq_smid
 SOFI,SoFi Technologies Inc. Common Stock  ,Finance,nasdaq_smid
-SOJC,Southern Company (The) Series 2017B 5.25% Junior Subordinated Notes due December 1 2077,Utilities,nasdaq_smid
-SOJD,Southern Company (The) Series 2020A 4.95% Junior Subordinated Notes due January 30 2080,Utilities,nasdaq_smid
-SOJE,Southern Company (The) Series 2020C 4.20% Junior Subordinated Notes due October 15 2060,Utilities,nasdaq_smid
 SOLS,Solstice Advanced Materials Inc. Common Stock ,Industrials,nasdaq_smid
-SOLV,Solventum Corporation Common Stock,Health Care,nasdaq_smid
+SOLV,Solventum,Health Care,nasdaq_smid+sp500
 SON,Sonoco Products Company Common Stock,Consumer Discretionary,nasdaq_smid
 SONO,"Sonos, Inc.",Consumer Discretionary,nasdaq_smid+sp600
 SOR,Source Capital Inc. Cmn Shs of BI,Finance,nasdaq_smid
@@ -2233,6 +2259,8 @@ SOUN,SoundHound AI Inc Class A Common Stock,Technology,nasdaq_smid
 SPB,Spectrum Brands Holdings Inc. Common Stock,Miscellaneous,nasdaq_smid
 SPCE,Virgin Galactic Holdings Inc. Common Stock,Consumer Discretionary,nasdaq_smid
 SPFI,South Plains Financial Inc. Common Stock,Finance,nasdaq_smid
+SPG,Simon Property Group,Real Estate,sp500
+SPGI,S&P Global,Financials,sp500
 SPH,Suburban Propane Partners L.P. Common Stock,Consumer Discretionary,nasdaq_smid
 SPHR,Sphere Entertainment,Communication Services,nasdaq_smid+sp600
 SPIR,Spire Global Inc. Class A Common Stock,Consumer Discretionary,nasdaq_smid
@@ -2243,7 +2271,7 @@ SPTX,Seaport Therapeutics Inc. Common Stock,Health Care,nasdaq_smid
 SPXC,SPX Technologies Inc. Common Stock,Industrials,nasdaq_smid
 SR,Spire Inc. Common Stock,Utilities,nasdaq_smid
 SRCE,1st Source Corporation Common Stock,Finance,nasdaq_smid
-SREA,DBA Sempra 5.750% Junior Subordinated Notes due 2079,Utilities,nasdaq_smid
+SRE,Sempra,Utilities,sp500
 SRPT,Sarepta Therapeutics,Health Care,nasdaq_smid+sp600
 SRRK,Scholar Rock Holding Corporation Common Stock,Health Care,nasdaq_smid
 SRTA,Strata Critical Medical Inc. Class A Common Stock,Health Care,nasdaq_smid
@@ -2257,23 +2285,20 @@ STAG,Stag Industrial Inc. Common Stock,Real Estate,nasdaq_smid
 STBA,"S&T Bancorp, Inc.",Financials,nasdaq_smid+sp600
 STC,Stewart Information Services Corporation,Financials,nasdaq_smid+sp600
 STDN,Standard Nuclear Inc. Class A Common Stock,Basic Materials,nasdaq_smid
-STE,STERIS plc (Ireland) Ordinary Shares,Health Care,nasdaq_smid
+STE,Steris,Health Care,nasdaq_smid+sp500
 STEP,StepStone Group,Financials,nasdaq_smid+sp600
-STLD,Steel Dynamics Inc.,Industrials,nasdaq_smid
+STLD,Steel Dynamics,Materials,nasdaq_smid+sp500
 STLN,Starling Oncology Inc. Common Stock,Health Care,nasdaq_smid
 STOK,Stoke Therapeutics Inc. Common Stock,Health Care,nasdaq_smid
 STRA,"Strategic Education, Inc.",Consumer Discretionary,nasdaq_smid+sp600
-STRC,Strategy Inc Variable Rate Series A Perpetual Stretch Preferred Stock,Technology,nasdaq_smid
-STRD,Strategy Inc 10.00% Series A Perpetual Stride Preferred Stock,Technology,nasdaq_smid
-STRF,Strategy Inc 10.00% Series A Perpetual Strife Preferred Stock,Technology,nasdaq_smid
-STRK,Strategy Inc 8.00% Series A Perpetual Strike Preferred Stock,Technology,nasdaq_smid
 STRL,Sterling Infrastructure Inc. Common Stock,Industrials,nasdaq_smid
 STRZ,Starz Entertainment Corp. Common Shares,Consumer Discretionary,nasdaq_smid
-STT,State Street Corporation Common Stock,Finance,nasdaq_smid
+STT,State Street Corporation,Financials,nasdaq_smid+sp500
 STTK,Shattuck Labs Inc. Common Stock,Health Care,nasdaq_smid
 STUB,StubHub Holdings Inc. Class A Common Stock,Consumer Discretionary,nasdaq_smid
 STWD,STARWOOD PROPERTY TRUST INC. Starwood Property Trust Inc.,Real Estate,nasdaq_smid
-STZ,Constellation Brands Inc. Common Stock,Consumer Staples,nasdaq_smid
+STX,Seagate Technology,Information Technology,sp500
+STZ,Constellation Brands,Consumer Staples,nasdaq_smid+sp500
 SUI,Sun Communities Inc. Common Stock,Real Estate,nasdaq_smid
 SUJA,Suja Life Inc. Class A Common Stock,Consumer Staples,nasdaq_smid
 SUNB,Sunbelt Rentals Holdings Inc. Common Stock,Consumer Discretionary,nasdaq_smid
@@ -2281,22 +2306,24 @@ SUPN,"Supernus, Inc.",Health Care,sp600
 SVC,Service Properties Trust Common Shares of Beneficial Interest,Real Estate,nasdaq_smid
 SVRA,Savara Inc. Common Stock,Health Care,nasdaq_smid
 SVV,Savers Value Village Inc. Common Stock,Consumer Discretionary,nasdaq_smid
+SW,Smurfit Westrock,Materials,sp500
 SWBI,Smith & Wesson Brands Inc. Common Stock,Industrials,nasdaq_smid
 SWIM,Latham Group Inc. Common Stock,Industrials,nasdaq_smid
-SWK,Stanley Black & Decker Inc. Common Stock,Consumer Discretionary,nasdaq_smid
-SWKS,Skyworks Solutions Inc. Common Stock,Technology,nasdaq_smid
+SWK,Stanley Black & Decker,Industrials,nasdaq_smid+sp500
+SWKS,Skyworks Solutions,Information Technology,nasdaq_smid+sp500
 SWRD,Stewards Inc Common Stock,Finance,nasdaq_smid
 SWX,Southwest Gas Holdings Inc. Common Stock (DE),Utilities,nasdaq_smid
 SXC,SunCoke Energy Inc. Common Stock,Industrials,nasdaq_smid
 SXI,Standex International Corporation,Industrials,nasdaq_smid+sp600
 SXT,Sensient Technologies,Materials,nasdaq_smid+sp600
 SYBT,Stock Yards Bancorp Inc. Common Stock,Finance,nasdaq_smid
-SYF,Synchrony Financial Common Stock,Finance,nasdaq_smid
+SYF,Synchrony Financial,Financials,nasdaq_smid+sp500
+SYK,Stryker Corporation,Health Care,sp500
 SYM,Symbotic Inc. Class A Common Stock,Industrials,nasdaq_smid
 SYNA,Synaptics Incorporated Common Stock $0.001 Par Value,Technology,nasdaq_smid
 SYRE,Spyre Therapeutics Inc. Common Stock,Health Care,nasdaq_smid
-SYY,Sysco Corporation Common Stock,Consumer Discretionary,nasdaq_smid
-TACO,Berto Acquisition Corp. Ordinary Shares,Finance,nasdaq_smid
+SYY,Sysco,Consumer Staples,nasdaq_smid+sp500
+T,AT&T,Communication Services,sp500
 TALO,"Talos Energy, Inc.",Energy,nasdaq_smid+sp600
 TARS,Tarsus Pharmaceuticals Inc. Common Stock,Health Care,nasdaq_smid
 TASK,TaskUs Inc. Class A Common Stock,Technology,nasdaq_smid
@@ -2310,19 +2337,23 @@ TCMD,Tactile Systems Technology Inc. Common Stock,Health Care,nasdaq_smid
 TCPC,BlackRock TCP Capital Corp. Common Stock,Finance,nasdaq_smid
 TDAY,USA TODAY Co. Inc. Common Stock,Consumer Discretionary,nasdaq_smid
 TDC,Teradata,Information Technology,nasdaq_smid+sp600
+TDG,TransDigm Group,Industrials,sp500
 TDOC,Teladoc Health Inc. Common Stock,Health Care,nasdaq_smid
 TDS,"Telephone and Data Systems, Inc.",Communication Services,nasdaq_smid+sp600
 TDW,"Tidewater, Inc.",Energy,nasdaq_smid+sp600
-TDY,Teledyne Technologies Incorporated Common Stock,Industrials,nasdaq_smid
-TECH,Bio-Techne Corp Common Stock,Health Care,nasdaq_smid
+TDY,Teledyne Technologies,Information Technology,nasdaq_smid+sp500
+TECH,Bio-Techne,Health Care,nasdaq_smid+sp500
 TECX,Tectonic Therapeutic Inc. Common Stock,Health Care,nasdaq_smid
+TEL,TE Connectivity,Information Technology,sp500
 TEM,Tempus AI Inc. Class A Common Stock,Technology,nasdaq_smid
 TENB,Tenable Holdings Inc. Common Stock,Technology,nasdaq_smid
-TER,Teradyne Inc. Common Stock,Industrials,nasdaq_smid
+TER,Teradyne,Information Technology,nasdaq_smid+sp500
 TEX,Terex Corporation Common Stock,Industrials,nasdaq_smid
+TFC,Truist Financial,Financials,sp500
 TFIN,"Triumph Bancorp, Inc.",Financials,nasdaq_smid+sp600
 TFSL,TFS Financial Corporation Common Stock,Finance,nasdaq_smid
 TFX,Teleflex,Health Care,nasdaq_smid+sp600
+TGT,Target Corporation,Consumer Staples,sp500
 TGTX,"TG Therapeutics, Inc.",Health Care,nasdaq_smid+sp600
 TH,Target Hospitality Corp. Common Stock,Consumer Discretionary,nasdaq_smid
 THC,Tenet Healthcare Corporation Common Stock,Health Care,nasdaq_smid
@@ -2334,16 +2365,18 @@ TIC,TIC Solutions Inc. Common Stock,Consumer Discretionary,nasdaq_smid
 TILE,"Interface, Inc.",Industrials,nasdaq_smid+sp600
 TIPT,Tiptree Inc. Common Stock,Finance,nasdaq_smid
 TITN,Titan Machinery Inc. Common Stock,Consumer Discretionary,nasdaq_smid
+TJX,TJX Companies,Consumer Discretionary,sp500
 TKNO,Alpha Teknova Inc. Common Stock,Health Care,nasdaq_smid
-TKO,TKO Group Holdings Inc. Class A Common Stock,Consumer Discretionary,nasdaq_smid
+TKO,TKO Group Holdings,Communication Services,nasdaq_smid+sp500
 TKR,Timken Company (The) Common Stock,Industrials,nasdaq_smid
 TLN,Talen Energy Corporation Common Stock,Utilities,nasdaq_smid
 TLRY,Tilray Brands Inc. Common Stock ,Health Care,nasdaq_smid
 TLS,Telos Corporation Common Stock,Technology,nasdaq_smid
 TMDX,"TransMedics Group, Inc.",Health Care,nasdaq_smid+sp600
-TME,Tencent Music Entertainment Group American Depositary Shares each representing two Class A Ordinary Shares,Consumer Discretionary,nasdaq_smid
+TMO,Thermo Fisher Scientific,Health Care,sp500
 TMP,Tompkins Financial Corporation,Financials,nasdaq_smid+sp600
 TMS,Teamshares Inc. Common Stock,,nasdaq_smid
+TMUS,T-Mobile US,Communication Services,sp500
 TNC,Tennant Company,Industrials,nasdaq_smid+sp600
 TNDM,Tandem Diabetes Care,Health Care,nasdaq_smid+sp600
 TNET,TriNet Group Inc. Common Stock,Consumer Discretionary,nasdaq_smid
@@ -2355,39 +2388,40 @@ TOWN,TowneBank Common Stock,Finance,nasdaq_smid
 TPB,Turning Point Brands Inc. Common Stock,Consumer Discretionary,nasdaq_smid
 TPC,Tutor Perini Corporation,Industrials,nasdaq_smid+sp600
 TPG,TPG Inc. Class A Common Stock,Finance,nasdaq_smid
-TPGXL,TPG Operating Group II L.P. 6.950% Fixed-Rate Junior Subordinated Notes due 2064,,nasdaq_smid
-TPL,Texas Pacific Land Corporation Common Stock,Energy,nasdaq_smid
-TPR,Tapestry Inc. Common Stock,Consumer Discretionary,nasdaq_smid
+TPL,Texas Pacific Land Corporation,Energy,nasdaq_smid+sp500
+TPR,"Tapestry, Inc.",Consumer Discretionary,nasdaq_smid+sp500
 TR,"Tootsie Roll Industries, Inc.",Consumer Staples,nasdaq_smid+sp600
 TRAX,First Tracks Biotherapeutics Inc. Ordinary Shares ,Health Care,nasdaq_smid
 TRC,Tejon Ranch Co Common Stock,Finance,nasdaq_smid
 TREE,LendingTree Inc. Common Stock,Finance,nasdaq_smid
 TREX,Trex Company Inc. Common Stock,Basic Materials,nasdaq_smid
+TRGP,Targa Resources,Energy,sp500
 TRI,Thomson Reuters Corporation Common Shares,Consumer Discretionary,nasdaq_smid
 TRIN,Trinity Capital Inc. Common Stock,Finance,nasdaq_smid
 TRIP,TripAdvisor,Communication Services,nasdaq_smid+sp600
 TRLV,Trulieve Cannabis Corp. Subordinate Voting Shares,Health Care,nasdaq_smid
-TRMB,Trimble Inc. Common Stock,Industrials,nasdaq_smid
+TRMB,Trimble Inc.,Information Technology,nasdaq_smid+sp500
 TRMK,Trustmark Corp.,Financials,nasdaq_smid+sp600
 TRN,"Trinity Industries, Inc.",Industrials,nasdaq_smid+sp600
-TRNI,Trinity Capital Inc. 7.875% Notes Due 2029,Finance,nasdaq_smid
 TRNO,Terreno Realty Corporation,Real Estate,nasdaq_smid+sp600
 TRNS,Transcat Inc. Common Stock,Industrials,nasdaq_smid
-TRNZ,Trinity Capital Inc. 7.875% Notes due 2029,Finance,nasdaq_smid
 TRON,Tron Inc. Common Stock,Finance,nasdaq_smid
-TROW,T. Rowe Price Group Inc. Common Stock,Finance,nasdaq_smid
+TROW,T. Rowe Price,Financials,nasdaq_smid+sp500
 TROX,Tronox Holdings plc Ordinary Shares (UK),Basic Materials,nasdaq_smid
 TRS,TriMas Corporation Common Stock,Industrials,nasdaq_smid
 TRST,TrustCo Bank Corp NY,Financials,nasdaq_smid+sp600
 TRTX,TPG RE Finance Trust Inc. Common Stock,Real Estate,nasdaq_smid
 TRU,TransUnion Common Stock,Finance,nasdaq_smid
 TRUP,Trupanion,Financials,nasdaq_smid+sp600
+TRV,Travelers Companies (The),Financials,sp500
 TRVI,Trevi Therapeutics Inc. Common Stock,Health Care,nasdaq_smid
 TRXB,TRex Bio Inc. Common stock,Health Care,nasdaq_smid
 TSBK,Timberland Bancorp Inc. Common Stock,Finance,nasdaq_smid
-TSCO,Tractor Supply Company Common Stock,Consumer Discretionary,nasdaq_smid
+TSCO,Tractor Supply,Consumer Discretionary,nasdaq_smid+sp500
 TSHA,Taysha Gene Therapies Inc. Common Stock,Health Care,nasdaq_smid
-TSN,Tyson Foods Inc. Common Stock,Consumer Staples,nasdaq_smid
+TSLA,"Tesla, Inc.",Consumer Discretionary,sp500
+TSN,Tyson Foods,Consumer Staples,nasdaq_smid+sp500
+TT,Trane Technologies,Industrials,sp500
 TTAM,Titan America SA Common Shares,Industrials,nasdaq_smid
 TTAN,ServiceTitan Inc. Class A Common Stock,Technology,nasdaq_smid
 TTC,Toro Company (The) Common Stock,Consumer Discretionary,nasdaq_smid
@@ -2395,34 +2429,34 @@ TTD,The Trade Desk Inc. Class A Common Stock,Technology,nasdaq_smid
 TTEK,Tetra Tech Inc. Common Stock,Consumer Discretionary,nasdaq_smid
 TTI,Tetra Technologies Inc. Common Stock,Energy,nasdaq_smid
 TTMI,TTM Technologies Inc. Common Stock,Technology,nasdaq_smid
-TTWO,Take-Two Interactive Software Inc. Common Stock,Technology,nasdaq_smid
+TTWO,Take-Two Interactive,Communication Services,nasdaq_smid+sp500
 TVGN,Tevogen Inc. Common Stock,Health Care,nasdaq_smid
 TVTX,Travere Therapeutics Inc. Common Stock,Health Care,nasdaq_smid
 TW,Tradeweb Markets Inc. Class A Common Stock,Finance,nasdaq_smid
 TWFG,TWFG Inc. Class A Common Stock,Finance,nasdaq_smid
 TWI,Titan International Inc. (DE) Common Stock,Industrials,nasdaq_smid
 TWIN,Twin Disc Incorporated Common Stock,Industrials,nasdaq_smid
-TWLO,Twilio Inc. Class A Common Stock,Technology,nasdaq_smid
+TWLO,Twilio,Information Technology,nasdaq_smid+sp500
 TWST,Twist Bioscience Corporation Common Stock,Health Care,nasdaq_smid
 TXG,10x Genomics Inc. Class A Common Stock,Industrials,nasdaq_smid
+TXN,Texas Instruments,Information Technology,sp500
 TXNM,TXNM Energy Inc. Common Stock,Utilities,nasdaq_smid
-TXO,TXO Partners L.P. Common Units Representing Limited Partner Interests,Energy,nasdaq_smid
 TXRH,Texas Roadhouse Inc. Common Stock,Consumer Discretionary,nasdaq_smid
-TXT,Textron Inc. Common Stock,Industrials,nasdaq_smid
+TXT,Textron,Industrials,nasdaq_smid+sp500
 TY,Tri Continental Corporation Common Stock,Finance,nasdaq_smid
 TYG,Tortoise Energy Infrastructure Corporation Common Stock,Finance,nasdaq_smid
-TYL,Tyler Technologies Inc. Common Stock,Technology,nasdaq_smid
+TYL,Tyler Technologies,Information Technology,nasdaq_smid+sp500
 TYRA,Tyra Biosciences Inc. Common Stock,Health Care,nasdaq_smid
 U,Unity Software Inc. Common Stock,Technology,nasdaq_smid
 UA,Under Armour (Class C),Consumer Discretionary,nasdaq_smid+sp600
 UAA,Under Armour (Class A),Consumer Discretionary,nasdaq_smid+sp600
-UAL,United Airlines Holdings Inc. Common Stock,Consumer Discretionary,nasdaq_smid
+UAL,United Airlines Holdings,Industrials,nasdaq_smid+sp500
 UAMY,United States Antimony Corporation Common Stock,Industrials,nasdaq_smid
-UAN,CVR Partners LP Common Units representing Limited Partner Interests,Industrials,nasdaq_smid
+UBER,Uber,Industrials,sp500
 UBSI,United Bankshares Inc. Common Stock,Finance,nasdaq_smid
 UCB,"United Community Banks, Inc.",Financials,nasdaq_smid+sp600
 UCTT,"Ultra Clean Holdings, Inc.",Information Technology,nasdaq_smid+sp600
-UDR,UDR Inc. Common Stock,Real Estate,nasdaq_smid
+UDR,"UDR, Inc.",Real Estate,nasdaq_smid+sp500
 UE,Urban Edge Properties,Real Estate,nasdaq_smid+sp600
 UFCS,"United Fire Group, Inc.",Financials,nasdaq_smid+sp600
 UFPI,UFP Industries Inc. Common Stock,Basic Materials,nasdaq_smid
@@ -2430,28 +2464,31 @@ UFPT,"UFP Technologies, Inc.",Health Care,nasdaq_smid+sp600
 UGI,UGI Corporation Common Stock,Utilities,nasdaq_smid
 UHAL,U-Haul Holding Company Common Stock,Consumer Discretionary,nasdaq_smid
 UHAL-B,U-Haul Holding Company Series N Non-Voting Common Stock ,Consumer Discretionary,nasdaq_smid
-UHS,Universal Health Services Inc. Common Stock,Health Care,nasdaq_smid
+UHS,Universal Health Services,Health Care,nasdaq_smid+sp500
 UHT,Universal Health Realty Income Trust Common Stock,Real Estate,nasdaq_smid
 UI,Ubiquiti Inc. Common Stock,Technology,nasdaq_smid
 ULCC,Frontier Group Holdings Inc. Common Stock,Consumer Discretionary,nasdaq_smid
 ULH,Universal Logistics Holdings Inc. Common Stock,Industrials,nasdaq_smid
 ULS,UL Solutions Inc. Class A Common Stock,Health Care,nasdaq_smid
-ULTA,Ulta Beauty Inc. Common Stock,Consumer Discretionary,nasdaq_smid
+ULTA,Ulta Beauty,Consumer Discretionary,nasdaq_smid+sp500
 UMAC,Unusual Machines Inc. Common Stock,Technology,nasdaq_smid
 UMBF,UMB Financial Corporation Common Stock,Finance,nasdaq_smid
-UMBFO,UMB Financial Corporation Depositary Shares Each Representing a 1/400th Interest in a Share of 7.750% Fixed-Rate Reset Non-Cumulative Perpetual Preferred Stock Series B,Finance,nasdaq_smid
 UMH,UMH Properties Inc. Common Stock,Real Estate,nasdaq_smid
 UNF,UniFirst Corporation,Industrials,nasdaq_smid+sp600
 UNFI,United Natural Foods Inc,Consumer Staples,nasdaq_smid+sp600
+UNH,UnitedHealth Group,Health Care,sp500
 UNIT,Uniti Group,Communication Services,nasdaq_smid+sp600
 UNM,Unum Group Common Stock,Finance,nasdaq_smid
-UNMA,Unum Group 6.250% Junior Subordinated Notes due 2058,Finance,nasdaq_smid
+UNP,Union Pacific Corporation,Industrials,sp500
 UNTY,Unity Bancorp Inc. Common Stock,Finance,nasdaq_smid
 UPBD,"Upbound Group, Inc.",Consumer Discretionary,nasdaq_smid+sp600
+UPS,United Parcel Service,Industrials,sp500
 UPST,Upstart Holdings Inc. Common stock,Finance,nasdaq_smid
 UPWK,"Upwork, Inc.",Industrials,nasdaq_smid+sp600
 URBN,"Urban Outfitters, Inc.",Consumer Discretionary,nasdaq_smid+sp600
+URI,United Rentals,Industrials,sp500
 USAR,USA Rare Earth Inc. Class A Common Stock,Basic Materials,nasdaq_smid
+USB,U.S. Bancorp,Financials,sp500
 USCB,USCB Financial Holdings Inc. Class A Common Stock,Finance,nasdaq_smid
 USFD,US Foods Holding Corp. Common Stock,Consumer Discretionary,nasdaq_smid
 USLM,"United States Lime & Minerals, Inc.",Materials,nasdaq_smid+sp600
@@ -2464,12 +2501,9 @@ UVE,UNIVERSAL INSURANCE HOLDINGS INC Common Stock,Finance,nasdaq_smid
 UVSP,Univest Financial Corporation Common Stock,Finance,nasdaq_smid
 UVV,Universal Corporation,Consumer Staples,nasdaq_smid+sp600
 UWMC,UWM Holdings Corporation Class A Common Stock,Finance,nasdaq_smid
-UZD,Array Digital Infrastructure Inc. 6.250% Senior Notes due 2069,Telecommunications,nasdaq_smid
-UZE,Array Digital Infrastructure Inc. 5.500% Senior Notes due 2070,Telecommunications,nasdaq_smid
-UZF,Array Digital Infrastructure Inc. 5.500% Senior Notes due 2070,Telecommunications,nasdaq_smid
+V,Visa Inc.,Financials,sp500
 VAC,Marriott Vacations Worldwide,Consumer Discretionary,nasdaq_smid+sp600
 VAL,Valaris Limited Common Shares,Energy,nasdaq_smid
-VAL-WS,Valaris Limited Warrants,Energy,nasdaq_smid
 VALU,Value Line Inc. Common Stock,Finance,nasdaq_smid
 VC,Visteon Corporation Common Stock,Consumer Discretionary,nasdaq_smid
 VCEL,Vericel,Health Care,nasdaq_smid+sp600
@@ -2477,7 +2511,7 @@ VCTR,"Victory Capital Holdings, Inc.",Financials,nasdaq_smid+sp600
 VCV,Invesco California Value Municipal Income Trust Common Stock,Finance,nasdaq_smid
 VCYT,"Veracyte, Inc.",Health Care,nasdaq_smid+sp600
 VECO,Veeco Instruments Inc.,Information Technology,nasdaq_smid+sp600
-VEEV,Veeva Systems Inc. Class A Common Stock,Technology,nasdaq_smid
+VEEV,Veeva Systems,Health Care,nasdaq_smid+sp500
 VEL,Velocity Financial Inc. Common Stock,Finance,nasdaq_smid
 VERA,Vera Therapeutics Inc. Class A Common Stock,Health Care,nasdaq_smid
 VERX,Vertex Inc. Class A Common Stock,Technology,nasdaq_smid
@@ -2489,7 +2523,7 @@ VGZ,Vista Gold Corp Common Stock,Basic Materials,nasdaq_smid
 VHI,Valhi Inc. Common Stock,Basic Materials,nasdaq_smid
 VIA,Via Transportation Inc. Class A Common Stock,Technology,nasdaq_smid
 VIAV,Viavi Solutions Inc. Common Stock,Technology,nasdaq_smid
-VICI,VICI Properties Inc. Common Stock,Real Estate,nasdaq_smid
+VICI,Vici Properties,Real Estate,nasdaq_smid+sp500
 VICR,Vicor Corporation Common Stock,Technology,nasdaq_smid
 VIK,Viking Holdings Ltd Ordinary Shares,Consumer Discretionary,nasdaq_smid
 VIR,"Vir Biotechnology, Inc.",Health Care,nasdaq_smid+sp600
@@ -2500,15 +2534,14 @@ VKI,Invesco Advantage Municipal Income Trust II Common Shares of Beneficial Inte
 VKQ,Invesco Municipal Trust Common Stock,Finance,nasdaq_smid
 VKTX,Viking Therapeutics Inc. Common Stock,Health Care,nasdaq_smid
 VLGEA,Village Super Market Inc. Class A Common Stock,Consumer Staples,nasdaq_smid
-VLTO,Veralto Corp Common Stock ,Industrials,nasdaq_smid
+VLO,Valero Energy,Energy,sp500
+VLTO,Veralto,Industrials,nasdaq_smid+sp500
 VLY,Valley National Bancorp Common Stock,Finance,nasdaq_smid
-VLYPN,Valley National Bancorp 8.250% Fixed-Rate Reset Non-Cumulative Perpetual Preferred Stock Series C,Finance,nasdaq_smid
-VLYPO,Valley National Bancorp 5.50% Fixed-to-Floating Rate Non-Cumulative Perpetual Preferred Stock Series B,Finance,nasdaq_smid
-VLYPP,Valley National Bancorp 6.25% Fixed-to-Floating Rate Non-Cumulative Perpetual Preferred Stock Series A,Finance,nasdaq_smid
-VMC,Vulcan Materials Company (Holding Company) Common Stock,Industrials,nasdaq_smid
+VMC,Vulcan Materials Company,Materials,nasdaq_smid+sp500
 VMD,Viemed Healthcare Inc. Common Shares,Health Care,nasdaq_smid
 VMI,Valmont Industries Inc. Common Stock,Industrials,nasdaq_smid
 VMO,Invesco Municipal Opportunity Trust Common Stock,Finance,nasdaq_smid
+VMRK,Vivmark Residential,Real Estate,sp500
 VNO,Vornado Realty Trust Common Stock,Real Estate,nasdaq_smid
 VNOM,Viper Energy Inc. Class A Common Stock,Energy,nasdaq_smid
 VNT,Vontier Corporation Common Stock ,Industrials,nasdaq_smid
@@ -2520,54 +2553,56 @@ VRDN,Viridian Therapeutics Inc. Common Stock,Health Care,nasdaq_smid
 VREX,Varex Imaging Corporation Common Stock,Technology,nasdaq_smid
 VRNS,Varonis Systems Inc. Common Stock,Technology,nasdaq_smid
 VRRM,Verra Mobility Corporation,Industrials,nasdaq_smid+sp600
-VRSK,Verisk Analytics Inc. Common Stock,Technology,nasdaq_smid
-VRSN,VeriSign Inc. Common Stock,Technology,nasdaq_smid
+VRSK,Verisk Analytics,Industrials,nasdaq_smid+sp500
+VRSN,Verisign,Information Technology,nasdaq_smid+sp500
+VRT,Vertiv,Industrials,sp500
 VRTS,"Virtus Investment Partners, Inc.",Financials,nasdaq_smid+sp600
+VRTX,Vertex Pharmaceuticals,Health Care,sp500
 VSAT,"Viasat, Inc.",Information Technology,nasdaq_smid+sp600
 VSEC,VSE Corporation,Industrials,nasdaq_smid+sp600
-VSECU,VSE Corporation Tangible Equity Units,,nasdaq_smid
 VSH,Vishay Intertechnology,Information Technology,nasdaq_smid+sp600
 VSNT,"Versant Media Group, Inc.",Communication Services,nasdaq_smid+sp600
-VST,Vistra Corp. Common Stock,Utilities,nasdaq_smid
+VST,Vistra Corp.,Utilities,nasdaq_smid+sp500
 VSTM,Verastem Inc. Common Stock,Health Care,nasdaq_smid
 VSTS,Vestis,Industrials,nasdaq_smid+sp600
 VSXY,Victoria's Secret,Consumer Discretionary,nasdaq_smid+sp600
 VTOL,Bristow Group Inc.,Energy,nasdaq_smid+sp600
-VTR,Ventas Inc. Common Stock,Real Estate,nasdaq_smid
-VTRS,Viatris Inc. Common Stock,Health Care,nasdaq_smid
+VTR,Ventas,Real Estate,nasdaq_smid+sp500
+VTRS,Viatris,Health Care,nasdaq_smid+sp500
 VTS,Vitesse Energy Inc. Common Stock,Energy,nasdaq_smid
 VVV,Valvoline Inc. Common Stock,Industrials,nasdaq_smid
 VVX,"V2X, Inc.",Industrials,nasdaq_smid+sp600
-VYLR,Vylor Inc. Common Stock,Consumer Staples,nasdaq_smid
+VYLR,Vylor,Consumer Staples,nasdaq_smid+sp500
 VYX,NCR Voyix,Information Technology,nasdaq_smid+sp600
+VZ,Verizon,Communication Services,sp500
 W,Wayfair Inc. Class A Common Stock,Consumer Discretionary,nasdaq_smid
-WAB,Westinghouse Air Brake Technologies Corporation Common Stock,Industrials,nasdaq_smid
+WAB,Wabtec,Industrials,nasdaq_smid+sp500
 WABC,Westamerica Bank,Financials,nasdaq_smid+sp600
 WAFD,"WaFd, Inc.",Financials,nasdaq_smid+sp600
-WAFDP,WaFd Inc. Depositary Shares,Finance,nasdaq_smid
 WAL,Western Alliance Bancorporation Common Stock (DE),Finance,nasdaq_smid
 WASH,Washington Trust Bancorp Inc. Common Stock,Finance,nasdaq_smid
-WAT,Waters Corporation Common Stock,Industrials,nasdaq_smid
+WAT,Waters Corporation,Health Care,nasdaq_smid+sp500
 WAY,Waystar Holding Corp,Health Care,nasdaq_smid+sp600
 WBTN,WEBTOON Entertainment Inc. Common stock,Consumer Discretionary,nasdaq_smid
 WCC,WESCO International Inc. Common Stock,Consumer Discretionary,nasdaq_smid
 WCCB,West Coast Community Bancorp Common Stock,Finance,nasdaq_smid
 WD,"Walker & Dunlop, Inc.",Financials,nasdaq_smid+sp600
-WDAY,Workday Inc. Class A Common Stock,Technology,nasdaq_smid
+WDAY,"Workday, Inc.",Information Technology,nasdaq_smid+sp500
+WDC,Western Digital,Information Technology,sp500
 WDFC,WD-40 Company,Consumer Staples,nasdaq_smid+sp600
-WEC,WEC Energy Group Inc. Common Stock,Utilities,nasdaq_smid
+WEC,WEC Energy Group,Utilities,nasdaq_smid+sp500
+WELL,Welltower,Real Estate,sp500
 WEN,The Wendy's Company,Consumer Discretionary,nasdaq_smid+sp600
 WERN,Werner Enterprises,Industrials,nasdaq_smid+sp600
-WES,Western Midstream Partners LP Common Units Representing Limited Partner Interests,Utilities,nasdaq_smid
 WEST,Westrock Coffee Company Common Stock,Consumer Staples,nasdaq_smid
 WEX,WEX Inc. common stock,Consumer Discretionary,nasdaq_smid
 WEYS,Weyco Group Inc. Common Stock,Consumer Staples,nasdaq_smid
+WFC,Wells Fargo,Financials,sp500
 WFRD,Weatherford International plc Ordinary Shares,Consumer Discretionary,nasdaq_smid
 WGO,"Winnebago Industries, Inc.",Consumer Discretionary,nasdaq_smid+sp600
 WGS,GeneDx Holdings Corp. Class A Common Stock,Health Care,nasdaq_smid
 WH,Wyndham Hotels & Resorts Inc. Common Stock ,Consumer Discretionary,nasdaq_smid
 WHD,"Cactus, Inc.",Energy,nasdaq_smid+sp600
-WHFCL,WhiteHorse Finance Inc. 7.875% Notes due 2028,,nasdaq_smid
 WHR,Whirlpool Corporation Common Stock,Consumer Discretionary,nasdaq_smid
 WINA,Winmark,Consumer Discretionary,nasdaq_smid+sp600
 WING,Wingstop Inc. Common Stock,Consumer Discretionary,nasdaq_smid
@@ -2576,83 +2611,84 @@ WKC,World Kinect Corporation,Energy,nasdaq_smid+sp600
 WLDN,Willdan Group Inc. Common Stock,Consumer Discretionary,nasdaq_smid
 WLFC,Willis Lease Finance Corporation Common Stock,Consumer Discretionary,nasdaq_smid
 WLK,Westlake Corporation Common Stock,Industrials,nasdaq_smid
-WLKP,Westlake Chemical Partners LP Common Units representing limited partner interests,Industrials,nasdaq_smid
 WLTH,Wealthfront Corporation Common Stock,Finance,nasdaq_smid
 WLY,John Wiley & Sons,Communication Services,nasdaq_smid+sp600
 WLYB,John Wiley & Sons Inc. Common Stock,Consumer Discretionary,nasdaq_smid
+WM,Waste Management,Industrials,sp500
+WMB,Williams Companies,Energy,sp500
 WMG,Warner Music Group Corp. Class A Common Stock,Consumer Discretionary,nasdaq_smid
 WMK,Weis Markets Inc. Common Stock,Consumer Staples,nasdaq_smid
 WMS,Advanced Drainage Systems Inc. Common Stock,Consumer Discretionary,nasdaq_smid
+WMT,Walmart,Consumer Staples,sp500
 WNC,Wabash National Corporation Common Stock,Industrials,nasdaq_smid
 WOLF,Wolfspeed Inc. Common Stock New,Technology,nasdaq_smid
 WOOF,Petco Health and Wellness Company Inc. Class A Common Stock,Consumer Discretionary,nasdaq_smid
 WOR,Worthington Enterprises,Industrials,nasdaq_smid+sp600
 WPC,W. P. Carey Inc. REIT,Real Estate,nasdaq_smid
-WRB,W.R. Berkley Corporation Common Stock,Finance,nasdaq_smid
+WRB,W. R. Berkley Corporation,Financials,nasdaq_smid+sp500
 WRBY,Warby Parker,Consumer Discretionary,nasdaq_smid+sp600
 WRLD,World Acceptance Corporation,Financials,nasdaq_smid+sp600
 WS,Worthington Steel,Materials,nasdaq_smid+sp600
 WSBC,WesBanco,Financials,nasdaq_smid+sp600
-WSBCO,WesBanco Inc. Depositary Shares each representing 1/40th interest in a share of 7.375% Fixed-Rate Reset Non-Cumulative Perpetual Preferred Stock Series B,Finance,nasdaq_smid
 WSBF,Waterstone Financial Inc. Common Stock (MD),Finance,nasdaq_smid
 WSC,WillScot Holdings Corp.,Industrials,nasdaq_smid+sp600
 WSFS,WSFS Financial Corporation,Financials,nasdaq_smid+sp600
-WSM,Williams-Sonoma Inc. Common Stock (DE),Consumer Discretionary,nasdaq_smid
+WSM,"Williams-Sonoma, Inc.",Consumer Discretionary,nasdaq_smid+sp500
 WSO,Watsco Inc. Common Stock,Consumer Discretionary,nasdaq_smid
-WST,West Pharmaceutical Services Inc. Common Stock,Health Care,nasdaq_smid
+WST,West Pharmaceutical Services,Health Care,nasdaq_smid+sp500
 WT,"WisdomTree Investments, Inc.",Financials,nasdaq_smid+sp600
 WTBA,West Bancorporation Common Stock,Finance,nasdaq_smid
 WTFC,Wintrust Financial Corporation Common Stock,Finance,nasdaq_smid
-WTFCN,Wintrust Financial Corporation Depositary Shares Each Representing a 1/1000th Interest in a Share of 7.875% Fixed-Rate Reset Non-Cumulative Perpetual Preferred StocK,Finance,nasdaq_smid
 WTI,W&T Offshore Inc. Common Stock,Energy,nasdaq_smid
 WTM,White Mountains Insurance Group Ltd. Common Stock,Finance,nasdaq_smid
 WTRG,Essential Utilities Inc. Common Stock,Utilities,nasdaq_smid
 WTS,Watts Water Technologies Inc. Class A Common Stock,Industrials,nasdaq_smid
 WTTR,Select Water Solutions Inc. Class A common stock,Energy,nasdaq_smid
+WTW,Willis Towers Watson,Financials,sp500
 WU,Western Union,Financials,nasdaq_smid+sp600
 WULF,TeraWulf Inc. Common Stock,Finance,nasdaq_smid
 WWD,Woodward Inc. Common Stock,Energy,nasdaq_smid
 WWW,"Wolverine World Wide, Inc.",Consumer Discretionary,nasdaq_smid+sp600
-WY,Weyerhaeuser Company Common Stock,Real Estate,nasdaq_smid
+WY,Weyerhaeuser,Real Estate,nasdaq_smid+sp500
 WYFI,WhiteFiber Inc. Ordinary Shares,Finance,nasdaq_smid
-WYNN,Wynn Resorts Limited Common stock,Consumer Discretionary,nasdaq_smid
+WYNN,Wynn Resorts,Consumer Discretionary,nasdaq_smid+sp500
 XE,X-Energy Inc. Class A Common Stock,Industrials,nasdaq_smid
+XEL,Xcel Energy,Utilities,sp500
 XERS,Xeris Biopharma Holdings Inc. Common Stock,Health Care,nasdaq_smid
 XFLT,XAI Floating Rate & Alternative Income Trust Common Shares of Beneficial Interest,Finance,nasdaq_smid
 XFOR,X4 Pharmaceuticals Inc. Common Stock,Health Care,nasdaq_smid
 XHR,"Xenia Hotels & Resorts, Inc.",Real Estate,nasdaq_smid+sp600
-XIFR,XPLR Infrastructure LP Common Units representing limited partner interests,Utilities,nasdaq_smid
 XMAX,XMAX Inc. Common Stock,Consumer Discretionary,nasdaq_smid
 XMTR,Xometry Inc. Class A Common Stock,Consumer Discretionary,nasdaq_smid
 XNCR,Xencor Inc,Health Care,nasdaq_smid+sp600
+XOM,ExxonMobil,Energy,sp500
 XPEL,"XPEL, Inc.",Consumer Discretionary,nasdaq_smid+sp600
 XPO,XPO Inc. Common Stock,Consumer Discretionary,nasdaq_smid
 XRAY,DENTSPLY SIRONA Inc. Common Stock,Health Care,nasdaq_smid
 XRN,Chiron Real Estate Inc. Common Stock,Real Estate,nasdaq_smid
-XYL,Xylem Inc. Common Stock New,Industrials,nasdaq_smid
+XYL,Xylem Inc.,Industrials,nasdaq_smid+sp500
+XYZ,"Block, Inc.",Financials,sp500
 YDES,YD Bio Limited Ordinary Shares,Health Care,nasdaq_smid
 YELP,"Yelp, Inc.",Communication Services,nasdaq_smid+sp600
 YETI,YETI Holdings Inc. Common Stock,Consumer Discretionary,nasdaq_smid
 YEXT,Yext Inc. Common Stock,Technology,nasdaq_smid
 YORW,York Water Company (The) Common Stock,Utilities,nasdaq_smid
 YOU,"Clear Secure, Inc.",Information Technology,nasdaq_smid+sp600
-YSS,York Space Systems Inc. Common Stock,Industrials,nasdaq_smid
 YSWY,Yesway Inc. Class A Common Stock,Consumer Staples,nasdaq_smid
-YUM,Yum! Brands Inc.,Consumer Discretionary,nasdaq_smid
+YUM,Yum! Brands,Consumer Discretionary,nasdaq_smid+sp500
 YUMC,Yum China Holdings Inc. Common Stock,Consumer Discretionary,nasdaq_smid
 Z,Zillow Group Inc. Class C Capital Stock,Consumer Discretionary,nasdaq_smid
-ZBH,Zimmer Biomet Holdings Inc. Common Stock,Health Care,nasdaq_smid
+ZBH,Zimmer Biomet,Health Care,nasdaq_smid+sp500
 ZBIO,Zenas BioPharma Inc. Common Stock,Health Care,nasdaq_smid
-ZBRA,Zebra Technologies Corporation Class A Common Stock,Industrials,nasdaq_smid
+ZBRA,Zebra Technologies,Information Technology,nasdaq_smid+sp500
 ZD,Ziff Davis,Communication Services,nasdaq_smid+sp600
 ZETA,Zeta Global Holdings Corp. Class A Common Stock,Technology,nasdaq_smid
 ZG,Zillow Group Inc. Class A Common Stock,Consumer Discretionary,nasdaq_smid
 ZION,Zions Bancorporation N.A. Common Stock,Finance,nasdaq_smid
-ZIONP,Zions Bancorporation N.A. Depositary Shares (Each representing 1/40th Interest in a Share of Series A Floating-Rate Non-Cumulative Perpetual Preferred Stock),Finance,nasdaq_smid
 ZIP,ZipRecruiter Inc. Class A Common Stock,Technology,nasdaq_smid
 ZM,Zoom Communications Inc. Class A Common Stock,Technology,nasdaq_smid
 ZS,Zscaler Inc. Common Stock,Technology,nasdaq_smid
-ZTS,Zoetis Inc. Class A Common Stock,Health Care,nasdaq_smid
+ZTS,Zoetis,Health Care,nasdaq_smid+sp500
 ZVRA,Zevra Therapeutics Inc. Common Stock,Health Care,nasdaq_smid
 ZWS,Zurn Elkay Water Solutions Corp.,Industrials,nasdaq_smid+sp600
 ZYME,Zymeworks Inc. Common Stock,Health Care,nasdaq_smid

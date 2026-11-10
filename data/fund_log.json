@@ -1,0 +1,19 @@
+{
+ "date": "2026-11-10",
+ "A": 172,
+ "B_waiting": 2708,
+ "fetched": 383,
+ "fetched_A": 172,
+ "failed": 3,
+ "failed_sample": [
+  "ACCV",
+  "ADIG",
+  "ASA"
+ ],
+ "stopped": "시간 예산",
+ "coverage": 383,
+ "universe": 2903,
+ "coverage_pct": 13.2,
+ "save_errors": [],
+ "minutes": 30.0
+}
