@@ -1,0 +1,24 @@
+{
+ "requested": 646,
+ "received": 645,
+ "missing": [
+  "CWEN-A"
+ ],
+ "backfilled": 645,
+ "backfill_failed": [
+  "CWEN-A"
+ ],
+ "split_refetched": [],
+ "intraday_filled": {},
+ "new_rows": 473119,
+ "validate_errors": [],
+ "as_of": "2026-11-09",
+ "universe": 601,
+ "core": 45,
+ "screen_rows": 638,
+ "store_rows": 473119,
+ "store_tickers": 645,
+ "store_from": "2023-11-10",
+ "seconds": 117,
+ "missing_count": 1
+}
