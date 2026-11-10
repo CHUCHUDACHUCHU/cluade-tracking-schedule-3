@@ -8,7 +8,7 @@
   "OXY-WS",
   "VAL-WS"
  ],
- "backfilled": 2050,
+ "backfilled": 30,
  "backfill_failed": [
   "AMPX-WS",
   "CWEN-A",
@@ -18,7 +18,7 @@
  ],
  "split_refetched": [],
  "intraday_filled": {},
- "new_rows": 1432959,
+ "new_rows": 56044,
  "validate_errors": [],
  "universe_errors": [
   "r2000: StopIteration: ",
@@ -26,8 +26,8 @@
  ],
  "universe_sources": {
   "nasdaq_smid": 2054,
-  "nasdaq_smid+sp600": 575,
-  "sp600": 28
+  "nasdaq_smid+sp600": 573,
+  "sp600": 30
  },
  "as_of": "2026-11-09",
  "universe": 2648,
@@ -36,6 +36,6 @@
  "store_rows": 1892684,
  "store_tickers": 2688,
  "store_from": "2023-11-10",
- "seconds": 251,
+ "seconds": 236,
  "missing_count": 5
 }

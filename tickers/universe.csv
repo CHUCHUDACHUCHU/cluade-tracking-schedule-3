@@ -622,7 +622,7 @@ CRWV,CoreWeave Inc. Class A Common Stock,Technology,nasdaq_smid
 CSGP,CoStar Group Inc. Common Stock,Finance,nasdaq_smid
 CSL,Carlisle Companies Incorporated Common Stock,Industrials,nasdaq_smid
 CSQ,Calamos Strategic Total Return Common Stock,Finance,nasdaq_smid
-CSR,Centerspace Trust,Real Estate,nasdaq_smid+sp600
+CSR,Centerspace Trust,Real Estate,sp600
 CSTL,Castle Biosciences Inc. Common Stock,Health Care,nasdaq_smid
 CSV,Carriage Services Inc. Common Stock,Consumer Discretionary,nasdaq_smid
 CSW,"CSW Industrials, Inc.",Industrials,nasdaq_smid+sp600
@@ -1859,7 +1859,7 @@ PEGA,Pegasystems Inc. Common Stock,Technology,nasdaq_smid
 PEN,Penumbra Inc. Common Stock,Health Care,nasdaq_smid
 PENG,"Penguin Solutions, Inc.",Information Technology,nasdaq_smid+sp600
 PENN,Penn Entertainment,Consumer Discretionary,nasdaq_smid+sp600
-PFBC,Preferred Bank,Financials,nasdaq_smid+sp600
+PFBC,Preferred Bank,Financials,sp600
 PFG,Principal Financial Group Inc Common Stock,Finance,nasdaq_smid
 PFGC,Performance Food Group Company Common Stock,Consumer Discretionary,nasdaq_smid
 PFH,Prudential Financial Inc. 4.125% Junior Subordinated Notes due 2060,Finance,nasdaq_smid
