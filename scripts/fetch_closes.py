@@ -43,7 +43,15 @@ def read_list(path: Path) -> list[str]:
 
 def sp600_from_wikipedia() -> list[str]:
     try:
-        tables = pd.read_html("https://en.wikipedia.org/wiki/List_of_S%26P_600_companies")
+        import io
+        import urllib.request
+
+        req = urllib.request.Request(
+            "https://en.wikipedia.org/wiki/List_of_S%26P_600_companies",
+            headers={"User-Agent": "us-closes/1.0 (github actions; personal research)"},
+        )
+        html = urllib.request.urlopen(req, timeout=30).read().decode("utf-8")
+        tables = pd.read_html(io.StringIO(html))
         col = [c for c in tables[0].columns if "Symbol" in str(c) or "Ticker" in str(c)][0]
         return [str(s).strip().replace(".", "-") for s in tables[0][col]]
     except Exception as e:  # 위키 형식 변경 대비
@@ -91,6 +99,56 @@ def download(tickers: list[str], period: str, chunk: int = 50, retries: int = 3)
     if not frames:
         return pd.DataFrame(columns=["date", "ticker", "open", "high", "low", "close", "adj_close", "volume"])
     return pd.concat(frames, ignore_index=True)
+
+
+# ---------- 일봉 지연 보정 ----------
+def fill_from_intraday(daily: pd.DataFrame, tickers: list[str]) -> tuple[pd.DataFrame, dict]:
+    """Yahoo 일봉이 늦게 생기는 날이 있어(11/9 확인), 최근 5일 15분봉으로 빠진 날의 일봉을 만든다.
+    일봉에 이미 있는 날짜는 건드리지 않는다. 정규장(09:30~16:00 ET) 봉만 쓴다."""
+    import yfinance as yf
+
+    global daily_last
+    daily_last = daily.groupby("ticker")["date"].max().max() if not daily.empty else None
+    try:
+        raw = yf.download(tickers, period="5d", interval="15m", auto_adjust=False,
+                          group_by="ticker", threads=True, progress=False, prepost=False)
+    except Exception as e:
+        print(f"[warn] 15분봉 실패: {e}", file=sys.stderr)
+        return daily, {}
+    if raw is None or raw.empty:
+        return daily, {}
+    have = set(zip(daily["date"], daily["ticker"]))
+    rows, filled = [], {}
+    for t in tickers:
+        try:
+            g = raw[t] if isinstance(raw.columns, pd.MultiIndex) else raw
+        except KeyError:
+            continue
+        g = g.rename(columns=str.lower).dropna(subset=["close"])
+        if g.empty:
+            continue
+        idx = g.index.tz_convert("America/New_York") if g.index.tz is not None else g.index
+        g = g.set_axis(idx)
+        g = g.between_time("09:30", "15:59")
+        for d, day in g.groupby(g.index.date):
+            ds = d.strftime("%Y-%m-%d")
+            if (ds, t) in have or t == "KRW=X":
+                continue
+            # 장 마감 전 데이터로 만든 '잠정' 일봉은 넣지 않음: 마지막 봉이 15:45 이후여야 함
+            last = day.index[-1]
+            if last.hour * 60 + last.minute < 15 * 60 + 45:
+                continue
+            rows.append({"date": ds, "ticker": t, "open": day["open"].iloc[0], "high": day["high"].max(),
+                         "low": day["low"].min(), "close": day["close"].iloc[-1],
+                         "adj_close": day["close"].iloc[-1], "volume": day["volume"].sum()})
+            filled.setdefault(t, []).append(ds)
+    if rows:
+        daily = pd.concat([daily, pd.DataFrame(rows)], ignore_index=True)
+        print(f"15분봉으로 보정: {sum(len(v) for v in filled.values())}행 {sorted(set(sum(filled.values(), [])))}")
+    return daily, filled
+
+
+daily_last = None
 
 
 # ---------- 지표 ----------
@@ -153,6 +211,7 @@ def main():
 
     core = read_list(TICKERS / "core.txt")
     df = download(core, FETCH_PERIOD)
+    df, filled = fill_from_intraday(df, core)
     got = set(df["ticker"].unique())
     missing = [t for t in core if t not in got]
 
@@ -181,6 +240,8 @@ def main():
         "as_of": as_of,
         "source": "Yahoo Finance via yfinance (close = 미조정 종가, 수익률은 adj_close 기준)",
         "missing_today": missing,
+        "intraday_filled": filled,   # 일봉이 늦어 15분봉으로 만든 행 {티커: [날짜…]}
+        "daily_last_date": daily_last,
         "stale": sorted(t for t, v in latest.items() if v["stale"]),
         "count": len(latest),
     }
@@ -192,13 +253,18 @@ def main():
     if args.universe:
         uni = read_list(TICKERS / "universe.txt") or sp600_from_wikipedia()
         uni = [t for t in uni if t not in core]
+        if not uni:
+            # 핵심 데이터 커밋은 막지 않도록 경고만 남기고 기존 파일 유지
+            print("[warn] 넓은 목록이 비어 있음 — universe.txt 또는 위키 목록 확인, 이번엔 건너뜀", file=sys.stderr)
+            return
         udf = download(uni, "1y")
         rows = []
         for t, g in udf.groupby("ticker"):
             if len(g) >= 30:
                 rows.append({"ticker": t, **indicators(g)})
-        pd.DataFrame(rows).to_csv(DATA / "universe_latest.csv", index=False)
-        print(f"universe: {len(rows)}/{len(uni)}개")
+        if rows:
+            pd.DataFrame(rows).to_csv(DATA / "universe_latest.csv", index=False)
+        print(f"universe: {len(rows)}/{len(uni)}개", file=sys.stderr if not rows else sys.stdout)
 
     if len(missing) > len(core) // 2:
         sys.exit("[error] 절반 이상 누락 — Yahoo 차단 가능성")
