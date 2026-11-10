@@ -78,7 +78,7 @@ def norm_ticker(t: str) -> str | None:
     t = str(t).strip().upper()
     if t == "KRW=X":
         return t
-    t = t.replace(".", "-").replace(" ", "-")
+    t = t.replace(".", "-").replace("/", "-").replace(" ", "-")
     return t if re.fullmatch(r"[A-Z][A-Z0-9\-]{0,9}", t) else None
 
 
@@ -119,6 +119,13 @@ def fetch_nasdaq_smid() -> pd.DataFrame:
     d = d[(d["mcap"] >= SMID_MCAP[0]) & (d["mcap"] <= SMID_MCAP[1])]
     if "country" in d.columns:
         d = d[d["country"].fillna("").str.contains("United States")]
+    # 보통주만: 워런트·유닛·권리·우선주·스팩(인수 목적 회사) 제외
+    name = d["name"].fillna("")
+    sym = d["symbol"].astype(str)
+    bad = (name.str.contains(r"\b(?:Warrants?|Units?|Rights?|Preferred|Depositary Shares|Notes due)\b", case=False, regex=True)
+           | name.str.contains(r"Acquisition Corp|Acquisition Co\b|SPAC", case=False, regex=True)
+           | sym.str.contains(r"\^|[/.\-](?:WS|W|U|R)$|-P[A-Z]?$", regex=True))
+    d = d[~bad]
     return pd.DataFrame({"ticker": d["symbol"].map(norm_ticker), "name": d["name"],
                          "sector": d["sector"]}).dropna(subset=["ticker"]).drop_duplicates("ticker")
 
