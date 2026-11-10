@@ -2,14 +2,14 @@ name: daily-closes
 
 on:
   schedule:
-    # 21:41 UTC = 06:41 KST (화~토). 미국 장 마감(동부 16:00) 40분 이상 뒤(정각은 GitHub 지연이 잦아 피함), 리포터 08:07 전.
+    # 21:41 UTC = 06:41 KST (화~토) — 미국 장 마감 후, 리포터(08:07) 전
     - cron: "41 21 * * 1-5"
-    # 토 21:41 UTC = 일 06:41 KST. 넓은 목록(universe) 주 1회 갱신 → 일요일 재선정용
+    # 토 21:41 UTC = 일 06:41 KST — 같은 수집 + 종목 목록(S&P 600·러셀 2000·러셀 미드캡) 갱신 + 주간 백업
     - cron: "41 21 * * 6"
   workflow_dispatch:
     inputs:
-      universe:
-        description: "넓은 목록도 갱신"
+      refresh_universe:
+        description: "종목 목록(S&P 600·러셀 2000·러셀 미드캡) 다시 받기"
         type: boolean
         default: false
 
@@ -20,27 +20,69 @@ concurrency:
   group: closes
   cancel-in-progress: false
 
+env:
+  GH_TOKEN: ${{ github.token }}
+  TAG: data
+
 jobs:
-  fetch:
+  collect:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 90
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt
-      - name: fetch
+
+      - name: 저장소(Release) 준비·내려받기
         run: |
-          if [ "${{ github.event.schedule }}" = "41 21 * * 6" ] || [ "${{ inputs.universe }}" = "true" ]; then
-            python scripts/fetch_closes.py --universe
+          mkdir -p store
+          gh release view "$TAG" >/dev/null 2>&1 || \
+            gh release create "$TAG" --title "data store" --notes "일봉 시계열 저장소(자동 관리). ohlcv.parquet = 전체, ohlcv_backup_* = 주간 백업."
+          if gh release view "$TAG" --json assets -q '.assets[].name' | grep -qx "ohlcv.parquet"; then
+            # 저장소가 있는데 못 받으면 여기서 멈춤(빈 저장소로 덮어쓰는 사고 방지)
+            for i in 1 2 3; do gh release download "$TAG" -p ohlcv.parquet -D store --clobber && break; sleep 20; done
+            test -s store/ohlcv.parquet || { echo "저장소 내려받기 실패 — 중단"; exit 1; }
           else
-            python scripts/fetch_closes.py
+            echo "저장소 없음 → 첫 실행(3년 백필)"
           fi
-      - name: commit
+
+      - name: 수집
+        id: run
+        run: |
+          FLAG=""
+          if [ "${{ github.event.schedule }}" = "41 21 * * 6" ] || [ "${{ inputs.refresh_universe }}" = "true" ] || [ ! -f tickers/universe.csv ]; then
+            FLAG="--refresh-universe"
+          fi
+          set +e
+          python scripts/collect.py --store store/ohlcv.parquet $FLAG
+          echo "code=$?" >> "$GITHUB_OUTPUT"
+
+      - name: 저장소 올리기(검증 통과 시)
+        if: steps.run.outputs.code == '0' || steps.run.outputs.code == '1'
+        run: |
+          gh release upload "$TAG" store/ohlcv.parquet --clobber
+          if [ "${{ github.event.schedule }}" = "41 21 * * 6" ]; then
+            B="ohlcv_backup_$(date -u +%F).parquet"
+            cp store/ohlcv.parquet "store/$B"
+            gh release upload "$TAG" "store/$B" --clobber
+            # 백업은 최근 4개만 유지
+            gh release view "$TAG" --json assets -q '.assets[].name' | grep '^ohlcv_backup_' | sort | head -n -4 | \
+              while read -r a; do gh release delete-asset "$TAG" "$a" -y; done
+          fi
+
+      - name: 요약 파일 커밋
+        if: always() && steps.run.outputs.code != ''
         run: |
           git config user.name "closes-bot"
           git config user.email "closes-bot@users.noreply.github.com"
-          git add data/
+          git add data/ tickers/
           git diff --cached --quiet || git commit -m "closes $(date -u +%F)"
-          git push
+          git pull --rebase -q && git push
+
+      - name: 결과 판정
+        if: always()
+        run: |
+          head -c 2000 data/collect_log.json 2>/dev/null || true
+          [ "${{ steps.run.outputs.code }}" = "0" ] || { echo "수집 결과 코드 ${{ steps.run.outputs.code }} (1=절반 미만 수신, 2=검증 실패로 업로드 안 함)"; exit 1; }

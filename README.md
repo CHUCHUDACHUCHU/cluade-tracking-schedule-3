@@ -1,37 +1,45 @@
-# us-closes
+# us-closes (v2)
 
-미국 주식·ETF 일별 종가 수집기. GitHub Actions가 매일 yfinance로 받아 `data/`에 커밋한다.
+미국 주식 약 2,800종목(S&P 600 + 러셀 2000 + 러셀 미드캡) + 핵심 목록의 일봉을 매일 수집해 3년 이상 시계열로 쌓는다.
+GitHub Actions가 yfinance(Yahoo Finance)로 받는다.
 
-## 설치 (한 번만)
-1. GitHub에 **공개** 저장소 `us-closes` 생성 → 이 폴더 내용을 그대로 push
-2. 저장소 Settings → Actions → General → Workflow permissions: **Read and write** 선택
-3. Actions 탭 → `daily-closes` → **Run workflow** (universe 체크) 로 첫 실행 → `data/` 파일 생성 확인
+## 일정 (`.github/workflows/closes.yml`)
+- 화~토 06:41 KST: 전 종목 최근 1개월 받아 누적 → 요약 파일 커밋
+- 일 06:41 KST: 위 + 종목 목록 갱신 + 주간 백업
+- 수동: Actions → daily-closes → Run workflow (`refresh_universe` 체크 시 목록 다시 받기)
 
-## 일정
-- 화~토 06:41 KST: 핵심 목록(`tickers/core.txt`) → `core_prices.csv`, `latest.json`
-- 일 06:41 KST: 위 + 넓은 목록 → `universe_latest.csv` (기본 S&P 600 위키 목록, `tickers/universe.txt`가 있으면 그 목록)
+## 저장 위치
+| 위치 | 파일 | 내용 |
+|---|---|---|
+| Release `data` | `ohlcv.parquet` | **전체 시계열**(long: date,ticker,open,high,low,close,adj_close,volume). 첫 실행 3년 백필, 이후 매일 누적·삭제 없음. git 이력에 쌓이지 않음 |
+| Release `data` | `ohlcv_backup_YYYY-MM-DD.parquet` | 일요일 백업, 최근 4개 유지 |
+| git `data/` | `screen.csv` | 전 종목 1행 요약 지표 + 섹터·섹터 ETF·섹터 대비 상대강도(②의 1차 거르기용) |
+| git `data/` | `latest.json`, `core_prices.csv` | 핵심 목록(core.txt) 최신 지표·최근 400거래일(①②③ 호환) |
+| git `data/` | `universe_latest.csv` | screen.csv 중 핵심 목록 밖 종목(현행 ② 지침 호환) |
+| git `data/` | `collect_log.json` | 이번 실행 통계(받은 수·누락·백필·분할 재수집·검증 결과) |
+| git `tickers/` | `core.txt` | 핵심 목록(직접 관리: SPY·섹터 ETF·KRW=X·대형주 후보) |
+| git `tickers/` | `universe.csv` | 자동 목록(ticker,name,sector,sources) |
 
-## 파일
-| 파일 | 내용 |
-|---|---|
-| `data/latest.json` | `meta`(as_of 기준일, missing_today, stale) + 티커별 최신 지표: close·prev_close·high·low·sma20/50/200·vs_sma20_pct·sma20_rising·rsi14·atr20_pct·ret_5d/21d/63d/126d·ret_6m_ex1m·from_high_pct·avg_dollar_vol_20d·history_days |
-| `data/core_prices.csv` | 최근 400거래일 OHLCV (date,ticker,open,high,low,close,adj_close,volume) |
-| `data/universe_latest.csv` | 넓은 목록 1행/티커 요약 지표 (일요일 재선정용) |
+## 받는 법(리포터·분석)
+```bash
+curl -fsSL -o ohlcv.parquet https://github.com/CHUCHUDACHUCHU/cluade-tracking-schedule-3/releases/download/data/ohlcv.parquet
+pip install pyarrow   # pandas.read_parquet용
+```
+```python
+import pandas as pd
+df = pd.read_parquet("ohlcv.parquet", filters=[("ticker", "in", ["ANET", "STRL"])])  # 필요한 종목만
+```
 
-- `close`는 미조정 종가(손절가·진입가 비교용), 수익률(`ret_*`)은 배당·분할 조정 종가 기준.
+## 안전장치
+- 목록: S&P 600(위키피디아), 러셀 2000(iShares IWM 보유 종목), 러셀 미드캡(iShares IWR). 일부 출처 실패 시 직전 목록을 보존, 새 목록이 직전의 80% 미만이면 직전 목록 사용.
+- 다운로드: 100개씩, 덩어리마다 3회 재시도, 끝에 빠진 종목만 20개씩 재시도. 못 받은 날은 다음 날 1개월 창으로 자동 보충.
+- 일봉 지연: 핵심 목록은 15분봉으로 그날 일봉 보정(장 마감 봉까지 있을 때만, `intraday_filled` 표시).
+- 분할: 겹치는 날 종가가 2% 넘게 바뀐 종목은 기존 시작일부터 다시 받음.
+- 업로드 전 검증: 행 수 1% 넘게 감소, 종목 수 2% 넘게 감소, 최신 날짜 후퇴, 중복, 0 이하 종가 → 업로드하지 않음(코드 2).
+- 저장소가 있는데 내려받기 실패 → 중단(빈 저장소로 덮어쓰기 방지).
+- 절반 이상 못 받음(Yahoo 차단 의심) → 받은 만큼 저장하고 실패로 표시(코드 1).
+
+## 참고
+- `close` = 분할 반영·배당 미반영 종가(진입·손절 비교용), `adj_close` = 배당까지 반영(수익률용).
 - `KRW=X` = 원/달러 환율.
-- ② 후보 풀이 바뀌면 `tickers/core.txt`를 고친다(다음 실행부터 반영, 과거 이력은 2년 치 자동 수집).
-
-## 리포터 지침에 넣을 문구 (①②③ 공통)
-```
-[종가 — GitHub CSV 우선, 2026-11-xx부터]
-- 종가·지표는 웹 검색 대신 아래 파일을 bash curl로 받아 python으로 읽는다(출력은 필요한 값만 print).
-  · 최신 지표: https://raw.githubusercontent.com/<계정>/us-closes/main/data/latest.json
-  · 일별 이력: https://raw.githubusercontent.com/<계정>/us-closes/main/data/core_prices.csv
-  · 넓은 목록(일요일 ②): https://raw.githubusercontent.com/<계정>/us-closes/main/data/universe_latest.csv
-- meta.as_of가 미국 기준일과 같으면 그 값을 '확정 종가'로 쓴다(잠정 아님, 교차확인 완료로 본다).
-- meta.as_of가 기준일보다 이르거나 파일을 못 받으면 직전 방식(웹 확인, 종목당 1회)으로 대체하고 리포트에 "종가 CSV 미갱신"을 쓴다.
-- 티커가 missing_today·stale에 있으면 그 종목만 "확인 불가(최신: MM/DD)".
-- 환율은 tickers의 "KRW=X" close를 쓴다(출처: Yahoo Finance).
-- ⑤·⑥ Notion 가격 DB에는 더 이상 쓰지 않는다(과거 기록 보관용).
-```
+- 대형주(ETN·RTX 등)는 세 목록에 없으므로 `core.txt`에 둔다.
