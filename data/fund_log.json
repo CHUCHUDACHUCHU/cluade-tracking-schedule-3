@@ -1,19 +1,18 @@
 {
- "date": "2026-11-10",
- "A": 172,
- "B_waiting": 2708,
- "fetched": 383,
- "fetched_A": 172,
- "failed": 3,
+ "date": "2026-11-11",
+ "A": 201,
+ "B_waiting": 2679,
+ "fetched": 430,
+ "fetched_A": 201,
+ "failed": 2,
  "failed_sample": [
   "ACCV",
-  "ADIG",
-  "ASA"
+  "ADIG"
  ],
  "stopped": "시간 예산",
- "coverage": 383,
+ "coverage": 614,
  "universe": 2903,
- "coverage_pct": 13.2,
+ "coverage_pct": 21.2,
  "save_errors": [],
  "minutes": 30.0
 }
