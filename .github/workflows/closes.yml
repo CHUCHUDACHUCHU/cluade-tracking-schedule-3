@@ -1,13 +1,17 @@
 name: daily-closes
 
 on:
+  # 주 실행은 외부 스케줄러(cron-job.org)가 06:41 KST(화~일)에 workflow_dispatch(scheduled=true)로 호출.
+  # 아래 GitHub 예약은 예비 — 몇 시간씩 밀릴 수 있고, 이미 받은 기준일이면 바로 끝남.
+  # 토 UTC 실행(= 일 KST)은 종목 목록 갱신 + 주간 백업까지.
   schedule:
-    # 21:41 UTC = 06:41 KST (화~토) — 미국 장 마감 후, 리포터(08:07) 전에 끝나도록 펀더멘털은 30분 예산
-    - cron: "41 21 * * 1-5"
-    # 토 21:41 UTC = 일 06:41 KST — 같은 수집 + 종목 목록 갱신 + 주간 백업
-    - cron: "41 21 * * 6"
+    - cron: "41 21 * * 1-6"
   workflow_dispatch:
     inputs:
+      scheduled:
+        description: "외부 스케줄러 호출(예약 실행과 똑같이 처리: 이미 받았으면 건너뜀, 토 UTC면 주간 작업)"
+        type: boolean
+        default: false
       refresh_universe:
         description: "종목 목록(S&P 500·S&P 600·러셀/나스닥 대체) 다시 받기"
         type: boolean
@@ -27,9 +31,47 @@ concurrency:
 env:
   GH_TOKEN: ${{ github.token }}
   TAG: data
+  AUTO: ${{ github.event_name == 'schedule' || inputs.scheduled == true }}
 
 jobs:
+  check:
+    runs-on: ubuntu-latest
+    outputs:
+      skip: ${{ steps.c.outputs.skip }}
+    steps:
+      # 앞 실행이 끝나길 기다렸다 시작할 수 있으니 트리거 시점 커밋이 아니라 main 최신본을 본다
+      - uses: actions/checkout@v5
+        with:
+          ref: main
+      - name: 자동 실행이면, 직전 미국 거래일 종가를 이미 받았는지 확인
+        id: c
+        run: |
+          SKIP=false
+          if [ "$AUTO" = "true" ]; then
+            if python3 - <<'EOF'
+          import json, sys, datetime as d
+          from zoneinfo import ZoneInfo
+          now = d.datetime.now(ZoneInfo("America/New_York"))
+          day = now.date() if now.hour >= 16 else now.date() - d.timedelta(days=1)
+          while day.weekday() >= 5:
+              day -= d.timedelta(days=1)
+          meta = json.load(open("data/latest.json"))["meta"]
+          print("기대 기준일", day, "/ 현재 as_of", meta["as_of"], "/ 생성", meta["generated_at_utc"])
+          if d.datetime.now(d.timezone.utc).weekday() == 5:
+              # 주간 실행일: 종가는 전날 받았어도 주간 작업이 오늘(UTC) 끝났을 때만 건너뜀
+              sys.exit(0 if meta["generated_at_utc"][:10] == d.datetime.now(d.timezone.utc).date().isoformat() else 1)
+          sys.exit(0 if meta["as_of"] >= day.isoformat() else 1)
+          EOF
+            then
+              SKIP=true
+            fi
+          fi
+          echo "skip=$SKIP"
+          echo "skip=$SKIP" >> "$GITHUB_OUTPUT"
+
   collect:
+    needs: check
+    if: needs.check.outputs.skip != 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 100
     steps:
@@ -38,6 +80,15 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt
+
+      - name: 주간 실행 여부(토요일 UTC 자동 실행 = 일요일 KST)
+        id: wk
+        run: |
+          if [ "$AUTO" = "true" ] && [ "$(date -u +%u)" = "6" ]; then
+            echo "weekly=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "weekly=false" >> "$GITHUB_OUTPUT"
+          fi
 
       - name: 저장소(Release) 준비·내려받기
         run: |
@@ -59,7 +110,7 @@ jobs:
         id: run
         run: |
           FLAG=""
-          if [ "${{ github.event.schedule }}" = "41 21 * * 6" ] || [ "${{ inputs.refresh_universe }}" = "true" ] || [ ! -f tickers/universe.csv ]; then
+          if [ "${{ steps.wk.outputs.weekly }}" = "true" ] || [ "${{ inputs.refresh_universe }}" = "true" ] || [ ! -f tickers/universe.csv ]; then
             FLAG="--refresh-universe"
           fi
           set +e
@@ -70,7 +121,7 @@ jobs:
         if: steps.run.outputs.code == '0' || steps.run.outputs.code == '1'
         run: |
           gh release upload "$TAG" store/ohlcv.parquet --clobber
-          if [ "${{ github.event.schedule }}" = "41 21 * * 6" ]; then
+          if [ "${{ steps.wk.outputs.weekly }}" = "true" ]; then
             B="ohlcv_backup_$(date -u +%F).parquet"
             cp store/ohlcv.parquet "store/$B"
             gh release upload "$TAG" "store/$B" --clobber
@@ -92,7 +143,7 @@ jobs:
           for f in fundamentals.parquet fund_history.parquet financials.parquet; do
             [ -s "store/$f" ] && gh release upload "$TAG" "store/$f" --clobber
           done
-          if [ "${{ github.event.schedule }}" = "41 21 * * 6" ] && [ -s store/fund_history.parquet ]; then
+          if [ "${{ steps.wk.outputs.weekly }}" = "true" ] && [ -s store/fund_history.parquet ]; then
             B="fund_history_backup_$(date -u +%F).parquet"
             cp store/fund_history.parquet "store/$B"
             gh release upload "$TAG" "store/$B" --clobber
@@ -114,5 +165,6 @@ jobs:
         run: |
           head -c 1500 data/collect_log.json 2>/dev/null || true; echo
           head -c 1500 data/fund_log.json 2>/dev/null || true; echo
+          [ -n "${{ steps.run.outputs.code }}" ] || { echo "일봉 수집 전 단계(준비·내려받기)에서 중단"; exit 1; }
           [ "${{ steps.run.outputs.code }}" = "0" ] || { echo "일봉 수집 코드 ${{ steps.run.outputs.code }} (1=절반 미만 수신, 2=검증 실패로 업로드 안 함)"; exit 1; }
           [ "${{ steps.fund.outputs.code }}" = "0" ] || { echo "펀더멘털 코드 ${{ steps.fund.outputs.code }} (2=검증 실패로 업로드 안 함)"; exit 1; }

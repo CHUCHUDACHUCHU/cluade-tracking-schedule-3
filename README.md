@@ -6,6 +6,7 @@ GitHub Actions가 yfinance(Yahoo Finance)로 받는다.
 ## 일정 (`.github/workflows/closes.yml`)
 - 화~토 06:41 KST: 전 종목 최근 1개월 받아 누적 → 요약 파일 커밋
 - 일 06:41 KST: 위 + 종목 목록 갱신 + 주간 백업
+- 실행은 외부 스케줄러(cron-job.org)가 06:41 KST에 `workflow_dispatch`(`scheduled=true`)로 호출. GitHub 예약(같은 시각)은 예비이며, 직전 미국 거래일 종가를 이미 받았으면 바로 끝남
 - 수동: Actions → daily-closes → Run workflow (`refresh_universe` 체크 시 목록 다시 받기)
 
 ## 저장 위치
