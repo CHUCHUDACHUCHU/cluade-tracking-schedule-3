@@ -1,18 +1,22 @@
 {
- "date": "2026-11-11",
- "A": 208,
- "B_waiting": 2672,
+ "date": "2026-11-12",
+ "A": 220,
+ "B_waiting": 2660,
  "fetched": 459,
- "fetched_A": 208,
- "failed": 2,
+ "fetched_A": 220,
+ "failed": 6,
  "failed_sample": [
   "ACCV",
-  "ADIG"
+  "ADIG",
+  "DMLP",
+  "ETB",
+  "ETV",
+  "FDBC"
  ],
  "stopped": "시간 예산",
- "coverage": 880,
+ "coverage": 1124,
  "universe": 2903,
- "coverage_pct": 30.3,
+ "coverage_pct": 38.7,
  "save_errors": [],
  "minutes": 30.0
 }
