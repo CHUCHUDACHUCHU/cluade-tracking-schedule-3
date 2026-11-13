@@ -1,0 +1,42 @@
+name: history-long
+
+# 장기 일봉(2004~) 연구용 저장소. 수동 1회 실행(시간 예산 넘으면 다시 실행 → 이어 받기).
+on:
+  workflow_dispatch:
+    inputs:
+      start:
+        description: "시작일"
+        type: string
+        default: "2004-01-01"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: closes          # 매일 수집과 겹치지 않게 같은 그룹
+  cancel-in-progress: false
+
+env:
+  GH_TOKEN: ${{ github.token }}
+  TAG: data
+
+jobs:
+  long:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: 이어 받기용 기존 파일
+        run: |
+          mkdir -p store
+          gh release download "$TAG" -p ohlcv_long.parquet -D store --clobber || echo "처음 생성"
+      - name: 장기 일봉 수집
+        run: python scripts/history_long.py --out store/ohlcv_long.parquet --start "${{ inputs.start }}" --budget-min 150
+      - name: 올리기
+        run: |
+          test -s store/ohlcv_long.parquet && gh release upload "$TAG" store/ohlcv_long.parquet --clobber
+          cat data/history_long_log.json

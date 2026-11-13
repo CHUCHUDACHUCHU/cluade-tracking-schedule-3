@@ -44,7 +44,7 @@ RL_STOP = 4             # 레이트 리밋 연속 횟수 → 그날 중단
 A_MAX = 220             # A 묶음 최대 종목 수
 FULL_EVERY_DAYS = 6     # 재무제표·실적 일정은 이 기간마다(또는 실적 전후) 다시 받음, 그 사이엔 가벼운 갱신
 NON_STOCK = {"SPY", "KRW=X", "XLF", "SMH", "GRID", "XLK", "XLI", "ITA", "IGV", "XLE", "IYZ", "XBI", "XLC", "PAVE",
-             "XLV", "XLB", "KRE", "XLU", "XLY", "URA", "XLP", "XHB", "XLRE"}  # ETF·환율은 펀더멘털 없음
+             "XLV", "XLB", "KRE", "XLU", "XLY", "URA", "XLP", "XHB", "XLRE", "UUP", "GLD", "USO", "CPER", "EEM", "IWM", "RSP", "VIXY"}  # ETF·환율은 펀더멘털 없음
 
 INFO_KEYS = {
     "marketCap": "mcap", "enterpriseValue": "ev", "forwardPE": "fwd_pe", "trailingPE": "ttm_pe",
