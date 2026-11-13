@@ -94,7 +94,7 @@ def tech_left(r) -> int:
     n = 0
     n += 0 if (r.get("vs_sma20_pct") or -1) > 0 else 1
     n += 0 if bool(r.get("sma20_rising")) else 1
-    n += 0 if (r.get("rs21_vs_sector_pct") or -1) > 0 else 1
+    # v5.7: 섹터 대비 상대강도는 남은 기술 조건에서 뺌(score_v3_2.py와 같음)
     n += 1 if ((r.get("rsi14") or 0) >= 70 or (r.get("vs_sma20_pct") or 0) >= 8) else 0
     return n
 

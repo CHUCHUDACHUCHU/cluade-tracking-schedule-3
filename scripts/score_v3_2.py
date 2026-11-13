@@ -88,7 +88,7 @@ def stock(cfg):
         tw = []
         if not T["above20"]: tw.append("20일선 아래")
         if not T["up20"]: tw.append("20일선 하락 중")
-        if it.get("kind") != "etf" and not (rs20 > 0 or rs_hi): tw.append("섹터 대비 20일 상대강도 음수(%.1f%%)" % rs20)
+        # v5.7(2026-11-13): "섹터 대비 20일 상대강도 음수" 관문 삭제 — 20년 시험에서 섹터보다 강한/약한 종목의 3개월 초과수익 차이 +0.3%p(t 0.4), 효과 없음. rs20은 리더 점수·기록에만 씀.
         if T["rsi"] >= 70 or T["d20"] >= 8: tw.append("과열(RSI %.0f, 20일선 %+.1f%%)" % (T["rsi"], T["d20"]))
         if it.get("earn_days", 99) <= 3 and not it.get("post_er_ok"): tw.append("실적 3거래일 이내")
         wait += tw
