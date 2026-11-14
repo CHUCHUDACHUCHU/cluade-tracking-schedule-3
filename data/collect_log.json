@@ -1,32 +1,57 @@
 {
- "requested": 2730,
- "received": 2729,
+ "requested": 2734,
+ "received": 2733,
  "missing": [
   "CWEN-A"
  ],
- "backfilled": 16,
+ "backfilled": 39,
  "backfill_failed": [
   "CWEN-A"
  ],
  "split_refetched": [],
- "intraday_filled": {},
- "new_rows": 62529,
+ "intraday_filled": {
+  "XLC": [
+   "2026-11-13"
+  ],
+  "PAVE": [
+   "2026-11-13"
+  ],
+  "XLRE": [
+   "2026-11-13"
+  ],
+  "ANET": [
+   "2026-11-13"
+  ],
+  "NVT": [
+   "2026-11-13"
+  ],
+  "CRDO": [
+   "2026-11-13"
+  ],
+  "ALAB": [
+   "2026-11-13"
+  ]
+ },
+ "new_rows": 76032,
  "validate_errors": [],
- "universe_errors": [],
+ "universe_errors": [
+  "r2000: StopIteration: ",
+  "rmid: StopIteration: "
+ ],
  "universe_sources": {
-  "nasdaq_smid": 1587,
-  "nasdaq_smid+sp600": 573,
-  "nasdaq_smid+sp500": 258,
-  "sp500": 245,
-  "sp600": 30
+  "nasdaq_smid": 1591,
+  "nasdaq_smid+sp600": 572,
+  "nasdaq_smid+sp500": 254,
+  "sp500": 249,
+  "sp600": 31
  },
  "as_of": "2026-11-13",
- "universe": 2672,
+ "universe": 2676,
  "core": 58,
- "screen_rows": 2916,
- "store_rows": 2087120,
- "store_tickers": 2932,
+ "screen_rows": 2939,
+ "store_rows": 2102137,
+ "store_tickers": 2955,
  "store_from": "2023-11-10",
- "seconds": 259,
+ "seconds": 321,
  "missing_count": 1
 }
