@@ -1,0 +1,66 @@
+name: extra-data (내부자 매매 · 실적 서프라이즈 · 애널리스트 의견)
+
+on:
+  schedule:
+    - cron: "13 18 * * *"      # 매일 03:13 KST — 기존 06:41 수집과 겹치지 않게
+  workflow_dispatch:
+    inputs:
+      insider_start:
+        description: "내부자 데이터 시작 분기(첫 백필용)"
+        default: "2019q1"
+      budget_min:
+        description: "애널리스트·실적 이력 수집 시간 예산(분) — 첫 백필은 180"
+        default: "180"
+
+permissions:
+  contents: write              # Release 'data'에 파일 올리기
+
+concurrency:
+  group: extra-data
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 240         # 수동 첫 백필(예산 180분 + 내부자 20분)까지 들어가게
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 패키지 설치
+        run: pip install pandas pyarrow requests yfinance
+
+      - name: 기존 파일 받기(Release 'data')
+        run: |
+          mkdir -p data_out
+          for f in insider.parquet insider_quarters.json earnings_hist.parquet ratings_hist.parquet analyst_state.json; do
+            gh release download data -p "$f" -D data_out --clobber || echo "아직 없음: $f"
+          done
+
+      - name: 내부자 매매(SEC Form 4) — 일요일(KST) 또는 수동 실행 때만
+        run: |
+          DOW=$(date -u +%u)
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] || [ "$DOW" = "6" ]; then
+            python scripts/insider.py --out data_out --start "${{ github.event.inputs.insider_start || '2019q1' }}" \
+              --existing data_out/insider.parquet --state data_out/insider_quarters.json
+          else
+            echo "오늘은 내부자 데이터 갱신 요일이 아님(토 18:13 UTC = 일 03:13 KST에 갱신)"
+          fi
+
+      - name: 실적 서프라이즈 · 애널리스트 의견 이력
+        run: python scripts/analyst_hist.py --out data_out --budget-min "${{ github.event.inputs.budget_min || '40' }}"
+
+      - name: Release 'data'에 올리기
+        run: |
+          cd data_out
+          for f in insider.parquet insider_quarters.json insider_log.json earnings_hist.parquet ratings_hist.parquet analyst_state.json analyst_log.json; do
+            [ -f "$f" ] && gh release upload data "$f" --clobber && echo "올림: $f"
+          done
+          cat analyst_log.json 2>/dev/null || true
+          cat insider_log.json 2>/dev/null || true
