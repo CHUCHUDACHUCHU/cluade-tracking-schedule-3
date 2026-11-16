@@ -1,10 +1,10 @@
 {
- "date": "2026-11-13",
+ "date": "2026-11-14",
  "A": 220,
- "B_waiting": 2673,
- "fetched": 446,
+ "B_waiting": 2688,
+ "fetched": 429,
  "fetched_A": 220,
- "failed": 9,
+ "failed": 12,
  "failed_sample": [
   "ACCV",
   "ADIG",
@@ -14,12 +14,15 @@
   "FDBC",
   "FPH",
   "GCBC",
-  "HIFS"
+  "HIFS",
+  "IAM",
+  "IPX",
+  "MFP"
  ],
  "stopped": "시간 예산",
- "coverage": 1363,
- "universe": 2916,
- "coverage_pct": 46.7,
+ "coverage": 1781,
+ "universe": 2939,
+ "coverage_pct": 60.6,
  "save_errors": [],
  "minutes": 30.0
 }
