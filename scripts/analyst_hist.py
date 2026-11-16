@@ -37,7 +37,8 @@ def norm_rat(t: str, df: pd.DataFrame) -> pd.DataFrame:
         return pd.DataFrame()
     d = df.reset_index()
     d.columns = [str(c) for c in d.columns]
-    g = lambda c: d[c] if c in d.columns else pd.Series([None] * len(d))
+    low = {c.lower(): c for c in d.columns}      # yfinance 버전에 따라 Firm/firm, ToGrade/toGrade 등 대소문자가 다름
+    g = lambda c: d[low[c.lower()]] if c.lower() in low else pd.Series([None] * len(d))
     datecol = next((c for c in d.columns if "date" in c.lower()), d.columns[0])
     return pd.DataFrame({"ticker": t, "date": pd.to_datetime(d[datecol], errors="coerce", utc=True).dt.tz_localize(None),
                          "firm": g("firm"), "to_grade": g("toGrade"), "from_grade": g("fromGrade"), "action": g("action"),
@@ -72,6 +73,7 @@ def main():
     ap.add_argument("--out", default="data_out"); ap.add_argument("--screen", default="data/screen.csv")
     ap.add_argument("--budget-min", type=float, default=40); ap.add_argument("--limit", type=int, default=60)
     ap.add_argument("--refresh-days", type=int, default=7); ap.add_argument("--sleep", type=float, default=0.6)
+    ap.add_argument("--min-dv", type=float, default=5e6)   # 20일 평균 거래대금 하한(달러)
     a = ap.parse_args()
     os.makedirs(a.out, exist_ok=True)
     sp = os.path.join(a.out, "analyst_state.json")
@@ -79,12 +81,16 @@ def main():
     sc = pd.read_csv(a.screen)
     tickers = sc.ticker.astype(str).str.upper().tolist()
     if "quote_type" in sc.columns:   # ETF는 실적·의견이 없음
-        tickers = sc[sc.quote_type.fillna("EQUITY").str.upper() != "ETF"].ticker.astype(str).str.upper().tolist()
+        sc = sc[sc.quote_type.fillna("EQUITY").str.upper() != "ETF"]
+    if "avg_dollar_vol_20d" in sc.columns:   # 우선주·채권형·소형 펀드 등 거래가 거의 없는 종목은 빼고, 거래대금 큰 종목부터
+        sc = sc[sc.avg_dollar_vol_20d.fillna(0) >= a.min_dv].sort_values("avg_dollar_vol_20d", ascending=False)
+    tickers = sc.ticker.astype(str).str.upper().tolist()
+    rank = {t: i for i, t in enumerate(tickers)}
     today = dt.date.today()
     due = [t for t in tickers if (today - dt.date.fromisoformat(state.get(t, "2000-01-01"))).days >= a.refresh_days]
-    due.sort(key=lambda t: state.get(t, "2000-01-01"))
+    due.sort(key=lambda t: (state.get(t, "2000-01-01"), rank[t]))
     t0 = time.time(); E, Rt, errs, n = [], [], {}, 0
-    stamp = dt.datetime.utcnow().strftime("%Y-%m-%d")
+    stamp = dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%d")
     for t in due:
         if time.time() - t0 > a.budget_min * 60:
             break
@@ -100,11 +106,11 @@ def main():
         time.sleep(a.sleep + random.random() * 0.4)
     ep = os.path.join(a.out, "earnings_hist.parquet"); rp = os.path.join(a.out, "ratings_hist.parquet")
     ea = merge(ep, pd.concat(E, ignore_index=True) if E else pd.DataFrame(), ["ticker", "earnings_date"])
-    ra = merge(rp, pd.concat(Rt, ignore_index=True) if Rt else pd.DataFrame(), ["ticker", "date", "firm", "to_grade", "from_grade", "pt_now"])
+    ra = merge(rp, pd.concat(Rt, ignore_index=True) if Rt else pd.DataFrame(), ["ticker", "date", "pt_action", "pt_now", "pt_prior"])
     if len(ea): ea.to_parquet(ep, index=False)
     if len(ra): ra.to_parquet(rp, index=False)
     json.dump(state, open(sp, "w"))
-    log = dict(updated_utc=dt.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"), processed=n, due=len(due), errors=len(errs),
+    log = dict(updated_utc=dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"), processed=n, due=len(due), errors=len(errs),
                error_sample=dict(list(errs.items())[:10]), earnings_rows=int(len(ea)), ratings_rows=int(len(ra)),
                covered=sum(1 for t in tickers if t in state), universe=len(tickers))
     json.dump(log, open(os.path.join(a.out, "analyst_log.json"), "w"), ensure_ascii=False, indent=1)

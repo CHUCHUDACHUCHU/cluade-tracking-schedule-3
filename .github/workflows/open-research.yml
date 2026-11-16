@@ -1,0 +1,33 @@
+name: open-research (학계 신호 · 공개 추정치 스냅숏, 수동 실행)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: 패키지 설치
+        run: pip install pandas pyarrow requests openassetpricing huggingface_hub polars
+      - name: 받기
+        run: python scripts/open_research.py data_out
+      - name: Release 'data'에 올리기
+        run: |
+          cd data_out
+          ls -la
+          for f in *.parquet open_research_log.json; do
+            [ -f "$f" ] || continue
+            SZ=$(stat -c %s "$f")
+            if [ "$SZ" -gt 1900000000 ]; then echo "너무 큼(건너뜀): $f $SZ"; continue; fi
+            gh release upload data "$f" --clobber && echo "올림: $f"
+          done

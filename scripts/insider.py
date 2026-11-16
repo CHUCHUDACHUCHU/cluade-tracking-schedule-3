@@ -113,7 +113,7 @@ def main():
     allx.to_parquet(os.path.join(a.out, "insider.parquet"), index=False)
     state["done"] = sorted(set(state["done"]))
     json.dump(state, open(os.path.join(a.out, "insider_quarters.json"), "w"), indent=1)
-    log.update(total_rows=int(len(allx)), updated_utc=dt.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"))
+    log.update(total_rows=int(len(allx)), updated_utc=dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"))
     json.dump(log, open(os.path.join(a.out, "insider_log.json"), "w"), ensure_ascii=False, indent=1)
     print("완료:", log)
 
