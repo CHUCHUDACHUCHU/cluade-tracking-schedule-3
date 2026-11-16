@@ -1,13 +1,12 @@
 {
- "date": "2026-11-14",
+ "date": "2026-11-16",
  "A": 220,
  "B_waiting": 2688,
- "fetched": 429,
+ "fetched": 393,
  "fetched_A": 220,
  "failed": 12,
  "failed_sample": [
   "ACCV",
-  "ADIG",
   "DMLP",
   "ETB",
   "ETV",
@@ -17,12 +16,13 @@
   "HIFS",
   "IAM",
   "IPX",
-  "MFP"
+  "MFP",
+  "NHC"
  ],
  "stopped": "시간 예산",
- "coverage": 1781,
+ "coverage": 1955,
  "universe": 2939,
- "coverage_pct": 60.6,
+ "coverage_pct": 66.5,
  "save_errors": [],
  "minutes": 30.0
 }
