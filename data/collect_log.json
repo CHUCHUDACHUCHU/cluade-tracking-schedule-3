@@ -9,11 +9,10 @@
   "CWEN-A"
  ],
  "split_refetched": [
-  "SENEA",
   "SENEB"
  ],
  "intraday_filled": {},
- "new_rows": 61396,
+ "new_rows": 63325,
  "validate_errors": [],
  "universe_errors": [],
  "universe_sources": {
@@ -23,13 +22,13 @@
   "sp500": 249,
   "sp600": 31
  },
- "as_of": "2026-11-17",
+ "as_of": "2026-11-18",
  "universe": 2676,
  "core": 58,
  "screen_rows": 2939,
- "store_rows": 2107590,
+ "store_rows": 2110311,
  "store_tickers": 2955,
  "store_from": "2023-11-10",
- "seconds": 209,
+ "seconds": 226,
  "missing_count": 1
 }
