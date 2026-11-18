@@ -1,5 +1,5 @@
 import json, sys, re, argparse, pandas as pd
-# 사용: python3 plan.py --rows rows2.json --screen data/screen.csv --latest data/latest.json --total 총평가원 --principal 원금원 [--first "TER,CRGY,ZYME"] [--mult 0.5]
+# v5.9 (2026-11-18) · 사용: python3 plan.py --rows rows2.json --screen data/screen.csv --latest data/latest.json --total 총평가원 --principal 원금원 [--first "TER,CRGY,ZYME"] [--mult 0.5]
 ap = argparse.ArgumentParser()
 for a in ("--rows", "--screen", "--latest"): ap.add_argument(a, required=True)
 ap.add_argument("--total", type=float, required=True); ap.add_argument("--principal", type=float, required=True)
@@ -36,13 +36,19 @@ for r in rows:
     d = dict(t=t, basket=b, q=q, ready=int(num(r.get("남은 기술 조건")) or 0), close=close, date=str(s.date), ma20=round(ma, 2),
              trig=round(trig, 2), kind=kind, dist=round(dist, 1), atr=atr, atr_days=round(abs(dist) / atr, 1) if atr else None,
              tech=tech, value=value, entry=entry, stop=stop, base=base, t3=t3_of(r), ne=str(s.next_earnings))
-    if not value and entry and stop and entry > stop:
-        w = (entry - stop) / entry
-        plan = min(CAP.get(b, 0.075) * A.total, A.principal * 0.02 / w) * A.mult
-        first = plan / 3 if b != "추세" else plan
-        d.update(stop_w=round(w * 100, 1), plan_krw=round(plan), plan_usd=round(plan / fx, 2), first_krw=round(first),
-                 first_usd=round(first / fx, 2), first_qty=round(first / fx / entry, 4),
-                 loss_first=round(first * w), loss_plan=round(plan * w), split=b != "추세", mult=A.mult)
+    # v5.9: 1차 지정가 = min(② 진입가, 종가 × (1 − 0.5×ATR)), 수량 = 원금×2% ÷ (지정가 − 손절가)
+    lim = round(min(entry, close * (1 - 0.5 * atr / 100)), 2) if entry and atr else None
+    if not value and lim and stop and lim > stop:
+        d.update(limit=lim, limit_pct=round((lim / close - 1) * 100, 1))
+        if lim <= stop * 1.05:
+            d.update(hold="지정가가 손절가에 근접 — 보류")
+        else:
+            w = (lim - stop) / lim
+            plan = min(CAP.get(b, 0.075) * A.total, A.principal * 0.02 / w) * A.mult
+            first = plan / 3 if b != "추세" else plan
+            d.update(stop_w=round(w * 100, 1), plan_krw=round(plan), plan_usd=round(plan / fx, 2), first_krw=round(first),
+                     first_usd=round(first / fx, 2), first_qty=round(first / fx / lim, 4),
+                     loss_first=round(first * w), loss_plan=round(plan * w), split=b != "추세", mult=A.mult)
     out.append(d)
 order = [x.strip() for x in A.first.split(",") if x.strip()]
 key = lambda d: (order.index(d["t"]) if d["t"] in order else 99, len(d.get("value", [])) > 0, d.get("ready", 9), abs(d.get("dist", 99)))
