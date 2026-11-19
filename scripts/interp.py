@@ -32,10 +32,20 @@ for it in st["items"]:
         dready=None if p.get("ready") is None else it["ready_left"] - p["ready"], prev_status=p.get("status"),
         news=(D.get("news") or {}).get("tag", "중립"), news_etf=(D.get("news") or {}).get("etf"), news_mult=(D.get("news") or {}).get("mult", 1.0)))
 cand = [r for r in rows if r["q"] >= 60 and r["status"] != "매수 후보"]
-# ② DB 기록 대상과 같은 규칙: 매수 후보 전부 + 품질 상위, 합계 25
-sel = sorted(rows, key=lambda r: (r["status"] != "매수 후보", -r["q"]))[:25]; selt = {r["t"] for r in sel}
 # 가장 먼저 후보가 될 종목: 가치 관문 통과(기술 조건만 남음) 우선 → 남은 기술 조건 → 트리거 거리
 first = sorted([r for r in cand if r["t"] not in manual], key=lambda r: (len(r["value"]) > 0, r["ready"], r["news"] != "순풍", abs(r["dist"])))[:3]  # v5.5 순풍은 같은 조건일 때만 앞으로
+# v5.10 ② DB 기록 대상: 매수 준비 순서 우선 — 매수 후보·보유 → first → 가치 관문 통과(품질 60↑, 트리거 가까운 순) → 남은 자리는 품질 순, 합계 25
+# (예전: 매수 후보 + 품질 상위 25 → 품질이 79~88에 몰려 있어 가장 가까운 후보(ONTO·COHR)가 잡음 수준 차이로 빠졌음, 11/19)
+SEL_MAX = 25
+_prio, _seen = [], set()
+def _add(r):
+    if r["t"] not in _seen: _prio.append(r); _seen.add(r["t"])
+for r in rows:
+    if r["status"] in ("매수 후보", "보유 중") or prev.get(r["t"], {}).get("status") == "보유 중": _add(r)
+for r in first: _add(r)
+for r in sorted([r for r in cand if not r["value"] and r["t"] not in manual], key=lambda r: abs(r["dist"])): _add(r)
+_fill = [r for r in sorted(rows, key=lambda r: -r["q"]) if r["t"] not in _seen]
+sel = _prio + _fill[:max(0, SEL_MAX - len(_prio))]; selt = {r["t"] for r in sel}
 etf = {k: v for k, v in json.load(open("data/latest.json"))["tickers"].items()}
 sec = []
 for s_ in sectors:

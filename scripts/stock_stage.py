@@ -123,6 +123,12 @@ def main():
     keep = [t.strip().upper() for t in a.keep.split(",") if t.strip()]
     sc = pd.read_csv(d / "screen.csv")
     fund = pd.read_parquet(st / "fundamentals.parquet").set_index("ticker")
+    # v5.10 방어: 수집 쪽에서 숫자 칸이 문자열(string)로 저장돼도 멈추지 않게 숫자로 변환
+    for _c in fund.columns:
+        if _c not in ("pe_hist", "yf_sector", "yf_industry", "quote_type", "fetched", "tier", "fetch_kind", "fund_fields_ok", "last_full") and str(fund[_c].dtype) in ("string", "object"):
+            _n = pd.to_numeric(fund[_c], errors="coerce")
+            if _n.notna().sum() >= 0.9 * fund[_c].notna().sum() and fund[_c].notna().sum() > 0:
+                fund[_c] = _n.astype("float64")
     cutoff = (pd.Timestamp(asof) - pd.Timedelta(days=21)).strftime("%Y-%m-%d")
 
     # ---------- A단계 ----------

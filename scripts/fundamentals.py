@@ -63,6 +63,11 @@ def log(*a):
     print(*a, flush=True)
 
 
+TEXT_INFO = {"yf_sector", "yf_industry", "quote_type"}   # INFO_KEYS 중 텍스트로 둘 칸(나머지는 숫자)
+
+NUMERIC_INFO = {v for v in INFO_KEYS.values() if v not in TEXT_INFO}
+
+
 def warn(*a):
     print("[warn]", *a, file=sys.stderr, flush=True)
 
@@ -132,7 +137,7 @@ def fetch_one(tk: str, prices: pd.DataFrame | None, light: bool = False) -> tupl
         got.append("info")
         for k, v in INFO_KEYS.items():
             val = info.get(k)
-            out[v] = val if isinstance(val, str) else num(val)
+            out[v] = val if v in TEXT_INFO else num(val)   # v5.10: 숫자 칸에 "Infinity" 같은 문자열이 와도 숫자/None만 저장
 
     return fetch_full_rest(t, tk, prices, out, fin_rows, got), fin_rows
 
@@ -144,7 +149,7 @@ def fetch_light(t, out, got) -> dict:
         got.append("info")
         for k, v in INFO_KEYS.items():
             val = info.get(k)
-            out[v] = val if isinstance(val, str) else num(val)
+            out[v] = val if v in TEXT_INFO else num(val)   # v5.10: 숫자 칸에 "Infinity" 같은 문자열이 와도 숫자/None만 저장
     estimates_and_ratings(t, out, got)
     out["fund_fields_ok"] = "+".join(got)
     out["fetch_kind"] = "light"
@@ -474,7 +479,9 @@ def main():
         for df, path in ((latest, fp), (hist, hp), (fins, fnp)):
             df = df.copy()
             for c in df.columns:
-                if df[c].dtype == object and c not in ("ticker", "tier", "fetched"):
+                if c in NUMERIC_INFO and str(df[c].dtype) in ("object", "string"):
+                    df[c] = pd.to_numeric(df[c], errors="coerce").astype("float64")   # v5.10: 문자열로 굳은 숫자 칸 복구(기존 파일도 다음 저장 때 자동 수리)
+                elif df[c].dtype == object and c not in ("ticker", "tier", "fetched"):
                     df[c] = df[c].astype("string")
             tmp = path.with_suffix(".tmp.parquet")
             df.to_parquet(tmp, index=False, compression="zstd")
