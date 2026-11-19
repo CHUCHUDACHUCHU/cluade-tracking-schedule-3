@@ -8,11 +8,9 @@
  "backfill_failed": [
   "CWEN-A"
  ],
- "split_refetched": [
-  "SENEB"
- ],
+ "split_refetched": [],
  "intraday_filled": {},
- "new_rows": 63325,
+ "new_rows": 62560,
  "validate_errors": [],
  "universe_errors": [],
  "universe_sources": {
@@ -22,13 +20,13 @@
   "sp500": 249,
   "sp600": 31
  },
- "as_of": "2026-11-18",
+ "as_of": "2026-11-19",
  "universe": 2676,
  "core": 58,
  "screen_rows": 2939,
- "store_rows": 2110311,
+ "store_rows": 2113036,
  "store_tickers": 2955,
  "store_from": "2023-11-10",
- "seconds": 226,
+ "seconds": 196,
  "missing_count": 1
 }
