@@ -1,10 +1,10 @@
 {
- "date": "2026-11-19",
- "A": 217,
- "B_waiting": 2691,
- "fetched": 457,
- "fetched_A": 217,
- "failed": 14,
+ "date": "2026-11-20",
+ "A": 212,
+ "B_waiting": 2696,
+ "fetched": 449,
+ "fetched_A": 212,
+ "failed": 16,
  "failed_sample": [
   "ACCV",
   "DMLP",
@@ -18,13 +18,15 @@
   "NHC",
   "OIG",
   "SEB",
-  "TCI",
-  "TIPT"
+  "TIPT",
+  "TRST",
+  "UAN",
+  "VALU"
  ],
  "stopped": "시간 예산",
- "coverage": 2620,
+ "coverage": 2858,
  "universe": 2939,
- "coverage_pct": 89.1,
+ "coverage_pct": 97.2,
  "save_errors": [],
  "minutes": 30.1
 }

@@ -4,13 +4,15 @@
  "missing": [
   "CWEN-A"
  ],
- "backfilled": 15,
+ "backfilled": 14,
  "backfill_failed": [
   "CWEN-A"
  ],
- "split_refetched": [],
+ "split_refetched": [
+  "SNDK"
+ ],
  "intraday_filled": {},
- "new_rows": 62560,
+ "new_rows": 63003,
  "validate_errors": [],
  "universe_errors": [],
  "universe_sources": {
@@ -20,11 +22,11 @@
   "sp500": 249,
   "sp600": 31
  },
- "as_of": "2026-11-19",
+ "as_of": "2026-11-20",
  "universe": 2676,
  "core": 58,
  "screen_rows": 2939,
- "store_rows": 2113036,
+ "store_rows": 2115758,
  "store_tickers": 2955,
  "store_from": "2023-11-10",
  "seconds": 196,
