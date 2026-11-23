@@ -1,21 +1,19 @@
 {
  "requested": 2687,
- "received": 2686,
+ "received": 2685,
  "missing": [
+  "ACA",
   "CWEN-A"
  ],
- "backfilled": 23,
+ "backfilled": 14,
  "backfill_failed": [
   "CWEN-A"
  ],
  "split_refetched": [],
  "intraday_filled": {},
- "new_rows": 67608,
+ "new_rows": 56217,
  "validate_errors": [],
- "universe_errors": [
-  "r2000: StopIteration: ",
-  "rmid: StopIteration: "
- ],
+ "universe_errors": [],
  "universe_sources": {
   "nasdaq_smid": 1544,
   "nasdaq_smid+sp600": 570,
@@ -23,13 +21,13 @@
   "sp500": 240,
   "sp600": 33
  },
- "as_of": "2026-11-20",
+ "as_of": "2026-11-23",
  "universe": 2629,
  "core": 58,
  "screen_rows": 2948,
- "store_rows": 2122028,
+ "store_rows": 2124699,
  "store_tickers": 2964,
  "store_from": "2023-11-10",
- "seconds": 245,
- "missing_count": 1
+ "seconds": 215,
+ "missing_count": 2
 }

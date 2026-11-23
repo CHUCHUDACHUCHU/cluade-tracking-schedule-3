@@ -1,10 +1,10 @@
 {
- "date": "2026-11-21",
+ "date": "2026-11-23",
  "A": 220,
  "B_waiting": 2697,
- "fetched": 463,
+ "fetched": 348,
  "fetched_A": 220,
- "failed": 18,
+ "failed": 17,
  "failed_sample": [
   "ACCV",
   "DMLP",
@@ -16,7 +16,6 @@
   "HIFS",
   "IPX",
   "NHC",
-  "OIG",
   "SEB",
   "TIPT",
   "TRST",
@@ -26,9 +25,9 @@
   "YSWY"
  ],
  "stopped": "시간 예산",
- "coverage": 2907,
+ "coverage": 2908,
  "universe": 2948,
  "coverage_pct": 98.6,
  "save_errors": [],
- "minutes": 30.0
+ "minutes": 30.1
 }
