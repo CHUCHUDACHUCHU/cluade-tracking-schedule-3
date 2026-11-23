@@ -11,10 +11,11 @@
 
 데이터 계산 규칙(섹터 소속 = GICS 섹터 ETF, 테마는 Yahoo 세부 업종으로 연결 — common.py)
   - 대상: 유동성 기준(20일 평균 거래대금 2천만 달러·주가 5달러·이력 120일) + 시총 20억 달러 이상 + 펀더멘털 수집 21일 이내
-  - 추정치 방향(rev_data): 대상 종목의 '내년 EPS 추정치 30일 변화' 중앙값 > +1% → +1, < −1% → −1, 그 사이 0 (대상 5개 미만이면 없음)
+  - 추정치 방향(rev_data): 대상 종목의 '내년 EPS 추정치 30일 변화'를 시총 제곱근으로 가중한 중앙값(v5.11) > +1% → +1, < −1% → −1, 그 사이 0
+    (대상 10개 미만이면 없음·data_ok=false). eps_rev_30d_median = 가중 중앙값, eps_rev_30d_eqmed = 예전 균등 중앙값(참고)
   - 리더 밀도(leaders_data): 최근 분기 매출 +30% 이상 + 내년 EPS 추정치 30일 상향(>0) 종목 수 → 0개=0, 1~2=1, 3~4=2, 5개 이상=3
   - 커버리지(fund_cov_pct): 유동성 통과 종목 중 펀더멘털이 21일 이내로 수집된 비율(테마 ETF는 상위 GICS 섹터 기준).
-    60% 미만이거나 대상이 5개 미만이면 data_ok=false(반영하지 않음)
+    60% 미만이거나 대상이 10개 미만이면 data_ok=false(반영하지 않음, v5.11)
 """
 from __future__ import annotations
 
@@ -32,6 +33,18 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from common import GICS_ETFS, SECTORS, THEME_PARENT, liquid, sector_members  # noqa: E402
 
 HERE = Path(__file__).resolve().parent
+MIN_N = 10  # v5.11: 섹터 데이터(추정치 방향·리더 밀도) 반영 최소 종목 수(시총 20억 달러↑·펀더멘털 21일 이내)
+
+
+def wmedian(v, w) -> float:
+    """가중 중앙값: 값 순으로 정렬해 누적 가중치가 절반을 넘는 첫 값."""
+    v = np.asarray(v, dtype=float); w = np.asarray(w, dtype=float)
+    ok = ~(np.isnan(v) | np.isnan(w)) & (w > 0)
+    v, w = v[ok], w[ok]
+    if not len(v):
+        return np.nan
+    o = np.argsort(v); v, w = v[o], w[o]
+    return float(v[np.searchsorted(np.cumsum(w) / w.sum(), 0.5)])
 
 
 def main():
@@ -56,14 +69,18 @@ def main():
         fresh = big[big["fund_fetched"].fillna("") >= cutoff] if "fund_fetched" in big else big.iloc[0:0]
         cm = m if etf in GICS_ETFS else liquid(pd.concat([mem[p_] for p_ in THEME_PARENT[etf]]).drop_duplicates("ticker"))
         cov = round(len(cm[cm["fund_fetched"].fillna("") >= cutoff]) / len(cm) * 100, 1) if len(cm) else 0.0
-        med = fresh["eps_1y_chg_30d_pct"].median() if len(fresh) else np.nan
-        rev_data = None if len(fresh) < 5 or pd.isna(med) else (1 if med > 1 else (-1 if med < -1 else 0))
+        # v5.11: 시총 제곱근 가중 중앙값(대형주 쪽으로 기울이되 상위 몇 종목이 독점하지 않게), 표본 10개 미만이면 미반영
+        f2 = fresh.dropna(subset=["eps_1y_chg_30d_pct"]) if len(fresh) else fresh
+        eq_med = f2["eps_1y_chg_30d_pct"].median() if len(f2) else np.nan
+        med = wmedian(f2["eps_1y_chg_30d_pct"], np.sqrt(f2["mcap_b"].clip(lower=0))) if len(f2) else np.nan
+        rev_data = None if len(f2) < MIN_N or pd.isna(med) else (1 if med > 1 else (-1 if med < -1 else 0))
         lead = fresh[(fresh["rev_growth_q"] >= 30) & (fresh["eps_1y_chg_30d_pct"] > 0)]
         n = len(lead)
         leaders_data = 0 if n == 0 else (1 if n <= 2 else (2 if n <= 4 else 3))
-        data_ok = cov >= 60 and len(fresh) >= 5
+        data_ok = cov >= 60 and len(fresh) >= MIN_N
         rows.append(dict(name=name, etf=etf, members_liquid=int(len(m)), fresh_big=int(len(fresh)), fund_cov_pct=cov,
-                         eps_rev_30d_median=None if pd.isna(med) else round(float(med), 2), rev_data=rev_data,
+                         eps_rev_30d_median=None if pd.isna(med) else round(float(med), 2),
+                         eps_rev_30d_eqmed=None if pd.isna(eq_med) else round(float(eq_med), 2), rev_data=rev_data,
                          leaders_n=n, leaders_data=leaders_data, data_ok=bool(data_ok),
                          leader_tickers=lead.sort_values("rev_growth_q", ascending=False)["ticker"].head(8).tolist()))
 
