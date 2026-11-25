@@ -11,7 +11,7 @@
  ],
  "split_refetched": [],
  "intraday_filled": {},
- "new_rows": 58890,
+ "new_rows": 61564,
  "validate_errors": [],
  "universe_errors": [],
  "universe_sources": {
@@ -21,13 +21,13 @@
   "sp500": 240,
   "sp600": 33
  },
- "as_of": "2026-11-24",
+ "as_of": "2026-11-25",
  "universe": 2629,
  "core": 58,
  "screen_rows": 2948,
- "store_rows": 2127375,
+ "store_rows": 2130051,
  "store_tickers": 2964,
  "store_from": "2023-11-10",
- "seconds": 216,
+ "seconds": 187,
  "missing_count": 2
 }
