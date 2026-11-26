@@ -5,13 +5,13 @@
   "ACA",
   "CWEN-A"
  ],
- "backfilled": 14,
+ "backfilled": 13,
  "backfill_failed": [
   "CWEN-A"
  ],
  "split_refetched": [],
  "intraday_filled": {},
- "new_rows": 61564,
+ "new_rows": 61561,
  "validate_errors": [],
  "universe_errors": [],
  "universe_sources": {
@@ -25,9 +25,9 @@
  "universe": 2629,
  "core": 58,
  "screen_rows": 2948,
- "store_rows": 2130051,
+ "store_rows": 2130057,
  "store_tickers": 2964,
  "store_from": "2023-11-10",
- "seconds": 187,
+ "seconds": 148,
  "missing_count": 2
 }
