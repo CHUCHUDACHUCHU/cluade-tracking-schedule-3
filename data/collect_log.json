@@ -25,9 +25,9 @@
  "universe": 2629,
  "core": 58,
  "screen_rows": 2948,
- "store_rows": 2130057,
+ "store_rows": 2130058,
  "store_tickers": 2964,
  "store_from": "2023-11-10",
- "seconds": 148,
+ "seconds": 172,
  "missing_count": 2
 }

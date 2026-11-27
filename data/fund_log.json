@@ -1,9 +1,9 @@
 {
- "date": "2026-11-26",
- "A": 182,
- "B_waiting": 2735,
- "fetched": 484,
- "fetched_A": 182,
+ "date": "2026-11-27",
+ "A": 181,
+ "B_waiting": 2736,
+ "fetched": 449,
+ "fetched_A": 181,
  "failed": 17,
  "failed_sample": [
   "ACCV",
