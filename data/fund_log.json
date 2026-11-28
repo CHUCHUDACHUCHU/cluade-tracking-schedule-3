@@ -1,9 +1,9 @@
 {
- "date": "2026-11-27",
- "A": 181,
- "B_waiting": 2736,
- "fetched": 482,
- "fetched_A": 181,
+ "date": "2026-11-28",
+ "A": 197,
+ "B_waiting": 2731,
+ "fetched": 466,
+ "fetched_A": 197,
  "failed": 17,
  "failed_sample": [
   "ACCV",
@@ -25,9 +25,9 @@
   "CIX"
  ],
  "stopped": "시간 예산",
- "coverage": 2909,
- "universe": 2948,
+ "coverage": 2920,
+ "universe": 2959,
  "coverage_pct": 98.7,
  "save_errors": [],
- "minutes": 30.1
+ "minutes": 30.0
 }
